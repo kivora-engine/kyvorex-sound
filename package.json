@@ -1,0 +1,12 @@
+{
+  "name": "kyvorex-sounds",
+  "version": "1.0.0",
+  "private": true,
+  "description": "KYVOREX SOUNDS — original procedural sound library",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.5"
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sounds — KYVOREX SOUNDS</title>
+<meta name="description" content="Browse the KYVOREX SOUNDS library. Preview in your browser, download MP3 and WAV.">
+<link rel="canonical" href="https://REPLACE-WITH-DOMAIN/sounds.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KYVOREX SOUNDS">
+<meta property="og:title" content="Sound Library — KYVOREX SOUNDS">
+<meta property="og:description" content="Preview sounds in your browser. Download MP3 and WAV.">
+<meta property="og:url" content="https://REPLACE-WITH-DOMAIN/sounds.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="KYVOREX SOUNDS — Library">
+<meta name="twitter:description" content="Preview and download original sounds for developers.">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">K</span>
+      <span class="brand-name">KYVOREX<span class="brand-accent">SOUNDS</span></span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="sounds.html" class="nav-link active">Sounds</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="license.html" class="nav-link">License</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h1 class="page-title">Sound Library</h1>
+      <p class="section-sub">Preview sounds instantly in your browser. Download available sounds in MP3 or WAV.</p>
+
+      <div class="toolbar">
+        <input type="search" id="search-input" class="input" placeholder="Search sounds...">
+        <div id="category-filters" class="chips"></div>
+      </div>
+
+      <div id="sounds-status" class="status">Loading sounds...</div>
+      <div id="sounds-grid" class="sounds-grid"></div>
+    </div>
+  </section>
+</main>
+
+<div id="player-bar" class="player-bar hidden">
+  <div class="container player-inner">
+    <div class="player-info">
+      <span id="player-title" class="player-title">—</span>
+      <span id="player-state" class="player-state">Idle</span>
+    </div>
+    <div class="player-actions">
+      <button id="player-toggle" class="btn btn-icon" aria-label="Play / Stop">▶</button>
+      <button id="player-stop" class="btn btn-icon" aria-label="Stop">■</button>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>&copy; <span id="year"></span> KYVOREX SOUNDS</p>
+    <nav class="footer-nav">
+      <a href="about.html">About</a>
+      <a href="license.html">License</a>
+      <a href="sounds.html">Sounds</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/audio-engine.js" defer></script>
+<script src="js/audio-presets.js" defer></script>
+<script src="js/wav-renderer.js" defer></script>
+<script src="js/ui.js" defer></script>
+<script src="js/player.js" defer></script>
+<script src="js/downloads.js" defer></script>
+<script src="js/filters.js" defer></script>
+<script src="js/sounds.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>2

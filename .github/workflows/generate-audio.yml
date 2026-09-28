@@ -1,0 +1,63 @@
+name: generate-audio
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-audio
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          ffmpeg -version
+
+      - name: Generate official audio
+        run: |
+          python tools/audio-generator/generate.py --official --sync-catalog
+
+      - name: Validate 10 WAV + 10 MP3
+        run: |
+          set -e
+          ids="ui-click-001 ui-confirm-001 alert-error-001 alert-success-001 \
+               coin-pickup-001 jump-001 hit-impact-001 explosion-small-001 \
+               laser-shot-001 power-up-001"
+          for id in $ids; do
+            wav="audio/wav/$id.wav"
+            mp3="audio/mp3/$id.mp3"
+            test -f "$wav" || (echo "MISSING: $wav"; exit 1)
+            test -f "$mp3" || (echo "MISSING: $mp3"; exit 1)
+            test -s "$wav" || (echo "EMPTY: $wav"; exit 1)
+            test -s "$mp3" || (echo "EMPTY: $mp3"; exit 1)
+          done
+          echo "All 20 files present and non-empty."
+
+      - name: Commit generated files
+        run: |
+          git config user.name  "kyvorex-audio-bot"
+          git config user.email "audio-bot@kyvorex.local"
+          git add audio/wav audio/mp3 data/sounds.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(audio): generate official catalog [skip ci]"
+            git push
+          fi

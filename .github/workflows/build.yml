@@ -1,0 +1,54 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Verify dist structure
+        run: |
+          test -d dist
+          test -f dist/index.html
+          test -f dist/sounds.html
+          test -f dist/about.html
+          test -f dist/license.html
+          test -f dist/404.html
+          test -f dist/robots.txt
+          test -f dist/sitemap.xml
+          test -f dist/_headers
+          test -f dist/data/sounds.json
+          if find dist -name '*.map' | grep -q .; then
+            echo "Source maps found in dist/"; exit 1;
+          fi
+
+      - name: Verify audio files
+        run: |
+          for id in ui-click-001 ui-confirm-001 alert-error-001 alert-success-001 coin-pickup-001 jump-001 hit-impact-001 explosion-small-001 laser-shot-001 power-up-001; do
+            test -f "dist/audio/wav/$id.wav" || (echo "missing WAV $id"; exit 1)
+            test -f "dist/audio/mp3/$id.mp3" || (echo "missing MP3 $id"; exit 1)
+          done
+
+      - name: Upload dist artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: kyvorex-sounds-dist
+          path: dist

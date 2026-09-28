@@ -1,0 +1,10 @@
+KYVOREX SOUNDS — Credits
+========================
+
+Project lead:       (to be filled)
+Sound design:       KYVOREX programmatic audio system
+Web development:    KYVOREX SOUNDS team
+
+Third-party assets: none.
+
+Credits will be updated as the project grows.

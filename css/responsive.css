@@ -1,0 +1,42 @@
+/* responsive.css — mobile-first tweaks only */
+
+/* Very small phones (~320px) */
+@media (max-width: 360px) {
+  .container { padding: 0 12px; }
+  .header-inner { gap: 6px; padding-top: 10px; padding-bottom: 10px; }
+  .nav-link { padding: 8px 8px; font-size: .82rem; }
+  .brand-name { font-size: .92rem; }
+  .hero-title { font-size: 1.65rem; }
+  .page-title { font-size: 1.4rem; }
+  .btn { padding: 9px 12px; font-size: .86rem; min-height: 40px; }
+  .btn-icon { width: 40px; height: 40px; min-height: 40px; }
+  .chip { padding: 7px 12px; font-size: .78rem; min-height: 38px; }
+  .category-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .category-card { padding: 12px; }
+}
+
+/* Standard phones (~360–480px) */
+@media (max-width: 480px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* Tablets and up */
+@media (min-width: 640px) {
+  .hero { padding: 60px 0 40px; }
+  .hero-title { font-size: 2.4rem; }
+  .sounds-grid { grid-template-columns: repeat(2, 1fr); }
+  .toolbar { flex-direction: row; align-items: center; }
+  .toolbar .input { flex: 1; }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  .hero-title { font-size: 2.7rem; }
+  .sounds-grid { grid-template-columns: repeat(3, 1fr); }
+  h1 { font-size: 2.1rem; }
+  .page-title { font-size: 2rem; }
+}

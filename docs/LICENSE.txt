@@ -1,0 +1,64 @@
+KYVOREX Free Sound License 1.0
+==============================
+
+Version 1.0 - Published 2026-09-27.
+This document is not legal advice.
+
+This license applies to the sound files distributed by KYVOREX
+SOUNDS ("the Sounds"). It does not apply to the website source code,
+to the KYVOREX name, or to the KYVOREX SOUNDS logo.
+
+
+1. GRANT OF RIGHTS
+
+You may:
+  - Use the Sounds in personal projects.
+  - Use the Sounds in commercial projects.
+  - Use the Sounds in games, apps, and other interactive media.
+  - Modify the Sounds and integrate them into your own works.
+  - Redistribute the Sounds as part of a larger work (game, app,
+    video, podcast, etc.).
+
+
+2. CONDITIONS
+
+  - Attribution is not required, but appreciated.
+  - Do not redistribute the Sounds as standalone files.
+  - Do not sell the Sounds as standalone files.
+  - Do not present the Sounds as your own original creations.
+
+
+3. REDISTRIBUTION
+
+The Sounds may be distributed as part of a larger project. They may
+not be sold, sublicensed or redistributed on their own, or as a
+sound pack.
+
+
+4. OWNERSHIP
+
+KYVOREX SOUNDS retains ownership of the original sound files. This
+license grants usage rights, not ownership.
+
+
+5. EXCLUSIONS
+
+This license does not grant any rights to:
+  - the KYVOREX name, logo or brand;
+  - the website source code;
+  - any other asset not explicitly listed as a Sound.
+
+
+6. NO WARRANTY
+
+The Sounds are provided "as is", without warranty of any kind.
+
+
+7. LICENSE REVISIONS
+
+KYVOREX may update, replace or revise this license for future
+releases of the library. Each revised version will be identified by
+a version number and publication date. Unless expressly stated
+otherwise and permitted by applicable law, later revisions do not
+retroactively alter rights already granted for files obtained under
+an earlier version.
