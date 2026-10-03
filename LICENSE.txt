@@ -1,0 +1,18 @@
+KYVOREX SOUNDS — Licensing summary
+===================================
+
+This repository contains two distinct categories of content.
+
+1. CODE
+   HTML, CSS, JavaScript, Python scripts, configuration files.
+   All rights reserved. No license is granted for the source code.
+   You may read the code for reference. You may not redistribute it
+   as your own project.
+
+2. SOUNDS
+   Audio files under audio/wav/ and audio/mp3/.
+   Licensed under the KYVOREX Free Sound License 1.0.
+   Full text in docs/LICENSE.txt and license.html.
+
+The KYVOREX name, the KYVOREX SOUNDS name and the logo are not covered
+by either license.

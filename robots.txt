@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow:
 
-Sitemap: https://REPLACE-WITH-DOMAIN/sitemap.xml
+Sitemap: https://kivora-engine.github.io/kyvorex-sound/sitemap.xml

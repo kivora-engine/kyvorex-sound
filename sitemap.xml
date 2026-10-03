@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://REPLACE-WITH-DOMAIN/</loc>
+    <loc>https://kivora-engine.github.io/kyvorex-sound/</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-DOMAIN/sounds.html</loc>
+    <loc>https://kivora-engine.github.io/kyvorex-sound/sounds.html</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-DOMAIN/about.html</loc>
+    <loc>https://kivora-engine.github.io/kyvorex-sound/about.html</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://REPLACE-WITH-DOMAIN/license.html</loc>
+    <loc>https://kivora-engine.github.io/kyvorex-sound/license.html</loc>
     <lastmod>2026-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
