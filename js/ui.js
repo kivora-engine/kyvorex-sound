@@ -26,6 +26,24 @@
     return node;
   }
 
+  /* ---------- date formatting (locale-aware via Intl) ---------- */
+  function formatDate(isoDate) {
+    if (!isoDate || typeof isoDate !== 'string') return '';
+    try {
+      // Force local-time interpretation of the YYYY-MM-DD value
+      // so the displayed day doesn't shift across timezones.
+      var d = new Date(isoDate + 'T00:00:00');
+      if (isNaN(d.getTime())) return isoDate;
+      return new Intl.DateTimeFormat(undefined, {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      }).format(d);
+    } catch (e) {
+      return isoDate;
+    }
+  }
+
   /* ---------- status badge ---------- */
   function statusBadge(sound) {
     if (sound.status === 'available') {
@@ -57,10 +75,17 @@
 
     var desc = el('p', { class: 'sound-desc', text: sound.description || '' });
 
-    var meta = el('div', { class: 'sound-meta' }, [
+    var metaChildren = [
       el('span', { text: '⏱ ' + (sound.duration || '—') }),
       statusBadge(sound)
-    ]);
+    ];
+    if (sound.date) {
+      metaChildren.push(el('span', {
+        class: 'sound-date',
+        text: 'Added ' + formatDate(sound.date)
+      }));
+    }
+    var meta = el('div', { class: 'sound-meta' }, metaChildren);
 
     // Preview — always available (procedural engine).
     var previewBtn = el('button', {
