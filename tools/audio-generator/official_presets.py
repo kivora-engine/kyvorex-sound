@@ -1,4 +1,4 @@
-"""Official catalog presets - 10 sounds.
+"""Official catalog presets - 20 sounds.
 
 Mirrors the JS presets in js/audio-presets.js so the generated WAV/MP3
 match what the browser Preview plays.
@@ -121,7 +121,7 @@ def _finalize(samples):
     return [s * factor for s in samples]
 
 
-# ---------- official presets ----------
+# ---------- INTERFACE ----------
 
 def ui_click_001():
     s = _tone('square', 1500.0, 0.045, 0.32, 0.001)
@@ -134,6 +134,24 @@ def ui_confirm_001():
     return _finalize(_mix(a, b))
 
 
+def ui_hover_001():
+    s = _tone('sine', 2200.0, 0.04, 0.22, 0.001)
+    return _finalize(_pad(s, 0.06))
+
+
+def ui_back_001():
+    s = _sweep('triangle', 800.0, 500.0, 0.10, 0.28, 0.003)
+    return _finalize(_pad(s, 0.12))
+
+
+def ui_toggle_001():
+    a = _at(_tone('square', 950.0, 0.04, 0.26, 0.001), 0.00, 0.12)
+    b = _at(_tone('square', 650.0, 0.04, 0.26, 0.001), 0.05, 0.12)
+    return _finalize(_mix(a, b))
+
+
+# ---------- ALERTS ----------
+
 def alert_error_001():
     a = _at(_tone('triangle', 520.0, 0.13, 0.34, 0.003), 0.00, 0.36)
     b = _at(_tone('triangle', 390.0, 0.15, 0.34, 0.003), 0.13, 0.36)
@@ -145,6 +163,19 @@ def alert_success_001():
     parts = [_at(_tone('sine', f, 0.13, 0.30, 0.005), t, 0.42) for f, t in notes]
     return _finalize(_mix(*parts))
 
+
+def alert_warning_001():
+    a = _at(_tone('triangle', 750.0, 0.11, 0.30, 0.004), 0.00, 0.30)
+    b = _at(_tone('triangle', 600.0, 0.13, 0.30, 0.004), 0.12, 0.30)
+    return _finalize(_mix(a, b))
+
+
+def alert_info_001():
+    s = _tone('sine', 700.0, 0.20, 0.28, 0.005)
+    return _finalize(_pad(s, 0.25))
+
+
+# ---------- GAMEPLAY ----------
 
 def coin_pickup_001():
     a = _at(_tone('square', 987.77, 0.09, 0.28, 0.002), 0.00, 0.36)
@@ -169,6 +200,26 @@ def explosion_small_001():
     return _finalize(_mix(nz, low))
 
 
+def footstep_single_001():
+    low = _at(_sweep('sine', 95.0, 70.0, 0.07, 0.40, 0.001), 0.00, 0.10)
+    nz = _at(_noise(0.04, 0.18, 0.001, seed=101), 0.00, 0.10)
+    return _finalize(_mix(low, nz))
+
+
+def damage_player_001():
+    sw = _at(_sweep('sawtooth', 400.0, 150.0, 0.18, 0.32, 0.002), 0.00, 0.20)
+    nz = _at(_noise(0.06, 0.18, 0.001, seed=13), 0.00, 0.20)
+    return _finalize(_mix(sw, nz))
+
+
+def checkpoint_001():
+    a = _at(_tone('sine', 550.0, 0.11, 0.30, 0.004), 0.00, 0.30)
+    b = _at(_tone('sine', 750.0, 0.14, 0.30, 0.004), 0.12, 0.30)
+    return _finalize(_mix(a, b))
+
+
+# ---------- SCI-FI ----------
+
 def laser_shot_001():
     s = _sweep('sawtooth', 1800.0, 240.0, 0.18, 0.30, 0.002)
     return _finalize(_pad(s, 0.22))
@@ -180,15 +231,36 @@ def power_up_001():
     return _finalize(_mix(*parts))
 
 
+def shield_activate_001():
+    s = _sweep('triangle', 250.0, 900.0, 0.35, 0.30, 0.010)
+    return _finalize(_pad(s, 0.40))
+
+
+def teleport_001():
+    up = _at(_sweep('sine', 300.0, 1400.0, 0.15, 0.30, 0.003), 0.00, 0.30)
+    down = _at(_sweep('sine', 1400.0, 350.0, 0.15, 0.30, 0.003), 0.15, 0.30)
+    return _finalize(_mix(up, down))
+
+
 OFFICIAL_PRESETS = {
     'ui-click-001': ui_click_001,
     'ui-confirm-001': ui_confirm_001,
+    'ui-hover-001': ui_hover_001,
+    'ui-back-001': ui_back_001,
+    'ui-toggle-001': ui_toggle_001,
     'alert-error-001': alert_error_001,
     'alert-success-001': alert_success_001,
+    'alert-warning-001': alert_warning_001,
+    'alert-info-001': alert_info_001,
     'coin-pickup-001': coin_pickup_001,
     'jump-001': jump_001,
     'hit-impact-001': hit_impact_001,
     'explosion-small-001': explosion_small_001,
+    'footstep-single-001': footstep_single_001,
+    'damage-player-001': damage_player_001,
+    'checkpoint-001': checkpoint_001,
     'laser-shot-001': laser_shot_001,
     'power-up-001': power_up_001,
+    'shield-activate-001': shield_activate_001,
+    'teleport-001': teleport_001,
 }
