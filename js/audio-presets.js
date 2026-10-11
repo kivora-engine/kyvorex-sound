@@ -1,4 +1,4 @@
-// audio-presets.js — 20 procedural sound presets
+// audio-presets.js — 25 procedural sound presets
 (function () {
   'use strict';
   var KY = window.KYVOREX = window.KYVOREX || {};
@@ -16,6 +16,14 @@
     duration: 0.08,
     build: function (E) {
       E.tone({ freq: 1500, dur: 0.045, type: 'square', gain: 0.32, attack: 0.001 });
+    }
+  });
+
+  // Softer sine click, lower pitch.
+  KY.audio.registerPreset('ui-click-002', {
+    duration: 0.07,
+    build: function (E) {
+      E.tone({ freq: 1100, dur: 0.05, type: 'sine', gain: 0.28, attack: 0.002 });
     }
   });
 
@@ -57,7 +65,6 @@
      ALERTS
      ----------------------------------------------------------- */
 
-  // Two descending tones, harsher.
   KY.audio.registerPreset('alert-error-001', {
     duration: 0.36,
     build: function (E) {
@@ -66,7 +73,6 @@
     }
   });
 
-  // Ascending arpeggio C-E-G.
   KY.audio.registerPreset('alert-success-001', {
     duration: 0.42,
     build: function (E) {
@@ -77,7 +83,6 @@
     }
   });
 
-  // Two mid-pitch tones, descending slightly (warning).
   KY.audio.registerPreset('alert-warning-001', {
     duration: 0.30,
     build: function (E) {
@@ -86,7 +91,6 @@
     }
   });
 
-  // Single soft bell tone (info).
   KY.audio.registerPreset('alert-info-001', {
     duration: 0.25,
     build: function (E) {
@@ -98,7 +102,6 @@
      GAMEPLAY
      ----------------------------------------------------------- */
 
-  // Two short notes with a bright high tail (arcade coin).
   KY.audio.registerPreset('coin-pickup-001', {
     duration: 0.36,
     build: function (E) {
@@ -107,7 +110,17 @@
     }
   });
 
-  // Fast rising sweep (jump).
+  // Three-note triangle arpeggio — bright and bouncy.
+  KY.audio.registerPreset('coin-pickup-002', {
+    duration: 0.40,
+    build: function (E) {
+      var notes = [1046.50, 1318.51, 1567.98];
+      notes.forEach(function (f, i) {
+        E.tone({ freq: f, dur: 0.12, type: 'triangle', gain: 0.26, when: i * 0.08, attack: 0.002 });
+      });
+    }
+  });
+
   KY.audio.registerPreset('jump-001', {
     duration: 0.22,
     build: function (E) {
@@ -115,7 +128,6 @@
     }
   });
 
-  // Low tone + noise burst (impact).
   KY.audio.registerPreset('hit-impact-001', {
     duration: 0.26,
     build: function (E) {
@@ -124,7 +136,6 @@
     }
   });
 
-  // Filtered noise + downward low sweep (small explosion).
   KY.audio.registerPreset('explosion-small-001', {
     duration: 0.6,
     build: function (E) {
@@ -133,7 +144,6 @@
     }
   });
 
-  // Soft low thump + short filtered noise (single footstep).
   KY.audio.registerPreset('footstep-single-001', {
     duration: 0.10,
     build: function (E) {
@@ -142,7 +152,6 @@
     }
   });
 
-  // Descending sawtooth + short noise (player hit).
   KY.audio.registerPreset('damage-player-001', {
     duration: 0.20,
     build: function (E) {
@@ -151,7 +160,6 @@
     }
   });
 
-  // Two ascending tones (checkpoint).
   KY.audio.registerPreset('checkpoint-001', {
     duration: 0.30,
     build: function (E) {
@@ -160,11 +168,21 @@
     }
   });
 
+  // Three ascending bell tones — larger, more rewarding.
+  KY.audio.registerPreset('checkpoint-002', {
+    duration: 0.45,
+    build: function (E) {
+      var notes = [523.25, 659.25, 880.00];
+      notes.forEach(function (f, i) {
+        E.tone({ freq: f, dur: 0.14, type: 'triangle', gain: 0.26, when: i * 0.10, attack: 0.004 });
+      });
+    }
+  });
+
   /* -----------------------------------------------------------
      SCI-FI
      ----------------------------------------------------------- */
 
-  // Fast downward sweep (laser shot).
   KY.audio.registerPreset('laser-shot-001', {
     duration: 0.22,
     build: function (E) {
@@ -172,7 +190,15 @@
     }
   });
 
-  // Four ascending notes (power up).
+  // Two-phase sweep: brief bright chirp then deeper discharge.
+  KY.audio.registerPreset('laser-shot-002', {
+    duration: 0.24,
+    build: function (E) {
+      E.tone({ freq: 2200, freqEnd: 1200, dur: 0.06, type: 'square', gain: 0.24, when: 0.00, attack: 0.002 });
+      E.tone({ freq: 1200, freqEnd: 300, dur: 0.16, type: 'sawtooth', gain: 0.30, when: 0.05, attack: 0.002 });
+    }
+  });
+
   KY.audio.registerPreset('power-up-001', {
     duration: 0.52,
     build: function (E) {
@@ -183,7 +209,15 @@
     }
   });
 
-  // Rising triangle sweep (shield activation).
+  // Continuous rising sweep + high bell finish — smooth energy build.
+  KY.audio.registerPreset('power-up-002', {
+    duration: 0.55,
+    build: function (E) {
+      E.tone({ freq: 300, freqEnd: 1100, dur: 0.35, type: 'sine', gain: 0.28, attack: 0.008 });
+      E.tone({ freq: 1320, dur: 0.20, type: 'triangle', gain: 0.24, when: 0.30, attack: 0.005 });
+    }
+  });
+
   KY.audio.registerPreset('shield-activate-001', {
     duration: 0.40,
     build: function (E) {
@@ -191,7 +225,6 @@
     }
   });
 
-  // Fast up-down sweep (teleport).
   KY.audio.registerPreset('teleport-001', {
     duration: 0.30,
     build: function (E) {

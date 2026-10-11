@@ -1,4 +1,4 @@
-"""Official catalog presets - 20 sounds.
+"""Official catalog presets - 25 sounds.
 
 Mirrors the JS presets in js/audio-presets.js so the generated WAV/MP3
 match what the browser Preview plays.
@@ -28,7 +28,6 @@ def _wave_sample(wave_type, phase):
 
 
 def _env_exp(n, attack):
-    """Attack then exponential decay toward near-zero."""
     n_atk = max(1, int(attack * SR))
     if n_atk > n:
         n_atk = n
@@ -93,7 +92,6 @@ def _mix(*parts):
 
 
 def _at(samples, offset_sec, total_sec):
-    """Place `samples` at offset, inside a buffer of total_sec."""
     n_total = int(total_sec * SR)
     n_off = int(offset_sec * SR)
     out = [0.0] * n_total
@@ -112,7 +110,6 @@ def _pad(samples, total_sec):
 
 
 def _finalize(samples):
-    """Soft clip + normalize to a safe peak."""
     peak = max((abs(s) for s in samples), default=0.0)
     if peak == 0.0:
         return samples
@@ -126,6 +123,11 @@ def _finalize(samples):
 def ui_click_001():
     s = _tone('square', 1500.0, 0.045, 0.32, 0.001)
     return _finalize(_pad(s, 0.08))
+
+
+def ui_click_002():
+    s = _tone('sine', 1100.0, 0.05, 0.28, 0.002)
+    return _finalize(_pad(s, 0.07))
 
 
 def ui_confirm_001():
@@ -183,6 +185,12 @@ def coin_pickup_001():
     return _finalize(_mix(a, b))
 
 
+def coin_pickup_002():
+    notes = [(1046.50, 0.00), (1318.51, 0.08), (1567.98, 0.16)]
+    parts = [_at(_tone('triangle', f, 0.12, 0.26, 0.002), t, 0.40) for f, t in notes]
+    return _finalize(_mix(*parts))
+
+
 def jump_001():
     s = _sweep('triangle', 320.0, 1100.0, 0.20, 0.34, 0.008)
     return _finalize(_pad(s, 0.22))
@@ -218,6 +226,12 @@ def checkpoint_001():
     return _finalize(_mix(a, b))
 
 
+def checkpoint_002():
+    notes = [(523.25, 0.00), (659.25, 0.10), (880.00, 0.20)]
+    parts = [_at(_tone('triangle', f, 0.14, 0.26, 0.004), t, 0.45) for f, t in notes]
+    return _finalize(_mix(*parts))
+
+
 # ---------- SCI-FI ----------
 
 def laser_shot_001():
@@ -225,10 +239,22 @@ def laser_shot_001():
     return _finalize(_pad(s, 0.22))
 
 
+def laser_shot_002():
+    a = _at(_sweep('square', 2200.0, 1200.0, 0.06, 0.24, 0.002), 0.00, 0.24)
+    b = _at(_sweep('sawtooth', 1200.0, 300.0, 0.16, 0.30, 0.002), 0.05, 0.24)
+    return _finalize(_mix(a, b))
+
+
 def power_up_001():
     notes = [(440.0, 0.00), (554.37, 0.08), (659.25, 0.16), (880.0, 0.24)]
     parts = [_at(_tone('square', f, 0.11, 0.26, 0.003), t, 0.52) for f, t in notes]
     return _finalize(_mix(*parts))
+
+
+def power_up_002():
+    up = _at(_sweep('sine', 300.0, 1100.0, 0.35, 0.28, 0.008), 0.00, 0.55)
+    bell = _at(_tone('triangle', 1320.0, 0.20, 0.24, 0.005), 0.30, 0.55)
+    return _finalize(_mix(up, bell))
 
 
 def shield_activate_001():
@@ -244,6 +270,7 @@ def teleport_001():
 
 OFFICIAL_PRESETS = {
     'ui-click-001': ui_click_001,
+    'ui-click-002': ui_click_002,
     'ui-confirm-001': ui_confirm_001,
     'ui-hover-001': ui_hover_001,
     'ui-back-001': ui_back_001,
@@ -253,14 +280,18 @@ OFFICIAL_PRESETS = {
     'alert-warning-001': alert_warning_001,
     'alert-info-001': alert_info_001,
     'coin-pickup-001': coin_pickup_001,
+    'coin-pickup-002': coin_pickup_002,
     'jump-001': jump_001,
     'hit-impact-001': hit_impact_001,
     'explosion-small-001': explosion_small_001,
     'footstep-single-001': footstep_single_001,
     'damage-player-001': damage_player_001,
     'checkpoint-001': checkpoint_001,
+    'checkpoint-002': checkpoint_002,
     'laser-shot-001': laser_shot_001,
+    'laser-shot-002': laser_shot_002,
     'power-up-001': power_up_001,
+    'power-up-002': power_up_002,
     'shield-activate-001': shield_activate_001,
     'teleport-001': teleport_001,
 }

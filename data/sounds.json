@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "updated": "2026-10-08",
+  "updated": "2026-10-11",
   "sounds": [
     {
       "id": "ui-click-001",
@@ -12,6 +12,22 @@
       "date": "2026-10-01",
       "mp3": "audio/mp3/ui-click-001.mp3",
       "wav": "audio/wav/ui-click-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "ui-click-002",
+      "name": "UI Click 002",
+      "category": "Interface",
+      "description": "Soft sine interface click, lower pitch.",
+      "tags": ["button", "click", "tap", "interface", "ui", "soft", "bouton", "clic", "appuyer", "doux"],
+      "duration": "0.07s",
+      "date": "2026-10-11",
+      "mp3": "audio/mp3/ui-click-002.mp3",
+      "wav": "audio/wav/ui-click-002.wav",
       "license": "KYVOREX Free Sound License 1.0",
       "status": "available",
       "previewMode": "procedural",
@@ -163,6 +179,22 @@
       "mp3Mode": "file"
     },
     {
+      "id": "coin-pickup-002",
+      "name": "Coin Pickup 002",
+      "category": "Gameplay",
+      "description": "Three-note triangle arpeggio, bright coin pickup.",
+      "tags": ["coin", "pickup", "reward", "collect", "arcade", "arpeggio", "pièce", "collecte", "récompense"],
+      "duration": "0.40s",
+      "date": "2026-10-11",
+      "mp3": "audio/mp3/coin-pickup-002.mp3",
+      "wav": "audio/wav/coin-pickup-002.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
       "id": "jump-001",
       "name": "Jump 001",
       "category": "Gameplay",
@@ -259,6 +291,22 @@
       "mp3Mode": "file"
     },
     {
+      "id": "checkpoint-002",
+      "name": "Checkpoint 002",
+      "category": "Gameplay",
+      "description": "Three-note bell arpeggio, rewarding checkpoint validation.",
+      "tags": ["checkpoint", "save", "progress", "bell", "validate", "point de contrôle", "sauvegarde", "progression", "cloche"],
+      "duration": "0.45s",
+      "date": "2026-10-11",
+      "mp3": "audio/mp3/checkpoint-002.mp3",
+      "wav": "audio/wav/checkpoint-002.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
       "id": "laser-shot-001",
       "name": "Laser Shot 001",
       "category": "Sci-Fi",
@@ -275,6 +323,22 @@
       "mp3Mode": "file"
     },
     {
+      "id": "laser-shot-002",
+      "name": "Laser Shot 002",
+      "category": "Sci-Fi",
+      "description": "Two-phase laser sweep, bright chirp then discharge.",
+      "tags": ["laser", "shot", "shoot", "weapon", "beam", "double", "science-fiction", "tir", "arme", "faisceau"],
+      "duration": "0.24s",
+      "date": "2026-10-11",
+      "mp3": "audio/mp3/laser-shot-002.mp3",
+      "wav": "audio/wav/laser-shot-002.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
       "id": "power-up-001",
       "name": "Power Up 001",
       "category": "Sci-Fi",
@@ -284,6 +348,22 @@
       "date": "2026-10-01",
       "mp3": "audio/mp3/power-up-001.mp3",
       "wav": "audio/wav/power-up-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "power-up-002",
+      "name": "Power Up 002",
+      "category": "Gameplay",
+      "description": "Continuous rising sweep with a high bell finish.",
+      "tags": ["power up", "upgrade", "boost", "sweep", "energy", "bonus", "amélioration", "renforcement", "énergie"],
+      "duration": "0.55s",
+      "date": "2026-10-11",
+      "mp3": "audio/mp3/power-up-002.mp3",
+      "wav": "audio/wav/power-up-002.wav",
       "license": "KYVOREX Free Sound License 1.0",
       "status": "available",
       "previewMode": "procedural",
