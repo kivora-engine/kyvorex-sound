@@ -170,7 +170,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 /* ---------- Chips ---------- */
@@ -184,12 +184,39 @@
   font-size: .82rem;
   cursor: pointer;
   min-height: 36px;
+  display: inline-flex;
+  align-items: center;
 }
 .chip:hover { color: var(--text); border-color: #333; }
 .chip.active {
   color: var(--emerald);
   border-color: var(--emerald);
   background: rgba(16, 185, 129, .08);
+}
+.chip-count {
+  margin-left: 6px;
+  opacity: .65;
+  font-size: .78em;
+  font-weight: 600;
+}
+
+/* ---------- Sort row ---------- */
+.sort-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+.sort-row .status { margin-bottom: 0; }
+
+.input-sort {
+  width: auto;
+  min-width: 150px;
+  padding: 8px 12px;
+  font-size: .85rem;
+  min-height: 38px;
 }
 
 /* ---------- Sounds grid & cards ---------- */
@@ -248,6 +275,25 @@
   color: #f59e0b;
   border-color: rgba(245, 158, 11, .35);
   background: rgba(245, 158, 11, .06);
+}
+
+/* ---------- Empty state ---------- */
+.sounds-empty {
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px 18px;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+.sounds-empty-msg {
+  margin: 0 0 4px;
+  font-weight: 600;
+  color: var(--text);
+}
+.sounds-empty-hint {
+  margin: 0 0 14px;
+  color: var(--text-muted);
+  font-size: .88rem;
 }
 
 /* ---------- Badge (generic) ---------- */

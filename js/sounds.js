@@ -1,11 +1,16 @@
 // sounds.js — data loading + orchestration of filters/rendering
 (function () {
   'use strict';
-
   var KY = window.KYVOREX = window.KYVOREX || {};
   var DATA_URL = 'data/sounds.json';
 
-  var state = { all: [], filtered: [], category: 'all', query: '' };
+  var state = {
+    all: [],
+    filtered: [],
+    category: 'all',
+    query: '',
+    sort: 'relevance'
+  };
 
   function loadData() {
     return fetch(DATA_URL).then(function (r) {
@@ -21,6 +26,46 @@
     return [];
   }
 
+  function hasActiveFilters() {
+    return state.query.trim() !== '' || state.category !== 'all';
+  }
+
+  function countLabel(n) {
+    return n + ' sound' + (n > 1 ? 's' : '');
+  }
+
+  function renderEmptyState() {
+    var grid = document.getElementById('sounds-grid');
+    if (!grid) return;
+
+    var wrap = KY.ui.el('div', { class: 'sounds-empty' }, [
+      KY.ui.el('p', { class: 'sounds-empty-msg', text: 'No sounds match your search.' }),
+      KY.ui.el('p', { class: 'sounds-empty-hint', text: 'Try different keywords or reset the filters.' }),
+      KY.ui.el('button', {
+        class: 'btn btn-ghost',
+        type: 'button',
+        id: 'reset-filters',
+        text: 'Reset filters'
+      })
+    ]);
+    grid.appendChild(wrap);
+
+    var btn = document.getElementById('reset-filters');
+    if (btn) btn.addEventListener('click', resetFilters);
+  }
+
+  function resetFilters() {
+    state.query = '';
+    state.category = 'all';
+    state.sort = 'relevance';
+    var search = document.getElementById('search-input');
+    if (search) search.value = '';
+    var sortSel = document.getElementById('sort-select');
+    if (sortSel) sortSel.value = 'relevance';
+    refreshChips();
+    render();
+  }
+
   function render() {
     var grid = document.getElementById('sounds-grid');
     if (!grid) return;
@@ -28,14 +73,21 @@
     KY.ui.clear(grid);
     state.filtered = KY.filters.apply(state.all, {
       category: state.category,
-      query: state.query
+      query: state.query,
+      sort: state.sort
     });
 
     if (!state.filtered.length) {
       KY.ui.setStatus('No sounds match your search.');
+      renderEmptyState();
       return;
     }
-    KY.ui.setStatus(state.filtered.length + ' sound' + (state.filtered.length > 1 ? 's' : ''));
+
+    var label = hasActiveFilters()
+      ? countLabel(state.filtered.length) + ' found'
+      : countLabel(state.filtered.length);
+    KY.ui.setStatus(label);
+
     state.filtered.forEach(function (s) {
       grid.appendChild(KY.ui.renderSoundCard(s));
     });
@@ -43,7 +95,8 @@
 
   function refreshChips() {
     var cats = KY.filters.getCategories(state.all);
-    KY.ui.renderChips(cats, state.category, function (cat) {
+    var counts = KY.filters.getCategoryCounts(state.all);
+    KY.ui.renderChips(cats, state.category, counts, function (cat) {
       state.category = cat;
       refreshChips();
       render();
@@ -86,10 +139,18 @@
     });
   }
 
+  function bindSort() {
+    var sel = document.getElementById('sort-select');
+    if (!sel) return;
+    sel.addEventListener('change', function (e) {
+      state.sort = e.target.value || 'relevance';
+      render();
+    });
+  }
+
   function init() {
     if (!document.getElementById('sounds-grid')) return;
 
-    // Read ?category= before data loads.
     var urlCat = KY.filters.readCategoryFromUrl();
     if (urlCat) state.category = urlCat;
 
@@ -100,6 +161,7 @@
 
     bindGridEvents();
     bindSearch();
+    bindSort();
 
     KY.ui.setStatus('Loading sounds...');
 
@@ -107,7 +169,6 @@
       .then(function (data) {
         state.all = normalize(data);
 
-        // Validate initial category against actual data.
         var cats = KY.filters.getCategories(state.all);
         if (state.category !== 'all' && cats.indexOf(state.category) === -1) {
           state.category = 'all';

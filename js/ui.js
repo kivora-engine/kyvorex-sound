@@ -30,8 +30,6 @@
   function formatDate(isoDate) {
     if (!isoDate || typeof isoDate !== 'string') return '';
     try {
-      // Force local-time interpretation of the YYYY-MM-DD value
-      // so the displayed day doesn't shift across timezones.
       var d = new Date(isoDate + 'T00:00:00');
       if (isNaN(d.getTime())) return isoDate;
       return new Intl.DateTimeFormat(undefined, {
@@ -87,7 +85,6 @@
     }
     var meta = el('div', { class: 'sound-meta' }, metaChildren);
 
-    // Preview — always available (procedural engine).
     var previewBtn = el('button', {
       class: 'btn btn-ghost',
       type: 'button',
@@ -96,7 +93,6 @@
       text: '▶ Preview'
     });
 
-    // WAV — native <a download> when the file exists.
     var wavBtn;
     if (available && sound.wav) {
       wavBtn = el('a', {
@@ -110,7 +106,6 @@
       wavBtn = disabledBtn('WAV — soon');
     }
 
-    // MP3 — native <a download> when the file exists.
     var mp3Btn;
     if (available && sound.mp3) {
       mp3Btn = el('a', {
@@ -133,19 +128,24 @@
     return card;
   }
 
-  /* ---------- chips ---------- */
-  function renderChips(categories, activeCategory, onClick) {
+  /* ---------- chips (with counters) ---------- */
+  function renderChips(categories, activeCategory, counts, onClick) {
     var container = document.getElementById('category-filters');
     if (!container) return;
     container.innerHTML = '';
+    counts = counts || {};
 
     function chip(label, value) {
+      var count = counts[value];
+      var children = [el('span', { text: label })];
+      if (typeof count === 'number') {
+        children.push(el('span', { class: 'chip-count', text: String(count) }));
+      }
       return el('button', {
         class: 'chip' + (activeCategory === value ? ' active' : ''),
         type: 'button',
-        'data-cat': value,
-        text: label
-      });
+        'data-cat': value
+      }, children);
     }
 
     container.appendChild(chip('All', 'all'));

@@ -1,7 +1,4 @@
 // scripts/build.js — production build for KYVOREX SOUNDS.
-// Copies the site to dist/, minifies JS and CSS, verifies everything
-// (HTML, JS, CSS, data, audio, root files) is present and valid.
-// Fails the build if any required file is missing or malformed.
 'use strict';
 
 const fs = require('fs');
@@ -10,12 +7,6 @@ const esbuild = require('esbuild');
 
 const ROOT = path.resolve(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
-
-const SOUND_IDS = [
-  'ui-click-001', 'ui-confirm-001', 'alert-error-001', 'alert-success-001',
-  'coin-pickup-001', 'jump-001', 'hit-impact-001', 'explosion-small-001',
-  'laser-shot-001', 'power-up-001'
-];
 
 const HTML_FILES = ['index.html', 'sounds.html', 'about.html', 'license.html', '404.html'];
 const ROOT_FILES = ['robots.txt', 'sitemap.xml', '_headers'];
@@ -28,21 +19,15 @@ const JS_FILES = [
 const CSS_FILES = ['base.css', 'layout.css', 'components.css', 'responsive.css'];
 
 const PLACEHOLDER = 'REPLACE-WITH-DOMAIN';
-const MIN_WAV_BYTES = 100;   // header + at least a few samples
-const MIN_MP3_BYTES = 100;   // non-empty MP3
+const MIN_WAV_BYTES = 100;
+const MIN_MP3_BYTES = 100;
 
 function rmrf(p) {
   if (fs.rmSync) fs.rmSync(p, { recursive: true, force: true });
   else if (fs.existsSync(p)) fs.rmdirSync(p, { recursive: true });
 }
-
 function ensure(p) { fs.mkdirSync(p, { recursive: true }); }
-
-function copyFile(src, dst) {
-  ensure(path.dirname(dst));
-  fs.copyFileSync(src, dst);
-}
-
+function copyFile(src, dst) { ensure(path.dirname(dst)); fs.copyFileSync(src, dst); }
 function copyDir(src, dst) {
   ensure(dst);
   for (const entry of fs.readdirSync(src, { withFileTypes: true })) {
@@ -54,62 +39,53 @@ function copyDir(src, dst) {
 }
 
 async function minifyJS() {
-  const entryPoints = JS_FILES
-    .map(f => path.join(ROOT, 'js', f))
-    .filter(f => fs.existsSync(f));
+  const entryPoints = JS_FILES.map(f => path.join(ROOT, 'js', f)).filter(f => fs.existsSync(f));
   if (!entryPoints.length) throw new Error('No JS files to build');
   await esbuild.build({
-    entryPoints,
-    outdir: path.join(DIST, 'js'),
-    bundle: false,
-    minify: true,
-    sourcemap: false,
-    legalComments: 'none',
-    logLevel: 'warning'
+    entryPoints, outdir: path.join(DIST, 'js'), bundle: false,
+    minify: true, sourcemap: false, legalComments: 'none', logLevel: 'warning'
   });
 }
 
 async function minifyCSS() {
-  const entryPoints = CSS_FILES
-    .map(f => path.join(ROOT, 'css', f))
-    .filter(f => fs.existsSync(f));
+  const entryPoints = CSS_FILES.map(f => path.join(ROOT, 'css', f)).filter(f => fs.existsSync(f));
   if (!entryPoints.length) throw new Error('No CSS files to build');
   await esbuild.build({
-    entryPoints,
-    outdir: path.join(DIST, 'css'),
-    bundle: false,
-    minify: true,
-    sourcemap: false,
-    legalComments: 'none',
-    logLevel: 'warning'
+    entryPoints, outdir: path.join(DIST, 'css'), bundle: false,
+    minify: true, sourcemap: false, legalComments: 'none', logLevel: 'warning'
   });
 }
 
-function fail(msg) {
-  console.error('BUILD FAILED: ' + msg);
-  process.exit(1);
+function fail(msg) { console.error('BUILD FAILED: ' + msg); process.exit(1); }
+
+/* ---------- catalog reading ---------- */
+function readCatalog() {
+  const file = path.join(ROOT, 'data', 'sounds.json');
+  if (!fs.existsSync(file)) fail('missing data/sounds.json');
+  let data;
+  try { data = JSON.parse(fs.readFileSync(file, 'utf8')); }
+  catch (e) { fail('sounds.json is not valid JSON: ' + e.message); }
+  const list = Array.isArray(data) ? data : (data && data.sounds) || [];
+  if (!Array.isArray(list) || !list.length) fail('sounds.json has no sounds');
+  return list;
 }
 
 /* ---------- WAV header validation ---------- */
 function validateWav(filepath) {
   const size = fs.statSync(filepath).size;
   if (size < MIN_WAV_BYTES) return 'file too small (' + size + ' bytes)';
-
   const fd = fs.openSync(filepath, 'r');
   const buf = Buffer.alloc(44);
   const read = fs.readSync(fd, buf, 0, 44, 0);
   fs.closeSync(fd);
   if (read < 44) return 'cannot read 44-byte header';
-
   if (buf.toString('ascii', 0, 4) !== 'RIFF') return 'missing RIFF signature';
   if (buf.toString('ascii', 8, 12) !== 'WAVE') return 'missing WAVE signature';
   if (buf.toString('ascii', 12, 16) !== 'fmt ') return 'missing fmt chunk';
-
   const audioFormat = buf.readUInt16LE(20);
   const channels = buf.readUInt16LE(22);
   const sampleRate = buf.readUInt32LE(24);
   const bitsPerSample = buf.readUInt16LE(34);
-
   if (audioFormat !== 1) return 'not PCM (format=' + audioFormat + ')';
   if (channels !== 1) return 'not mono (channels=' + channels + ')';
   if (sampleRate !== 44100) return 'sample rate != 44100 (got ' + sampleRate + ')';
@@ -124,23 +100,22 @@ function validateMp3(filepath) {
 }
 
 function verify() {
-  for (const f of HTML_FILES) {
-    if (!fs.existsSync(path.join(DIST, f))) fail('missing ' + f);
-  }
-  for (const f of ROOT_FILES) {
-    if (!fs.existsSync(path.join(DIST, f))) fail('missing ' + f);
-  }
-  for (const f of JS_FILES) {
-    if (!fs.existsSync(path.join(DIST, 'js', f))) fail('missing js/' + f);
-  }
-  for (const f of CSS_FILES) {
-    if (!fs.existsSync(path.join(DIST, 'css', f))) fail('missing css/' + f);
-  }
-  if (!fs.existsSync(path.join(DIST, 'data', 'sounds.json'))) {
-    fail('missing data/sounds.json');
-  }
+  for (const f of HTML_FILES) if (!fs.existsSync(path.join(DIST, f))) fail('missing ' + f);
+  for (const f of ROOT_FILES) if (!fs.existsSync(path.join(DIST, f))) fail('missing ' + f);
+  for (const f of JS_FILES) if (!fs.existsSync(path.join(DIST, 'js', f))) fail('missing js/' + f);
+  for (const f of CSS_FILES) if (!fs.existsSync(path.join(DIST, 'css', f))) fail('missing css/' + f);
+  if (!fs.existsSync(path.join(DIST, 'data', 'sounds.json'))) fail('missing data/sounds.json');
 
-  for (const id of SOUND_IDS) {
+  const catalog = readCatalog();
+  const seen = new Set();
+  let okCount = 0;
+
+  for (const sound of catalog) {
+    const id = sound && sound.id;
+    if (!id) fail('sound entry without id');
+    if (seen.has(id)) fail('duplicate sound id: ' + id);
+    seen.add(id);
+
     const wav = path.join(DIST, 'audio', 'wav', id + '.wav');
     const mp3 = path.join(DIST, 'audio', 'mp3', id + '.mp3');
 
@@ -151,7 +126,11 @@ function verify() {
     if (!fs.existsSync(mp3)) fail('missing audio/mp3/' + id + '.mp3');
     const mp3Err = validateMp3(mp3);
     if (mp3Err) fail('invalid MP3 ' + id + '.mp3: ' + mp3Err);
+
+    okCount++;
   }
+
+  console.log('Audio files verified: ' + okCount + ' sounds (WAV + MP3).');
 
   for (const sub of ['js', 'css']) {
     const dir = path.join(DIST, sub);
@@ -162,10 +141,8 @@ function verify() {
 }
 
 function warnPlaceholders() {
-  const filesToScan = HTML_FILES
-    .map(f => path.join(DIST, f))
+  const filesToScan = HTML_FILES.map(f => path.join(DIST, f))
     .concat([path.join(DIST, 'robots.txt'), path.join(DIST, 'sitemap.xml')]);
-
   let found = false;
   for (const f of filesToScan) {
     if (!fs.existsSync(f)) continue;
@@ -176,10 +153,7 @@ function warnPlaceholders() {
       found = true;
     }
   }
-  if (found) {
-    console.warn('WARNING: the site is not ready for public publication until the ' +
-      'placeholder domain is replaced in canonical/og:url/sitemap/robots.');
-  }
+  if (found) console.warn('WARNING: placeholder domain still present.');
 }
 
 async function main() {
@@ -205,7 +179,4 @@ async function main() {
   console.log('Build OK -> ' + DIST);
 }
 
-main().catch(err => {
-  console.error(err);
-  process.exit(1);
-});
+main().catch(err => { console.error(err); process.exit(1); });
