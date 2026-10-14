@@ -3,6 +3,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 const esbuild = require('esbuild');
 
 const ROOT = path.resolve(__dirname, '..');
@@ -57,6 +58,17 @@ async function minifyCSS() {
 }
 
 function fail(msg) { console.error('BUILD FAILED: ' + msg); process.exit(1); }
+
+/* ---------- catalog generation (NEW) ---------- */
+function buildCatalog() {
+  const script = path.join(ROOT, 'scripts', 'build_catalog.py');
+  if (!fs.existsSync(script)) fail('missing scripts/build_catalog.py');
+  try {
+    execSync('python3 ' + JSON.stringify(script), { stdio: 'inherit', cwd: ROOT });
+  } catch (e) {
+    fail('catalog build failed (see messages above)');
+  }
+}
 
 /* ---------- catalog reading ---------- */
 function readCatalog() {
@@ -158,6 +170,11 @@ function warnPlaceholders() {
 
 async function main() {
   console.log('Building KYVOREX SOUNDS...');
+
+  // 1. Regenerate data/sounds.json from the source files.
+  buildCatalog();
+
+  // 2. Prepare dist/.
   rmrf(DIST);
   ensure(DIST);
 

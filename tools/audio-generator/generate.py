@@ -7,6 +7,9 @@ Usage:
 
 Test presets go to tools/audio-generator/output-test/.
 Official sounds go to <project>/audio/wav/ and audio/mp3/.
+
+Catalog sources live in <project>/data/catalog/. `--sync-catalog`
+updates their `status` field and then regenerates data/sounds.json.
 """
 import argparse
 import os
@@ -19,8 +22,8 @@ if HERE not in sys.path:
 PROJECT_ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
 AUDIO_WAV = os.path.join(PROJECT_ROOT, 'audio', 'wav')
 AUDIO_MP3 = os.path.join(PROJECT_ROOT, 'audio', 'mp3')
+CATALOG_DIR = os.path.join(PROJECT_ROOT, 'data', 'catalog')
 OUTPUT_TEST = os.path.join(HERE, 'output-test')
-SOUNDS_JSON = os.path.join(PROJECT_ROOT, 'data', 'sounds.json')
 
 
 def _describe(samples, sr):
@@ -63,12 +66,11 @@ def run_tests():
 # -------------------------------------------------------------- official
 
 def _write_wavs(official_presets):
-    """Returns (ok_ids, failed_ids)."""
     from wav_export import write_wav
     from synthesis import DEFAULT_SAMPLE_RATE
 
     ok, failed = [], []
-    print("Step 1/3: generating 10 official WAV files")
+    print("Step 1/3: generating {0} official WAV files".format(len(official_presets)))
     print("         target: {0}".format(AUDIO_WAV))
     print("")
 
@@ -93,7 +95,6 @@ def _write_wavs(official_presets):
 
 
 def _convert_mp3s(wav_ok):
-    """Returns (ok_ids, failed_ids, ffmpeg_present)."""
     try:
         from mp3_convert import convert_to_mp3, has_ffmpeg
     except Exception:
@@ -131,18 +132,19 @@ def _convert_mp3s(wav_ok):
     return ok, failed, True
 
 
-def _sync(json_path):
-    print("Step 3/3: syncing data/sounds.json")
-    print("         file: {0}".format(json_path))
+def _sync():
+    print("Step 3/3: syncing catalog source files")
+    print("         dir: {0}".format(CATALOG_DIR))
     print("")
+
     try:
-        from catalog_sync import sync
+        from catalog_sync import sync, rebuild_catalog
     except Exception as e:
         print("  catalog_sync import failed: {0}".format(e))
         return
 
     try:
-        changed, summary = sync(json_path, AUDIO_WAV, AUDIO_MP3)
+        changed, summary = sync(CATALOG_DIR, AUDIO_WAV, AUDIO_MP3)
     except Exception as e:
         print("  catalog_sync failed: {0}".format(e))
         return
@@ -155,6 +157,14 @@ def _sync(json_path):
             row['old'], row['new']))
     print("")
     print("  Entries updated: {0}".format(changed))
+    print("")
+
+    print("Regenerating data/sounds.json from sources...")
+    ok = rebuild_catalog(PROJECT_ROOT)
+    if ok:
+        print("  sounds.json regenerated.")
+    else:
+        print("  WARNING: sounds.json was NOT regenerated.")
 
 
 def run_official(sync_catalog):
@@ -182,7 +192,7 @@ def run_official(sync_catalog):
     mp3_ok, mp3_failed, ffmpeg_present = _convert_mp3s(wav_ok)
 
     if sync_catalog:
-        _sync(SOUNDS_JSON)
+        _sync()
 
     print("")
     print("=========================================")
@@ -224,9 +234,9 @@ def main():
         description='KYVOREX SOUNDS - procedural audio generator'
     )
     parser.add_argument('--official', action='store_true',
-                        help='Generate the 10 official catalog sounds')
+                        help='Generate the official catalog sounds')
     parser.add_argument('--sync-catalog', action='store_true',
-                        help='Update data/sounds.json status (only with --official)')
+                        help='Update catalog source status and regenerate sounds.json')
     args = parser.parse_args()
 
     print("KYVOREX SOUNDS - Audio Generator")
