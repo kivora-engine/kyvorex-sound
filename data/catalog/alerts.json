@@ -64,6 +64,38 @@
       "previewMode": "procedural",
       "wavMode": "file",
       "mp3Mode": "file"
+    },
+    {
+      "id": "alert-achievement-001",
+      "name": "Achievement 001",
+      "category": "Alerts",
+      "description": "Three quick ascending notes for an achievement.",
+      "tags": ["achievement", "reward", "unlock", "trophy", "success", "succès", "récompense", "trophée", "débloquer"],
+      "duration": "0.40s",
+      "date": "2026-10-15",
+      "mp3": "audio/mp3/alert-achievement-001.mp3",
+      "wav": "audio/wav/alert-achievement-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "alert-mission-complete-001",
+      "name": "Mission Complete 001",
+      "category": "Alerts",
+      "description": "Four ascending notes with a held final tone.",
+      "tags": ["mission", "complete", "objective", "success", "achievement", "mission", "objectif", "accompli", "réussi"],
+      "duration": "0.60s",
+      "date": "2026-10-15",
+      "mp3": "audio/mp3/alert-mission-complete-001.mp3",
+      "wav": "audio/wav/alert-mission-complete-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
     }
   ]
 }

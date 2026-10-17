@@ -1,4 +1,4 @@
-"""Official catalog presets - 25 sounds.
+"""Official catalog presets - 35 sounds.
 
 Mirrors the JS presets in js/audio-presets.js so the generated WAV/MP3
 match what the browser Preview plays.
@@ -152,6 +152,17 @@ def ui_toggle_001():
     return _finalize(_mix(a, b))
 
 
+def ui_notification_001():
+    a = _at(_tone('sine', 587.33, 0.10, 0.30, 0.003), 0.00, 0.22)
+    b = _at(_tone('sine', 880.00, 0.13, 0.28, 0.003), 0.10, 0.22)
+    return _finalize(_mix(a, b))
+
+
+def ui_open_001():
+    s = _sweep('sine', 420.0, 900.0, 0.11, 0.26, 0.004)
+    return _finalize(_pad(s, 0.14))
+
+
 # ---------- ALERTS ----------
 
 def alert_error_001():
@@ -175,6 +186,19 @@ def alert_warning_001():
 def alert_info_001():
     s = _tone('sine', 700.0, 0.20, 0.28, 0.005)
     return _finalize(_pad(s, 0.25))
+
+
+def alert_achievement_001():
+    notes = [(523.25, 0.00), (659.25, 0.09), (880.00, 0.18)]
+    parts = [_at(_tone('square', f, 0.09, 0.24, 0.003), t, 0.40) for f, t in notes]
+    return _finalize(_mix(*parts))
+
+
+def alert_mission_complete_001():
+    steps = [(523.25, 0.00, 0.10), (659.25, 0.10, 0.10),
+             (783.99, 0.20, 0.10), (1046.50, 0.30, 0.28)]
+    parts = [_at(_tone('triangle', f, d, 0.26, 0.004), t, 0.60) for f, t, d in steps]
+    return _finalize(_mix(*parts))
 
 
 # ---------- GAMEPLAY ----------
@@ -232,6 +256,33 @@ def checkpoint_002():
     return _finalize(_mix(*parts))
 
 
+def chest_open_001():
+    n1 = _at(_noise(0.10, 0.22, 0.001, seed=71), 0.00, 0.55)
+    n2 = _at(_noise(0.08, 0.20, 0.001, seed=73), 0.10, 0.55)
+    t1 = _at(_tone('triangle', 659.25, 0.18, 0.26, 0.004), 0.22, 0.55)
+    t2 = _at(_tone('sine', 987.77, 0.25, 0.24, 0.005), 0.34, 0.55)
+    return _finalize(_mix(n1, n2, t1, t2))
+
+
+def door_open_001():
+    nz = _at(_noise(0.35, 0.28, 0.010, seed=33), 0.00, 0.48)
+    sw = _at(_sweep('triangle', 220.0, 130.0, 0.35, 0.28, 0.005), 0.02, 0.48)
+    return _finalize(_mix(nz, sw))
+
+
+def landing_001():
+    low = _at(_sweep('sine', 110.0, 80.0, 0.10, 0.42, 0.002), 0.00, 0.14)
+    nz = _at(_noise(0.04, 0.15, 0.001, seed=91), 0.00, 0.14)
+    return _finalize(_mix(low, nz))
+
+
+def magic_cast_001():
+    up = _at(_sweep('triangle', 500.0, 1300.0, 0.30, 0.26, 0.010), 0.00, 0.65)
+    t1 = _at(_tone('sine', 1760.0, 0.28, 0.24, 0.006), 0.32, 0.65)
+    t2 = _at(_tone('sine', 2637.0, 0.18, 0.16, 0.006), 0.36, 0.65)
+    return _finalize(_mix(up, t1, t2))
+
+
 # ---------- SCI-FI ----------
 
 def laser_shot_001():
@@ -268,6 +319,20 @@ def teleport_001():
     return _finalize(_mix(up, down))
 
 
+def energy_charge_001():
+    a = _at(_sweep('sawtooth', 180.0, 900.0, 0.55, 0.20, 0.020), 0.00, 0.75)
+    b = _at(_sweep('sine', 90.0, 450.0, 0.55, 0.22, 0.020), 0.00, 0.75)
+    c = _at(_tone('triangle', 1320.0, 0.16, 0.22, 0.004), 0.58, 0.75)
+    return _finalize(_mix(a, b, c))
+
+
+def scanner_001():
+    sweep = _at(_sweep('sine', 1400.0, 500.0, 0.30, 0.20, 0.010), 0.00, 0.60)
+    b1 = _at(_tone('sine', 900.0, 0.06, 0.24, 0.002), 0.32, 0.60)
+    b2 = _at(_tone('sine', 900.0, 0.06, 0.24, 0.002), 0.46, 0.60)
+    return _finalize(_mix(sweep, b1, b2))
+
+
 OFFICIAL_PRESETS = {
     'ui-click-001': ui_click_001,
     'ui-click-002': ui_click_002,
@@ -275,10 +340,14 @@ OFFICIAL_PRESETS = {
     'ui-hover-001': ui_hover_001,
     'ui-back-001': ui_back_001,
     'ui-toggle-001': ui_toggle_001,
+    'ui-notification-001': ui_notification_001,
+    'ui-open-001': ui_open_001,
     'alert-error-001': alert_error_001,
     'alert-success-001': alert_success_001,
     'alert-warning-001': alert_warning_001,
     'alert-info-001': alert_info_001,
+    'alert-achievement-001': alert_achievement_001,
+    'alert-mission-complete-001': alert_mission_complete_001,
     'coin-pickup-001': coin_pickup_001,
     'coin-pickup-002': coin_pickup_002,
     'jump-001': jump_001,
@@ -288,10 +357,16 @@ OFFICIAL_PRESETS = {
     'damage-player-001': damage_player_001,
     'checkpoint-001': checkpoint_001,
     'checkpoint-002': checkpoint_002,
+    'chest-open-001': chest_open_001,
+    'door-open-001': door_open_001,
+    'landing-001': landing_001,
+    'magic-cast-001': magic_cast_001,
     'laser-shot-001': laser_shot_001,
     'laser-shot-002': laser_shot_002,
     'power-up-001': power_up_001,
     'power-up-002': power_up_002,
     'shield-activate-001': shield_activate_001,
     'teleport-001': teleport_001,
+    'energy-charge-001': energy_charge_001,
+    'scanner-001': scanner_001,
 }

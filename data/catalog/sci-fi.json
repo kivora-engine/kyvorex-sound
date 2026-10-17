@@ -80,6 +80,38 @@
       "previewMode": "procedural",
       "wavMode": "file",
       "mp3Mode": "file"
+    },
+    {
+      "id": "energy-charge-001",
+      "name": "Energy Charge 001",
+      "category": "Sci-Fi",
+      "description": "Progressive rising energy charge with a final spike.",
+      "tags": ["energy", "charge", "power", "rising", "build-up", "énergie", "charge", "montée", "puissance"],
+      "duration": "0.75s",
+      "date": "2026-10-15",
+      "mp3": "audio/mp3/energy-charge-001.mp3",
+      "wav": "audio/wav/energy-charge-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "scanner-001",
+      "name": "Scanner 001",
+      "category": "Sci-Fi",
+      "description": "Descending scan sweep with two precise blips.",
+      "tags": ["scanner", "scan", "analyze", "detect", "target", "scanner", "analyse", "détection", "cible"],
+      "duration": "0.60s",
+      "date": "2026-10-15",
+      "mp3": "audio/mp3/scanner-001.mp3",
+      "wav": "audio/wav/scanner-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
     }
   ]
 }
