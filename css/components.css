@@ -389,3 +389,10 @@
   margin-top: 24px;
   text-align: right;
 }
+.cat-count {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--emerald);
+}

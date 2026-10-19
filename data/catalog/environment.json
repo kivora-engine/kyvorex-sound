@@ -1,0 +1,9 @@
+{
+  "category": "Environment",
+  "sounds": [
+    { "id": "environment-wind-gust-001", "name": "Wind Gust 001", "category": "Environment", "description": "Rising and fading wind gust.", "tags": ["wind", "gust", "environment", "vent", "rafale"], "duration": "0.80s", "date": "2026-10-19", "mp3": "audio/mp3/environment-wind-gust-001.mp3", "wav": "audio/wav/environment-wind-gust-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" },
+    { "id": "environment-thunder-001", "name": "Thunder 001", "category": "Environment", "description": "Deep thunder rumble.", "tags": ["thunder", "environment", "tonnerre", "orage"], "duration": "1.20s", "date": "2026-10-19", "mp3": "audio/mp3/environment-thunder-001.mp3", "wav": "audio/wav/environment-thunder-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" },
+    { "id": "environment-rain-start-001", "name": "Rain Start 001", "category": "Environment", "description": "Short rain burst.", "tags": ["rain", "environment", "pluie", "averse"], "duration": "0.50s", "date": "2026-10-19", "mp3": "audio/mp3/environment-rain-start-001.mp3", "wav": "audio/wav/environment-rain-start-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" },
+    { "id": "environment-cave-drip-001", "name": "Cave Drip 001", "category": "Environment", "description": "Water dripping in a cave.", "tags": ["cave", "drip", "environment", "grotte", "goutte"], "duration": "0.60s", "date": "2026-10-19", "mp3": "audio/mp3/environment-cave-drip-001.mp3", "wav": "audio/wav/environment-cave-drip-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" }
+  ]
+}

@@ -1,19 +1,16 @@
-// home.js — homepage categories, initialized by app.js only
+// home.js — renders homepage categories and count from data/sounds.json
 (function () {
   'use strict';
-
   var KY = window.KYVOREX = window.KYVOREX || {};
 
   var DESCRIPTIONS = {
-    'Interface': 'Clicks, taps, notifications.',
-    'Game': 'Actions, hits, pickups, feedback.',
-    'Alerts': 'Success, error, warning.',
-    'Sci-Fi': 'Energy, lasers, futuristic effects.',
-    'Gameplay': 'Actions, hits, feedback.',
-    'Ambient': 'Loops and atmospheres.'
+    'Interface': 'Commands, menus, sliders and interactions.',
+    'Alerts': 'Confirmations, errors, warnings and success.',
+    'Gameplay': 'Movements, objects, actions and game feedback.',
+    'Sci-Fi': 'Energy, electronic systems and futuristic effects.',
+    'Magic / Fantasy': 'Spells, magic heals, elements and portals.',
+    'Environment': 'Wind, thunder, rain and ambient details.'
   };
-
-  var initialized = false;
 
   function el(tag, attrs, children) {
     var node = document.createElement(tag);
@@ -36,38 +33,38 @@
     return node;
   }
 
-  function render(categories) {
+  function renderCategories(counts, total) {
     var container = document.getElementById('category-grid');
     if (!container) return;
     container.innerHTML = '';
 
-    if (!categories.length) {
-      container.appendChild(el('p', {
-        class: 'category-empty',
-        text: 'Categories will appear here as the library grows.'
-      }));
+    var countEl = document.getElementById('home-sound-count');
+    if (countEl) countEl.textContent = total + ' sounds available now.';
+
+    if (Object.keys(counts).length === 0) {
+      container.appendChild(el('p', { class: 'category-empty', text: 'Categories will appear here as the library grows.' }));
       return;
     }
 
-    categories.forEach(function (cat) {
+    Object.keys(counts).sort().forEach(function (cat) {
+      var desc = DESCRIPTIONS[cat];
       var children = [
         el('span', { class: 'cat-dot' }),
         el('h3', { text: cat })
       ];
-      var desc = DESCRIPTIONS[cat];
       if (desc) children.push(el('p', { text: desc }));
+      children.push(el('span', { class: 'cat-count', text: counts[cat] + ' sounds' }));
 
-      container.appendChild(el('a', {
+      var card = el('a', {
         class: 'category-card',
         href: 'sounds.html?category=' + encodeURIComponent(cat)
-      }, children));
+      }, children);
+
+      container.appendChild(card);
     });
   }
 
   function init() {
-    if (initialized) return;
-    initialized = true;
-
     var container = document.getElementById('category-grid');
     if (!container) return;
 
@@ -78,13 +75,21 @@
       })
       .then(function (data) {
         var list = Array.isArray(data) ? data : (data && data.sounds) || [];
-        var seen = {};
-        list.forEach(function (s) { if (s && s.category) seen[s.category] = true; });
-        render(Object.keys(seen).sort());
+        var counts = {};
+        list.forEach(function (s) { if (s && s.category) counts[s.category] = (counts[s.category] || 0) + 1; });
+        renderCategories(counts, list.length);
       })
       .catch(function () {
-        render([]);
+        var countEl = document.getElementById('home-sound-count');
+        if (countEl) countEl.textContent = 'Unable to load sound count.';
+        renderCategories({}, 0);
       });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 
   KY.home = { init: init };
