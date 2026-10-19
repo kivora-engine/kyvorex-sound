@@ -16,7 +16,7 @@ const DIRS_COPY = ['data', 'audio', 'assets'];
 const JS_FILES = [
   'app.js', 'home.js', 'sounds.js', 'player.js', 'downloads.js',
   'filters.js', 'ui.js', 'audio-engine.js', 'audio-presets.js', 'wav-renderer.js', 'donate.js'
-];app
+];
 const CSS_FILES = ['base.css', 'layout.css', 'components.css', 'responsive.css'];
 
 const PLACEHOLDER = 'REPLACE-WITH-DOMAIN';
@@ -59,7 +59,6 @@ async function minifyCSS() {
 
 function fail(msg) { console.error('BUILD FAILED: ' + msg); process.exit(1); }
 
-/* ---------- catalog generation (NEW) ---------- */
 function buildCatalog() {
   const script = path.join(ROOT, 'scripts', 'build_catalog.py');
   if (!fs.existsSync(script)) fail('missing scripts/build_catalog.py');
@@ -70,7 +69,6 @@ function buildCatalog() {
   }
 }
 
-/* ---------- catalog reading ---------- */
 function readCatalog() {
   const file = path.join(ROOT, 'data', 'sounds.json');
   if (!fs.existsSync(file)) fail('missing data/sounds.json');
@@ -82,7 +80,6 @@ function readCatalog() {
   return list;
 }
 
-/* ---------- WAV header validation ---------- */
 function validateWav(filepath) {
   const size = fs.statSync(filepath).size;
   if (size < MIN_WAV_BYTES) return 'file too small (' + size + ' bytes)';
@@ -170,11 +167,8 @@ function warnPlaceholders() {
 
 async function main() {
   console.log('Building KYVOREX SOUNDS...');
-
-  // 1. Regenerate data/sounds.json from the source files.
   buildCatalog();
 
-  // 2. Prepare dist/.
   rmrf(DIST);
   ensure(DIST);
 
