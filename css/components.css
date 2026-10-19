@@ -348,3 +348,44 @@
 
 /* ---------- Status line ---------- */
 .status { color: var(--text-muted); font-size: .85rem; margin-bottom: 12px; }
+/* ---------- Donate Modal ---------- */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 100;
+}
+
+.modal-content {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+.modal-content h2 {
+  color: var(--emerald);
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.modal-content p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.modal-actions {
+  margin-top: 24px;
+  text-align: right;
+}

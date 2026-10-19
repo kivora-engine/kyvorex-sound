@@ -15,8 +15,8 @@ const DIRS_COPY = ['data', 'audio', 'assets'];
 
 const JS_FILES = [
   'app.js', 'home.js', 'sounds.js', 'player.js', 'downloads.js',
-  'filters.js', 'ui.js', 'audio-engine.js', 'audio-presets.js', 'wav-renderer.js'
-];
+  'filters.js', 'ui.js', 'audio-engine.js', 'audio-presets.js', 'wav-renderer.js', 'donate.js'
+];app
 const CSS_FILES = ['base.css', 'layout.css', 'components.css', 'responsive.css'];
 
 const PLACEHOLDER = 'REPLACE-WITH-DOMAIN';
