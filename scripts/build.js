@@ -9,13 +9,13 @@ const esbuild = require('esbuild');
 const ROOT = path.resolve(__dirname, '..');
 const DIST = path.join(ROOT, 'dist');
 
-const HTML_FILES = ['index.html', 'sounds.html', 'about.html', 'license.html', '404.html'];
+const HTML_FILES = ['index.html', 'sounds.html', 'about.html', 'license.html', '404.html', 'announcements.html', 'updates.html'];
 const ROOT_FILES = ['robots.txt', 'sitemap.xml', '_headers'];
 const DIRS_COPY = ['data', 'audio', 'assets'];
 
 const JS_FILES = [
   'app.js', 'home.js', 'sounds.js', 'player.js', 'downloads.js',
-  'filters.js', 'ui.js', 'audio-engine.js', 'audio-presets.js', 'audio-presets-extra.js', 'wav-renderer.js', 'donate.js'
+  'filters.js', 'ui.js', 'audio-engine.js', 'audio-presets.js', 'audio-presets-extra.js', 'wav-renderer.js', 'donate.js', 'news.js'
 ];
 const CSS_FILES = ['base.css', 'layout.css', 'components.css', 'responsive.css'];
 

@@ -396,3 +396,46 @@
   font-weight: 600;
   color: var(--emerald);
 }
+/* ---------- News Tabs & Cards ---------- */
+.news-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.news-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.news-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.news-date {
+  font-size: 0.75rem;
+  color: var(--emerald);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.news-title {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+.news-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}

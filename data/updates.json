@@ -1,0 +1,28 @@
+{
+  "updates": [
+    {
+      "id": "update-2026-10-20",
+      "date": "2026-10-20",
+      "title": "Added 30 new sounds and 2 categories",
+      "description": "The catalog now includes 65 sounds. Discover the new 'Magic / Fantasy' and 'Environment' categories, along with 10 '002' variants of existing sounds. The home page now displays the live counter."
+    },
+    {
+      "id": "update-2026-10-19",
+      "date": "2026-10-19",
+      "title": "Added donate button",
+      "description": "A 'Donate' button has been added to the footer to prepare for future project support."
+    },
+    {
+      "id": "update-2026-10-17",
+      "date": "2026-10-17",
+      "title": "Added 10 new sounds",
+      "description": "The catalog expands with 10 additional sounds, bringing the total to 35 original sounds."
+    },
+    {
+      "id": "update-2026-10-15",
+      "date": "2026-10-15",
+      "title": "Improved search and filters",
+      "description": "Search is now smarter (handling accents, multi-words), and a sorting system has been added to the Sounds page."
+    }
+  ]
+}
