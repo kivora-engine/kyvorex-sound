@@ -257,5 +257,8 @@
       "wavMode": "file",
       "mp3Mode": "file"
     }
+    ,
+{ "id": "ui-drag-drop-001", "name": "UI Drag Drop 001", "category": "Interface", "description": "Satisfying drop confirmation.", "tags": ["drag", "drop", "ui", "glisser", "déposer"], "duration": "0.10s", "date": "2026-10-21", "mp3": "audio/mp3/ui-drag-drop-001.mp3", "wav": "audio/wav/ui-drag-drop-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" },
+{ "id": "ui-unlock-001", "name": "UI Unlock 001", "category": "Interface", "description": "Two quick tones for unlocking.", "tags": ["unlock", "confirm", "ui", "déverrouiller", "confirmer"], "duration": "0.20s", "date": "2026-10-21", "mp3": "audio/mp3/ui-unlock-001.mp3", "wav": "audio/wav/ui-unlock-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" }
   ]
 }

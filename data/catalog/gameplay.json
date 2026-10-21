@@ -337,5 +337,10 @@
       "wavMode": "file",
       "mp3Mode": "file"
     }
+    ,
+{ "id": "sword-swing-001", "name": "Sword Swing 001", "category": "Gameplay", "description": "Fast sword swing through air.", "tags": ["sword", "swing", "gameplay", "épée", "mouvement"], "duration": "0.20s", "date": "2026-10-21", "mp3": "audio/mp3/sword-swing-001.mp3", "wav": "audio/wav/sword-swing-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" },
+{ "id": "footstep-gravel-001", "name": "Footstep Gravel 001", "category": "Gameplay", "description": "Crunchy footstep on gravel.", "tags": ["footstep", "gravel", "gameplay", "pas", "gravier"], "duration": "0.15s", "date": "2026-10-21", "mp3": "audio/mp3/footstep-gravel-001.mp3", "wav": "audio/wav/footstep-gravel-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" },
+{ "id": "weapon-reload-001", "name": "Weapon Reload 001", "category": "Gameplay", "description": "Mechanical weapon reload clicks.", "tags": ["weapon", "reload", "gameplay", "arme", "recharger"], "duration": "0.30s", "date": "2026-10-21", "mp3": "audio/mp3/weapon-reload-001.mp3", "wav": "audio/wav/weapon-reload-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" },
+{ "id": "dodge-roll-001", "name": "Dodge Roll 001", "category": "Gameplay", "description": "Quick dodge roll movement.", "tags": ["dodge", "roll", "gameplay", "esquive", "roulade"], "duration": "0.25s", "date": "2026-10-21", "mp3": "audio/mp3/dodge-roll-001.mp3", "wav": "audio/wav/dodge-roll-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" }
   ]
 }
