@@ -1,4 +1,4 @@
-"""Extra catalog presets - 45 sounds."""
+"""Extra catalog presets - 55 sounds."""
 import math
 from synthesis import sine, square, triangle, sawtooth, white_noise, DEFAULT_SAMPLE_RATE
 
@@ -185,6 +185,59 @@ def bird_chirp_001():
 def fire_crackle_001():
     nz = _at(_noise(0.70, 0.25, 0.010, seed=3), 0.00, 0.80); c1 = _at(_noise(0.05, 0.30, 0.001, seed=19), 0.20, 0.80); c2 = _at(_noise(0.05, 0.30, 0.001, seed=23), 0.50, 0.80); return _finalize(_mix(nz, c1, c2))
 
+# HALLOWEEN
+def raven_caw_001():
+    nz = _at(_noise(0.15, 0.30, 0.002, seed=666), 0.00, 0.25); sw = _at(_sweep('sawtooth', 800.0, 200.0, 0.15, 0.35, 0.002), 0.00, 0.25); return _finalize(_mix(nz, sw))
+def ghost_apparition_001():
+    # Balayage plus complexe avec ajout d'un trémolo
+    up = _at(_sweep('sine', 200.0, 800.0, 0.40, 0.30, 0.010), 0.00, 0.80)
+    down = _at(_sweep('sine', 800.0, 300.0, 0.30, 0.20, 0.050), 0.40, 0.80)
+    tremolo = _tone('sine', 8.0, 0.80, 0.10, 0.010) # Oscillation rapide
+    return _finalize(_mix(up, down, tremolo))
+def witch_laugh_001():
+    parts = []
+    # Rire plus chaotique avec des notes de hauteurs et durées différentes
+    freqs = [800, 950, 700, 1100, 850]
+    durs = [0.06, 0.08, 0.05, 0.07, 0.06]
+    offset = 0.0
+    for f, d in zip(freqs, durs):
+        t = _tone('square', f, d, 0.25, 0.002)
+        parts.append(_at(t, offset, 0.50))
+        offset += d + 0.02
+    return _finalize(_mix(*parts))
+def chains_rattle_001():
+    parts = []
+    for i in range(6):
+        nz = _at(_noise(0.05, 0.25, 0.001, seed=10+i), i * 0.06, 0.40)
+        parts.append(nz)
+    return _finalize(_mix(*parts))
+def creepy_whisper_001():
+    # Bruit filtré avec modulation pour un effet de murmure
+    nz = _at(_noise(0.70, 0.35, 0.010, seed=777), 0.00, 0.80)
+    # Ajout d'une légère oscillation de fréquence
+    mod = [_tone('sine', 1500.0 + (i*10), 0.02, 0.10, 0.005)[0] for i in range(30)]
+    # On mixe le bruit et la modulation
+    return _finalize(_mix(nz, _tone('sine', 1200.0, 0.70, 0.05, 0.010)))
+def zombie_groan_001():
+    sw = _at(_sweep('sawtooth', 150.0, 80.0, 0.60, 0.35, 0.020), 0.00, 0.70); nz = _at(_noise(0.50, 0.15, 0.010, seed=13), 0.00, 0.70); return _finalize(_mix(sw, nz))
+def halloween_bell_001():
+    a = _at(_tone('triangle', 220.0, 0.40, 0.30, 0.005), 0.00, 0.50); b = _at(_tone('triangle', 233.0, 0.40, 0.25, 0.005), 0.00, 0.50); return _finalize(_mix(a, b))
+def pumpkin_smash_001():
+    nz = _at(_noise(0.10, 0.40, 0.001, seed=99), 0.00, 0.15); sw = _at(_sweep('sine', 200.0, 50.0, 0.10, 0.30, 0.002), 0.00, 0.15); return _finalize(_mix(nz, sw))
+def cauldron_bubble_001():
+    parts = []
+    for i in range(8):
+        f = 300 + (i * 50)
+        sw = _at(_sweep('sine', f, 100.0, 0.08, 0.20, 0.010), i * 0.10, 0.90)
+        parts.append(sw)
+    return _finalize(_mix(*parts))
+def bat_wings_flutter_001():
+    parts = []
+    for i in range(10):
+        nz = _at(_noise(0.03, 0.20, 0.001, seed=50+i), i * 0.04, 0.45)
+        parts.append(nz)
+    return _finalize(_mix(*parts))
+
 OFFICIAL_PRESETS_EXTRA = {
     'ui-menu-close-001': ui_menu_close_001, 'ui-modal-open-001': ui_modal_open_001, 'ui-slider-change-001': ui_slider_change_001, 'ui-tab-switch-001': ui_tab_switch_001,
     'ui-confirm-002': ui_confirm_002, 'ui-back-002': ui_back_002, 'ui-hover-002': ui_hover_002, 'ui-toggle-002': ui_toggle_002,
@@ -199,4 +252,7 @@ OFFICIAL_PRESETS_EXTRA = {
     'magic-enchantment-001': magic_enchantment_001, 'magic-dispel-001': magic_dispel_001, 'summon-creature-001': summon_creature_001,
     'environment-wind-gust-001': environment_wind_gust_001, 'environment-thunder-001': environment_thunder_001, 'environment-rain-start-001': environment_rain_start_001, 'environment-cave-drip-001': environment_cave_drip_001,
     'forest-ambience-001': forest_ambience_001, 'ocean-wave-001': ocean_wave_001, 'bird-chirp-001': bird_chirp_001, 'fire-crackle-001': fire_crackle_001,
+    'raven-caw-001': raven_caw_001, 'ghost-apparition-001': ghost_apparition_001, 'witch-laugh-001': witch_laugh_001, 'chains-rattle-001': chains_rattle_001,
+    'creepy-whisper-001': creepy_whisper_001, 'zombie-groan-001': zombie_groan_001, 'halloween-bell-001': halloween_bell_001, 'pumpkin-smash-001': pumpkin_smash_001,
+    'cauldron-bubble-001': cauldron_bubble_001, 'bat-wings-flutter-001': bat_wings_flutter_001,
 }

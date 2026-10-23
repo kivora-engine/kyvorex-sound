@@ -132,5 +132,7 @@
     ,
 { "id": "level-up-001", "name": "Level Up 001", "category": "Alerts", "description": "Ascending square wave for leveling up.", "tags": ["level", "up", "progress", "niveau", "progression"], "duration": "0.60s", "date": "2026-10-21", "mp3": "audio/mp3/level-up-001.mp3", "wav": "audio/wav/level-up-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" },
 { "id": "quest-accepted-001", "name": "Quest Accepted 001", "category": "Alerts", "description": "Confirmation for accepting a quest.", "tags": ["quest", "accept", "alert", "quête", "accepter"], "duration": "0.40s", "date": "2026-10-21", "mp3": "audio/mp3/quest-accepted-001.mp3", "wav": "audio/wav/quest-accepted-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" }
+    ,
+{ "id": "halloween-bell-001", "name": "Halloween Bell 001", "category": "Alerts", "description": "Dissonant eerie bell.", "tags": ["bell", "halloween", "cloche", "halloween"], "duration": "0.50s", "date": "2026-10-25", "mp3": "audio/mp3/halloween-bell-001.mp3", "wav": "audio/wav/halloween-bell-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" }
   ]
 }
