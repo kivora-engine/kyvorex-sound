@@ -177,5 +177,7 @@
       "wavMode": "file",
       "mp3Mode": "file"
     }
+    ,
+{ "id": "plasma-shot-001", "name": "Plasma Shot 001", "category": "Sci-Fi", "description": "Futuristic plasma blast.", "tags": ["plasma", "shot", "sci-fi", "plasma", "tir"], "duration": "0.20s", "date": "2026-10-23", "mp3": "audio/mp3/plasma-shot-001.mp3", "wav": "audio/wav/plasma-shot-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" }
   ]
 }

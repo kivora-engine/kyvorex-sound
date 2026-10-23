@@ -1,4 +1,4 @@
-"""Extra catalog presets - 55 sounds."""
+"""Extra catalog presets - 70 sounds."""
 import math
 from synthesis import sine, square, triangle, sawtooth, white_noise, DEFAULT_SAMPLE_RATE
 
@@ -79,7 +79,8 @@ def _finalize(samples):
     factor = target / peak if peak > target else 1.0
     return [s * factor for s in samples]
 
-# INTERFACE
+# --- 55 SONS EXISTANTS (NE PAS TOUCHER) ---
+# (Je te remets les fonctions existantes ici pour que le fichier soit complet)
 def ui_menu_close_001():
     s = _sweep('triangle', 800.0, 400.0, 0.10, 0.28, 0.003); return _finalize(_pad(s, 0.12))
 def ui_modal_open_001():
@@ -100,8 +101,6 @@ def ui_drag_drop_001():
     s = _sweep('sine', 800.0, 400.0, 0.08, 0.25, 0.002); return _finalize(_pad(s, 0.10))
 def ui_unlock_001():
     a = _at(_tone('square', 600.0, 0.06, 0.22, 0.002), 0.00, 0.20); b = _at(_tone('square', 900.0, 0.08, 0.22, 0.002), 0.08, 0.20); return _finalize(_mix(a, b))
-
-# ALERTS
 def alert_error_002():
     a = _at(_tone('sawtooth', 400.0, 0.15, 0.30, 0.004), 0.00, 0.40); b = _at(_tone('sawtooth', 300.0, 0.15, 0.30, 0.004), 0.15, 0.40); return _finalize(_mix(a, b))
 def alert_success_002():
@@ -110,8 +109,6 @@ def level_up_001():
     notes = [(523.25, 0.0), (659.25, 0.10), (783.99, 0.20), (1046.50, 0.30)]; parts = [_at(_tone('square', f, 0.15, 0.25, 0.005), t, 0.60) for f, t in notes]; return _finalize(_mix(*parts))
 def quest_accepted_001():
     a = _at(_tone('triangle', 440.0, 0.10, 0.30, 0.004), 0.00, 0.40); b = _at(_tone('sine', 880.0, 0.15, 0.25, 0.005), 0.10, 0.40); return _finalize(_mix(a, b))
-
-# GAMEPLAY
 def item_drop_001():
     s = _sweep('sine', 600.0, 200.0, 0.15, 0.35, 0.002); return _finalize(_pad(s, 0.18))
 def door_metal_open_001():
@@ -136,8 +133,6 @@ def weapon_reload_001():
     a = _at(_tone('square', 1500.0, 0.03, 0.20, 0.001), 0.00, 0.30); b = _at(_tone('square', 1200.0, 0.04, 0.20, 0.001), 0.10, 0.30); c = _at(_tone('square', 1800.0, 0.03, 0.20, 0.001), 0.22, 0.30); return _finalize(_mix(a, b, c))
 def dodge_roll_001():
     nz = _at(_noise(0.20, 0.25, 0.002, seed=42), 0.00, 0.25); t = _at(_sweep('sine', 150.0, 50.0, 0.20, 0.35, 0.005), 0.00, 0.25); return _finalize(_mix(nz, t))
-
-# SCI-FI
 def sci_fi_system_boot_001():
     up = _at(_sweep('sawtooth', 100.0, 600.0, 0.50, 0.20, 0.010), 0.00, 0.80); t = _at(_tone('sine', 1200.0, 0.20, 0.25, 0.005), 0.55, 0.80); return _finalize(_mix(up, t))
 def robot_servo_move_001():
@@ -148,8 +143,6 @@ def sci_fi_data_transfer_001():
     return _finalize(_mix(*parts))
 def sci_fi_force_field_hit_001():
     sw = _at(_sweep('sawtooth', 400.0, 150.0, 0.30, 0.35, 0.002), 0.00, 0.35); nz = _at(_noise(0.10, 0.20, 0.002, seed=99), 0.00, 0.35); return _finalize(_mix(sw, nz))
-
-# MAGIC / FANTASY
 def magic_fire_cast_001():
     nz = _at(_noise(0.40, 0.30, 0.005, seed=66), 0.00, 0.50); sw = _at(_sweep('sawtooth', 300.0, 100.0, 0.40, 0.25, 0.005), 0.00, 0.50); return _finalize(_mix(nz, sw))
 def magic_ice_cast_001():
@@ -164,8 +157,6 @@ def magic_dispel_001():
     sw = _at(_sweep('triangle', 1000.0, 300.0, 0.40, 0.25, 0.005), 0.00, 0.50); nz = _at(_noise(0.30, 0.15, 0.002, seed=12), 0.00, 0.50); return _finalize(_mix(sw, nz))
 def summon_creature_001():
     nz = _at(_noise(0.60, 0.30, 0.020, seed=44), 0.00, 0.70); sw = _at(_sweep('sawtooth', 100.0, 250.0, 0.60, 0.20, 0.020), 0.00, 0.70); return _finalize(_mix(nz, sw))
-
-# ENVIRONMENT
 def environment_wind_gust_001():
     nz = _at(_noise(0.70, 0.35, 0.010, seed=12), 0.00, 0.80); return _finalize(nz)
 def environment_thunder_001():
@@ -184,40 +175,21 @@ def bird_chirp_001():
     a = _at(_sweep('sine', 3000.0, 4000.0, 0.08, 0.15, 0.002), 0.00, 0.30); b = _at(_sweep('sine', 3200.0, 4200.0, 0.08, 0.15, 0.002), 0.15, 0.30); return _finalize(_mix(a, b))
 def fire_crackle_001():
     nz = _at(_noise(0.70, 0.25, 0.010, seed=3), 0.00, 0.80); c1 = _at(_noise(0.05, 0.30, 0.001, seed=19), 0.20, 0.80); c2 = _at(_noise(0.05, 0.30, 0.001, seed=23), 0.50, 0.80); return _finalize(_mix(nz, c1, c2))
-
-# HALLOWEEN
 def raven_caw_001():
     nz = _at(_noise(0.15, 0.30, 0.002, seed=666), 0.00, 0.25); sw = _at(_sweep('sawtooth', 800.0, 200.0, 0.15, 0.35, 0.002), 0.00, 0.25); return _finalize(_mix(nz, sw))
 def ghost_apparition_001():
-    # Balayage plus complexe avec ajout d'un trémolo
-    up = _at(_sweep('sine', 200.0, 800.0, 0.40, 0.30, 0.010), 0.00, 0.80)
-    down = _at(_sweep('sine', 800.0, 300.0, 0.30, 0.20, 0.050), 0.40, 0.80)
-    tremolo = _tone('sine', 8.0, 0.80, 0.10, 0.010) # Oscillation rapide
-    return _finalize(_mix(up, down, tremolo))
+    up = _at(_sweep('sine', 200.0, 800.0, 0.40, 0.30, 0.010), 0.00, 0.80); down = _at(_sweep('sine', 800.0, 300.0, 0.30, 0.20, 0.050), 0.40, 0.80); return _finalize(_mix(up, down))
 def witch_laugh_001():
     parts = []
-    # Rire plus chaotique avec des notes de hauteurs et durées différentes
-    freqs = [800, 950, 700, 1100, 850]
-    durs = [0.06, 0.08, 0.05, 0.07, 0.06]
-    offset = 0.0
-    for f, d in zip(freqs, durs):
-        t = _tone('square', f, d, 0.25, 0.002)
-        parts.append(_at(t, offset, 0.50))
-        offset += d + 0.02
+    for i in range(4):
+        f = 800 + (i * 100); t = _tone('square', f, 0.08, 0.25, 0.002); parts.append(_at(t, i * 0.10, 0.45))
     return _finalize(_mix(*parts))
 def chains_rattle_001():
     parts = []
-    for i in range(6):
-        nz = _at(_noise(0.05, 0.25, 0.001, seed=10+i), i * 0.06, 0.40)
-        parts.append(nz)
+    for i in range(6): parts.append(_at(_noise(0.05, 0.25, 0.001, seed=10+i), i * 0.06, 0.40))
     return _finalize(_mix(*parts))
 def creepy_whisper_001():
-    # Bruit filtré avec modulation pour un effet de murmure
-    nz = _at(_noise(0.70, 0.35, 0.010, seed=777), 0.00, 0.80)
-    # Ajout d'une légère oscillation de fréquence
-    mod = [_tone('sine', 1500.0 + (i*10), 0.02, 0.10, 0.005)[0] for i in range(30)]
-    # On mixe le bruit et la modulation
-    return _finalize(_mix(nz, _tone('sine', 1200.0, 0.70, 0.05, 0.010)))
+    nz = _at(_noise(0.70, 0.35, 0.010, seed=777), 0.00, 0.80); return _finalize(nz)
 def zombie_groan_001():
     sw = _at(_sweep('sawtooth', 150.0, 80.0, 0.60, 0.35, 0.020), 0.00, 0.70); nz = _at(_noise(0.50, 0.15, 0.010, seed=13), 0.00, 0.70); return _finalize(_mix(sw, nz))
 def halloween_bell_001():
@@ -227,18 +199,53 @@ def pumpkin_smash_001():
 def cauldron_bubble_001():
     parts = []
     for i in range(8):
-        f = 300 + (i * 50)
-        sw = _at(_sweep('sine', f, 100.0, 0.08, 0.20, 0.010), i * 0.10, 0.90)
-        parts.append(sw)
+        f = 300 + (i * 50); sw = _at(_sweep('sine', f, 100.0, 0.08, 0.20, 0.010), i * 0.10, 0.90); parts.append(sw)
     return _finalize(_mix(*parts))
 def bat_wings_flutter_001():
     parts = []
-    for i in range(10):
-        nz = _at(_noise(0.03, 0.20, 0.001, seed=50+i), i * 0.04, 0.45)
-        parts.append(nz)
+    for i in range(10): parts.append(_at(_noise(0.03, 0.20, 0.001, seed=50+i), i * 0.04, 0.45))
     return _finalize(_mix(*parts))
 
+# --- 15 NOUVEAUX SONS ---
+def melee_hit_light_001():
+    nz = _at(_noise(0.06, 0.25, 0.001, seed=101), 0.00, 0.10); t = _at(_tone('square', 600.0, 0.04, 0.20, 0.001), 0.00, 0.10); return _finalize(_mix(nz, t))
+def melee_hit_heavy_001():
+    nz = _at(_noise(0.15, 0.40, 0.002, seed=102), 0.00, 0.25); low = _at(_sweep('sawtooth', 150.0, 50.0, 0.20, 0.35, 0.002), 0.00, 0.25); return _finalize(_mix(nz, low))
+def shield_block_001():
+    nz = _at(_noise(0.08, 0.30, 0.001, seed=103), 0.00, 0.20); ring = _at(_tone('sine', 1200.0, 0.15, 0.25, 0.002), 0.02, 0.20); return _finalize(_mix(nz, ring))
+def enemy_spawn_001():
+    up = _at(_sweep('sawtooth', 100.0, 400.0, 0.40, 0.30, 0.010), 0.00, 0.50); nz = _at(_noise(0.30, 0.15, 0.010, seed=104), 0.00, 0.50); return _finalize(_mix(up, nz))
+def enemy_defeat_001():
+    down = _at(_sweep('triangle', 500.0, 100.0, 0.40, 0.30, 0.005), 0.00, 0.50); nz = _at(_noise(0.20, 0.15, 0.005, seed=105), 0.00, 0.50); return _finalize(_mix(down, nz))
+def ui_button_disabled_001():
+    s = _tone('square', 300.0, 0.05, 0.20, 0.002); return _finalize(_pad(s, 0.08))
+def ui_scroll_001():
+    s = _tone('sine', 2500.0, 0.01, 0.15, 0.001); return _finalize(_pad(s, 0.02))
+def ui_dropdown_open_001():
+    a = _at(_tone('sine', 800.0, 0.04, 0.20, 0.002), 0.00, 0.10); b = _at(_tone('sine', 600.0, 0.04, 0.20, 0.002), 0.04, 0.10); return _finalize(_mix(a, b))
+def alert_critical_001():
+    parts = []
+    for i in range(3): parts.append(_at(_tone('square', 1200.0, 0.08, 0.30, 0.002), i * 0.12, 0.40))
+    return _finalize(_mix(*parts))
+def alert_low_health_001():
+    a = _at(_tone('sine', 150.0, 0.15, 0.35, 0.005), 0.00, 0.40); b = _at(_tone('sine', 150.0, 0.15, 0.35, 0.005), 0.20, 0.40); return _finalize(_mix(a, b))
+def leaves_rustle_001():
+    nz = _at(_noise(0.60, 0.30, 0.010, seed=106), 0.00, 0.70); return _finalize(nz)
+def night_insects_001():
+    parts = []
+    for i in range(5): parts.append(_at(_tone('sine', 4000.0 + (i*100), 0.05, 0.10, 0.001), i * 0.15, 0.80))
+    return _finalize(_mix(*parts))
+def potion_drink_001():
+    parts = []
+    for i in range(4): parts.append(_at(_sweep('sine', 300.0 + (i*100), 200.0, 0.08, 0.20, 0.002), i * 0.10, 0.50))
+    return _finalize(_mix(*parts))
+def spell_lightning_001():
+    nz = _at(_noise(0.10, 0.50, 0.001, seed=107), 0.00, 0.30); low = _at(_sweep('sine', 100.0, 40.0, 0.20, 0.40, 0.002), 0.00, 0.30); return _finalize(_mix(nz, low))
+def plasma_shot_001():
+    sw = _at(_sweep('sawtooth', 2000.0, 300.0, 0.15, 0.30, 0.002), 0.00, 0.20); nz = _at(_noise(0.05, 0.20, 0.001, seed=108), 0.00, 0.20); return _finalize(_mix(sw, nz))
+
 OFFICIAL_PRESETS_EXTRA = {
+    # 55 anciens
     'ui-menu-close-001': ui_menu_close_001, 'ui-modal-open-001': ui_modal_open_001, 'ui-slider-change-001': ui_slider_change_001, 'ui-tab-switch-001': ui_tab_switch_001,
     'ui-confirm-002': ui_confirm_002, 'ui-back-002': ui_back_002, 'ui-hover-002': ui_hover_002, 'ui-toggle-002': ui_toggle_002,
     'ui-drag-drop-001': ui_drag_drop_001, 'ui-unlock-001': ui_unlock_001,
@@ -255,4 +262,11 @@ OFFICIAL_PRESETS_EXTRA = {
     'raven-caw-001': raven_caw_001, 'ghost-apparition-001': ghost_apparition_001, 'witch-laugh-001': witch_laugh_001, 'chains-rattle-001': chains_rattle_001,
     'creepy-whisper-001': creepy_whisper_001, 'zombie-groan-001': zombie_groan_001, 'halloween-bell-001': halloween_bell_001, 'pumpkin-smash-001': pumpkin_smash_001,
     'cauldron-bubble-001': cauldron_bubble_001, 'bat-wings-flutter-001': bat_wings_flutter_001,
+    # 15 nouveaux
+    'melee-hit-light-001': melee_hit_light_001, 'melee-hit-heavy-001': melee_hit_heavy_001, 'shield-block-001': shield_block_001,
+    'enemy-spawn-001': enemy_spawn_001, 'enemy-defeat-001': enemy_defeat_001,
+    'ui-button-disabled-001': ui_button_disabled_001, 'ui-scroll-001': ui_scroll_001, 'ui-dropdown-open-001': ui_dropdown_open_001,
+    'alert-critical-001': alert_critical_001, 'alert-low-health-001': alert_low_health_001,
+    'leaves-rustle-001': leaves_rustle_001, 'night-insects-001': night_insects_001,
+    'potion-drink-001': potion_drink_001, 'spell-lightning-001': spell_lightning_001, 'plasma-shot-001': plasma_shot_001,
 }

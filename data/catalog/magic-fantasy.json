@@ -13,5 +13,7 @@
     ,
 { "id": "witch-laugh-001", "name": "Witch Laugh 001", "category": "Magic / Fantasy", "description": "Synthetic cackling laugh.", "tags": ["witch", "laugh", "halloween", "sorcière", "halloween"], "duration": "0.45s", "date": "2026-10-25", "mp3": "audio/mp3/witch-laugh-001.mp3", "wav": "audio/wav/witch-laugh-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" },
 { "id": "cauldron-bubble-001", "name": "Cauldron Bubble 001", "category": "Magic / Fantasy", "description": "Bubbling magical cauldron.", "tags": ["cauldron", "bubble", "halloween", "chaudron", "halloween"], "duration": "0.90s", "date": "2026-10-25", "mp3": "audio/mp3/cauldron-bubble-001.mp3", "wav": "audio/wav/cauldron-bubble-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" }
+    ,
+{ "id": "spell-lightning-001", "name": "Spell Lightning 001", "category": "Magic / Fantasy", "description": "Crackling lightning spell.", "tags": ["lightning", "spell", "magic", "foudre", "sort"], "duration": "0.30s", "date": "2026-10-23", "mp3": "audio/mp3/spell-lightning-001.mp3", "wav": "audio/wav/spell-lightning-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" }
   ]
 }
