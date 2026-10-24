@@ -15,7 +15,8 @@ const DIRS_COPY = ['data', 'audio', 'assets'];
 
 const JS_FILES = [
   'app.js', 'home.js', 'sounds.js', 'player.js', 'downloads.js',
-  'filters.js', 'ui.js', 'audio-engine.js', 'audio-presets.js','audio-presets-music.js',
+  'filters.js', 'ui.js', 'audio-engine.js', 'audio-presets.js','audio-presets-music.js','audio-presets-science.js',
+'audio-presets-advanced-ui.js',
 'audio-presets-board.js',
 'audio-presets-events.js','audio-presets-quests.js', 'audio-presets-extra.js', 'wav-renderer.js', 'donate.js', 'news.js'
 ];

@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+  "id": "milestone-195",
+  "date": "2026-10-24",
+  "title": "195 Sounds Milestone Reached!",
+  "type": "info",
+  "message": "KYVOREX SOUNDS just hit 195 original sounds! Explore our newest additions: science lab experiments and advanced UI interactions. The adventure continues. Thank you for your support!"
+},
+    {
       "id": "welcome-2026",
       "date": "2026-10-20",
       "title": "Welcome to KYVOREX SOUNDS",
