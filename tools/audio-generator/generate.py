@@ -188,8 +188,18 @@ def run_official(sync_catalog, new_only):
         from official_presets import OFFICIAL_PRESETS
         from official_presets_extra import OFFICIAL_PRESETS_EXTRA
         from official_presets_quests import OFFICIAL_PRESETS_QUESTS
+        from official_presets_music import OFFICIAL_PRESETS_MUSIC
+        from official_presets_board import OFFICIAL_PRESETS_BOARD
+        from official_presets_events import OFFICIAL_PRESETS_EVENTS
         
-        presets_to_run = {**OFFICIAL_PRESETS, **OFFICIAL_PRESETS_EXTRA, **OFFICIAL_PRESETS_QUESTS}
+        presets_to_run = {
+            **OFFICIAL_PRESETS, 
+            **OFFICIAL_PRESETS_EXTRA, 
+            **OFFICIAL_PRESETS_QUESTS,
+            **OFFICIAL_PRESETS_MUSIC,
+            **OFFICIAL_PRESETS_BOARD,
+            **OFFICIAL_PRESETS_EVENTS
+        }
         tag = "all"
 
     total = len(presets_to_run)
