@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('mech-gear-engage-001', { duration: 0.15, build: function(E) { E.tone({ freq: 200, dur: 0.05, type: 'square', gain: 0.30, when: 0.00, attack: 0.002 }); E.tone({ freq: 250, dur: 0.05, type: 'square', gain: 0.30, when: 0.08, attack: 0.002 }); } });
+  KY.audio.registerPreset('mech-gear-grind-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.30, seed: 800, filter: { type: 'lowpass', freq: 800 } }); E.tone({ freq: 100, freqEnd: 150, dur: 0.40, type: 'sawtooth', gain: 0.25, attack: 0.020 }); } });
+  KY.audio.registerPreset('mech-piston-pump-001', { duration: 0.30, build: function(E) { E.tone({ freq: 80, dur: 0.15, type: 'sine', gain: 0.40, when: 0.00, attack: 0.005 }); E.tone({ freq: 80, dur: 0.15, type: 'sine', gain: 0.40, when: 0.15, attack: 0.005 }); } });
+  KY.audio.registerPreset('mech-hydraulic-press-001', { duration: 0.50, build: function(E) { E.tone({ freq: 150, freqEnd: 50, dur: 0.40, type: 'sawtooth', gain: 0.35, attack: 0.010 }); E.noise({ dur: 0.20, gain: 0.20, seed: 801, when: 0.30, filter: { type: 'lowpass', freq: 600 } }); } });
+  KY.audio.registerPreset('mech-spring-snap-001', { duration: 0.10, build: function(E) { E.tone({ freq: 1000, dur: 0.05, type: 'triangle', gain: 0.30, attack: 0.001 }); } });
+  KY.audio.registerPreset('mech-chain-rattle-001', { duration: 0.30, build: function(E) { for(var i=0; i<6; i++) { E.noise({ dur: 0.03, gain: 0.25, seed: 802+i, when: i*0.04, filter: { type: 'bandpass', freq: 3000 } }); } } });
+  KY.audio.registerPreset('mech-ratchet-turn-001', { duration: 0.25, build: function(E) { for(var i=0; i<4; i++) { E.tone({ freq: 800, dur: 0.02, type: 'square', gain: 0.25, when: i*0.06, attack: 0.001 }); } } });
+  KY.audio.registerPreset('mech-motor-start-001', { duration: 0.70, build: function(E) { E.tone({ freq: 50, freqEnd: 300, dur: 0.60, type: 'sawtooth', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('mech-motor-stop-001', { duration: 0.70, build: function(E) { E.tone({ freq: 300, freqEnd: 30, dur: 0.60, type: 'sawtooth', gain: 0.30, attack: 0.020 }); } });
+  KY.audio.registerPreset('mech-bolt-tighten-001', { duration: 0.30, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 400, dur: 0.03, type: 'square', gain: 0.20, when: i*0.08, attack: 0.001 }); } } });
+  KY.audio.registerPreset('mech-lock-engage-001', { duration: 0.10, build: function(E) { E.noise({ dur: 0.05, gain: 0.30, seed: 803, filter: { type: 'bandpass', freq: 2000 } }); E.tone({ freq: 300, dur: 0.04, type: 'square', gain: 0.25, when: 0.05, attack: 0.001 }); } });
+  KY.audio.registerPreset('mech-lock-release-001', { duration: 0.10, build: function(E) { E.tone({ freq: 300, dur: 0.04, type: 'square', gain: 0.25, when: 0.00, attack: 0.001 }); E.noise({ dur: 0.05, gain: 0.30, seed: 804, when: 0.05, filter: { type: 'bandpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('mech-valve-hiss-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.30, seed: 805, filter: { type: 'highpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('mech-steam-burst-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.40, seed: 806, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('mech-turbine-spin-001', { duration: 1.10, build: function(E) { E.tone({ freq: 100, freqEnd: 400, dur: 1.00, type: 'sawtooth', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('mech-conveyor-move-001', { duration: 0.90, build: function(E) { E.tone({ freq: 80, freqEnd: 100, dur: 0.80, type: 'sawtooth', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('mech-robotic-arm-001', { duration: 0.25, build: function(E) { E.tone({ freq: 200, freqEnd: 400, dur: 0.15, type: 'sine', gain: 0.25, attack: 0.005 }); E.tone({ freq: 600, dur: 0.05, type: 'square', gain: 0.20, when: 0.20, attack: 0.001 }); } });
+  KY.audio.registerPreset('mech-weld-spark-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.30, seed: 807, filter: { type: 'highpass', freq: 4000 } }); } });
+  KY.audio.registerPreset('mech-hammer-strike-001', { duration: 0.15, build: function(E) { E.tone({ freq: 150, dur: 0.10, type: 'sine', gain: 0.40, attack: 0.001 }); E.noise({ dur: 0.05, gain: 0.20, seed: 808, filter: { type: 'bandpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('mech-metal-clank-001', { duration: 0.20, build: function(E) { E.tone({ freq: 1200, dur: 0.15, type: 'triangle', gain: 0.30, attack: 0.001 }); } });
+  KY.audio.registerPreset('mech-pneumatic-hiss-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.25, seed: 809, filter: { type: 'highpass', freq: 2500 } }); } });
+  KY.audio.registerPreset('mech-clockwork-tick-001', { duration: 0.05, build: function(E) { E.tone({ freq: 1000, dur: 0.01, type: 'square', gain: 0.25, when: 0.00, attack: 0.001 }); E.tone({ freq: 1000, dur: 0.01, type: 'square', gain: 0.25, when: 0.10, attack: 0.001 }); } });
+  KY.audio.registerPreset('mech-heavy-door-slide-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.25, seed: 810, filter: { type: 'lowpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('mech-security-breach-001', { duration: 0.15, build: function(E) { E.tone({ freq: 800, dur: 0.10, type: 'sawtooth', gain: 0.30, when: 0.00, attack: 0.005 }); E.tone({ freq: 600, dur: 0.10, type: 'sawtooth', gain: 0.30, when: 0.15, attack: 0.005 }); } });
+  KY.audio.registerPreset('mech-system-shutdown-001', { duration: 0.90, build: function(E) { E.tone({ freq: 400, freqEnd: 50, dur: 0.80, type: 'square', gain: 0.30, attack: 0.010 }); } });
+})();

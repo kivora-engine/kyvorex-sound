@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('tool-screwdriver-turn-001', { duration: 0.10, build: function(E) { E.tone({ freq: 800, dur: 0.05, type: 'square', gain: 0.20, attack: 0.002 }); } });
+  KY.audio.registerPreset('tool-wrench-clank-001', { duration: 0.15, build: function(E) { E.tone({ freq: 1000, dur: 0.10, type: 'triangle', gain: 0.30, attack: 0.001 }); } });
+  KY.audio.registerPreset('tool-saw-wood-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.30, seed: 820, filter: { type: 'lowpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('tool-saw-metal-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.30, seed: 821, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('tool-drill-wood-001', { duration: 0.60, build: function(E) { E.tone({ freq: 200, freqEnd: 300, dur: 0.50, type: 'square', gain: 0.25, attack: 0.010 }); } });
+  KY.audio.registerPreset('tool-drill-metal-001', { duration: 0.60, build: function(E) { E.tone({ freq: 400, freqEnd: 500, dur: 0.50, type: 'sawtooth', gain: 0.25, attack: 0.010 }); } });
+  KY.audio.registerPreset('tool-hammer-nail-001', { duration: 0.10, build: function(E) { E.tone({ freq: 200, dur: 0.05, type: 'sine', gain: 0.35, attack: 0.001 }); } });
+  KY.audio.registerPreset('tool-wrench-ratchet-001', { duration: 0.20, build: function(E) { for(var i=0; i<4; i++) { E.tone({ freq: 600, dur: 0.02, type: 'square', gain: 0.20, when: i*0.05, attack: 0.001 }); } } });
+  KY.audio.registerPreset('tool-pliers-snip-001', { duration: 0.10, build: function(E) { E.noise({ dur: 0.05, gain: 0.30, seed: 822, filter: { type: 'highpass', freq: 2500 } }); } });
+  KY.audio.registerPreset('tool-sandpaper-rub-001', { duration: 0.60, build: function(E) { E.noise({ dur: 0.50, gain: 0.20, seed: 823, filter: { type: 'bandpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('tool-tape-peel-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.25, seed: 824, filter: { type: 'highpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('tool-glue-apply-001', { duration: 0.25, build: function(E) { E.tone({ freq: 300, freqEnd: 200, dur: 0.20, type: 'sine', gain: 0.20, attack: 0.010 }); } });
+  KY.audio.registerPreset('tool-glass-clink-001', { duration: 0.20, build: function(E) { E.tone({ freq: 2500, dur: 0.15, type: 'sine', gain: 0.25, attack: 0.001 }); } });
+  KY.audio.registerPreset('tool-metal-scrape-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.30, seed: 825, filter: { type: 'bandpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('tool-wood-creak-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.25, seed: 826, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('tool-stone-chisel-001', { duration: 0.10, build: function(E) { E.tone({ freq: 600, dur: 0.05, type: 'square', gain: 0.25, attack: 0.001 }); E.noise({ dur: 0.05, gain: 0.20, seed: 827, filter: { type: 'highpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('tool-rope-tie-001', { duration: 0.20, build: function(E) { E.noise({ dur: 0.15, gain: 0.20, seed: 828, filter: { type: 'lowpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('tool-wire-strip-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.25, seed: 829, filter: { type: 'bandpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('tool-solder-iron-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.15, seed: 830, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('tool-welding-arc-001', { duration: 0.60, build: function(E) { E.noise({ dur: 0.50, gain: 0.40, seed: 831, filter: { type: 'highpass', freq: 4000 } }); } });
+  KY.audio.registerPreset('tool-dropping-wrench-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.35, seed: 832, filter: { type: 'bandpass', freq: 1000 } }); E.tone({ freq: 800, dur: 0.10, type: 'triangle', gain: 0.25, when: 0.00, attack: 0.001 }); } });
+  KY.audio.registerPreset('tool-picking-up-nails-001', { duration: 0.20, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 1500, dur: 0.02, type: 'sine', gain: 0.15, when: i*0.05, attack: 0.001 }); } } });
+  KY.audio.registerPreset('tool-toolbox-open-001', { duration: 0.10, build: function(E) { E.tone({ freq: 300, dur: 0.05, type: 'square', gain: 0.25, attack: 0.002 }); } });
+  KY.audio.registerPreset('tool-toolbox-close-001', { duration: 0.12, build: function(E) { E.noise({ dur: 0.08, gain: 0.30, seed: 833, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('tool-multi-tool-switch-001', { duration: 0.05, build: function(E) { E.tone({ freq: 1200, dur: 0.02, type: 'square', gain: 0.20, when: 0.00, attack: 0.001 }); E.tone({ freq: 800, dur: 0.02, type: 'square', gain: 0.20, when: 0.05, attack: 0.001 }); } });
+})();
