@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('wolf-pack-howling-001', { duration: 1.00, build: function(E) { E.tone({ freq: 400, freqEnd: 600, dur: 0.80, type: 'sine', gain: 0.25, when: 0, attack: 0.050 }); E.tone({ freq: 450, freqEnd: 650, dur: 0.80, type: 'sine', gain: 0.20, when: 0.10, attack: 0.050 }); } });
+  KY.audio.registerPreset('lion-territorial-roar-001', { duration: 0.70, build: function(E) { E.tone({ freq: 150, freqEnd: 80, dur: 0.60, type: 'sawtooth', gain: 0.40, attack: 0.020 }); E.noise({ dur: 0.40, gain: 0.20, seed: 700, filter: { type: 'lowpass', freq: 600 } }); } });
+  KY.audio.registerPreset('elephant-trumpet-001', { duration: 0.50, build: function(E) { E.tone({ freq: 400, freqEnd: 600, dur: 0.40, type: 'square', gain: 0.30, attack: 0.020 }); } });
+  KY.audio.registerPreset('horse-snort-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.35, seed: 701, filter: { type: 'bandpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('horse-hoof-stone-001', { duration: 0.30, build: function(E) { E.tone({ freq: 300, dur: 0.05, type: 'square', gain: 0.30, when: 0, attack: 0.001 }); E.tone({ freq: 300, dur: 0.05, type: 'square', gain: 0.30, when: 0.15, attack: 0.001 }); } });
+  KY.audio.registerPreset('camel-call-001', { duration: 0.60, build: function(E) { E.tone({ freq: 200, freqEnd: 150, dur: 0.50, type: 'sine', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('hyena-cackle-001', { duration: 0.50, build: function(E) { for(var i=0; i<5; i++) { E.tone({ freq: 600, dur: 0.05, type: 'square', gain: 0.20, when: i*0.08, attack: 0.001 }); } } });
+  KY.audio.registerPreset('frog-pond-croak-001', { duration: 0.50, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 200, dur: 0.10, type: 'sine', gain: 0.30, when: i*0.15, attack: 0.005 }); } } });
+  KY.audio.registerPreset('cicada-day-chorus-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.25, seed: 702, filter: { type: 'highpass', freq: 4000 } }); } });
+  KY.audio.registerPreset('owl-wing-pass-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.15, seed: 703, filter: { type: 'lowpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('eagle-screech-001', { duration: 0.40, build: function(E) { E.tone({ freq: 2000, freqEnd: 1500, dur: 0.30, type: 'sine', gain: 0.25, attack: 0.005 }); } });
+  KY.audio.registerPreset('peacock-display-call-001', { duration: 0.25, build: function(E) { E.tone({ freq: 800, dur: 0.20, type: 'sine', gain: 0.25, attack: 0.010 }); } });
+  KY.audio.registerPreset('duck-flock-takeoff-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.30, seed: 704, filter: { type: 'bandpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('goose-warning-call-001', { duration: 0.20, build: function(E) { E.tone({ freq: 400, dur: 0.15, type: 'square', gain: 0.30, attack: 0.005 }); } });
+  KY.audio.registerPreset('dolphin-click-train-001', { duration: 0.30, build: function(E) { for(var i=0; i<6; i++) { E.tone({ freq: 3000, dur: 0.01, type: 'sine', gain: 0.20, when: i*0.04, attack: 0.001 }); } } });
+  KY.audio.registerPreset('whale-song-low-001', { duration: 1.20, build: function(E) { E.tone({ freq: 100, freqEnd: 150, dur: 1.00, type: 'sine', gain: 0.35, attack: 0.100 }); } });
+  KY.audio.registerPreset('seal-colony-call-001', { duration: 0.20, build: function(E) { E.tone({ freq: 300, dur: 0.15, type: 'sawtooth', gain: 0.25, attack: 0.010 }); } });
+  KY.audio.registerPreset('cricket-single-call-001', { duration: 0.10, build: function(E) { E.tone({ freq: 4000, dur: 0.05, type: 'sine', gain: 0.20, attack: 0.001 }); } });
+  KY.audio.registerPreset('bees-swarm-pass-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.30, seed: 705, filter: { type: 'bandpass', freq: 1200 } }); } });
+  KY.audio.registerPreset('mosquito-near-ear-001', { duration: 0.50, build: function(E) { E.tone({ freq: 6000, dur: 0.40, type: 'sine', gain: 0.15, attack: 0.010 }); } });
+  KY.audio.registerPreset('snake-hiss-long-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.30, seed: 706, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('crocodile-water-movement-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.25, seed: 707, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('monkey-canopy-leap-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.25, seed: 708, filter: { type: 'bandpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('boar-ground-snuffle-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.30, seed: 709, filter: { type: 'lowpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('deer-alarm-bark-001', { duration: 0.15, build: function(E) { E.tone({ freq: 400, dur: 0.10, type: 'square', gain: 0.30, attack: 0.002 }); } });
+})();

@@ -179,10 +179,10 @@ def run_official(sync_catalog, new_only):
     tag = "official"
     
     if new_only:
-        # Mode new-only : ne génère que les derniers sons ajoutés (Science + Advanced UI)
-        from official_presets_science import OFFICIAL_PRESETS_SCIENCE
-        from official_presets_advanced_ui import OFFICIAL_PRESETS_ADV_UI
-        presets_to_run = {**OFFICIAL_PRESETS_SCIENCE, **OFFICIAL_PRESETS_ADV_UI}
+        # Mode new-only : ne génère que les derniers sons ajoutés (Terrain + Animaux)
+        from official_presets_terrain import OFFICIAL_PRESETS_TERRAIN
+        from official_presets_animals import OFFICIAL_PRESETS_ANIMALS
+        presets_to_run = {**OFFICIAL_PRESETS_TERRAIN, **OFFICIAL_PRESETS_ANIMALS}
         tag = "new"
     else:
         # Mode complet : fusionne toutes les sources
@@ -194,6 +194,8 @@ def run_official(sync_catalog, new_only):
         from official_presets_events import OFFICIAL_PRESETS_EVENTS
         from official_presets_science import OFFICIAL_PRESETS_SCIENCE
         from official_presets_advanced_ui import OFFICIAL_PRESETS_ADV_UI
+        from official_presets_terrain import OFFICIAL_PRESETS_TERRAIN
+        from official_presets_animals import OFFICIAL_PRESETS_ANIMALS
         
         presets_to_run = {
             **OFFICIAL_PRESETS, 
@@ -203,7 +205,9 @@ def run_official(sync_catalog, new_only):
             **OFFICIAL_PRESETS_BOARD,
             **OFFICIAL_PRESETS_EVENTS,
             **OFFICIAL_PRESETS_SCIENCE,
-            **OFFICIAL_PRESETS_ADV_UI
+            **OFFICIAL_PRESETS_ADV_UI,
+            **OFFICIAL_PRESETS_TERRAIN,
+            **OFFICIAL_PRESETS_ANIMALS
         }
         tag = "all"
 
@@ -264,7 +268,7 @@ def main():
     parser.add_argument('--official', action='store_true',
                         help='Generate the official catalog sounds')
     parser.add_argument('--new-only', action='store_true',
-                        help='Generate only the latest new sounds (Science + Advanced UI)')
+                        help='Generate only the latest new sounds (Terrain + Animals)')
     parser.add_argument('--sync-catalog', action='store_true',
                         help='Update catalog source status and regenerate sounds.json')
     args = parser.parse_args()

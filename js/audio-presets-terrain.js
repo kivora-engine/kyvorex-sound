@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('footstep-mud-deep-001', { duration: 0.20, build: function(E) { E.noise({ dur: 0.15, gain: 0.30, seed: 600, filter: { type: 'lowpass', freq: 400 } }); E.tone({ freq: 100, freqEnd: 50, dur: 0.10, type: 'sine', gain: 0.35, attack: 0.005 }); } });
+  KY.audio.registerPreset('footstep-wet-grass-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.12, gain: 0.25, seed: 601, filter: { type: 'highpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('footstep-gravel-loose-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.05, gain: 0.30, seed: 602, when: 0, filter: { type: 'bandpass', freq: 3000 } }); E.noise({ dur: 0.05, gain: 0.25, seed: 603, when: 0.06, filter: { type: 'bandpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('footstep-wood-hollow-001', { duration: 0.10, build: function(E) { E.tone({ freq: 200, dur: 0.08, type: 'square', gain: 0.30, attack: 0.002 }); E.noise({ dur: 0.05, gain: 0.15, seed: 604, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('footstep-marble-hall-001', { duration: 0.15, build: function(E) { E.tone({ freq: 800, dur: 0.10, type: 'sine', gain: 0.25, attack: 0.002 }); E.noise({ dur: 0.05, gain: 0.10, seed: 605, filter: { type: 'highpass', freq: 4000 } }); } });
+  KY.audio.registerPreset('footstep-metal-grate-001', { duration: 0.12, build: function(E) { E.noise({ dur: 0.08, gain: 0.35, seed: 606, filter: { type: 'bandpass', freq: 2500 } }); E.tone({ freq: 400, dur: 0.06, type: 'sawtooth', gain: 0.20, attack: 0.002 }); } });
+  KY.audio.registerPreset('footstep-snow-crust-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.30, seed: 607, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('footstep-shallow-water-001', { duration: 0.20, build: function(E) { E.noise({ dur: 0.15, gain: 0.30, seed: 608, filter: { type: 'bandpass', freq: 1200 } }); E.tone({ freq: 600, freqEnd: 300, dur: 0.10, type: 'sine', gain: 0.20, attack: 0.005 }); } });
+  KY.audio.registerPreset('footstep-dry-leaves-pile-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.35, seed: 609, filter: { type: 'highpass', freq: 2500 } }); } });
+  KY.audio.registerPreset('footstep-sand-dunes-001', { duration: 0.30, build: function(E) { E.noise({ dur: 0.25, gain: 0.20, seed: 610, filter: { type: 'lowpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('landing-roll-soft-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.25, seed: 611, filter: { type: 'lowpass', freq: 800 } }); E.tone({ freq: 100, dur: 0.20, type: 'sine', gain: 0.30, attack: 0.010 }); } });
+  KY.audio.registerPreset('landing-knee-hard-001', { duration: 0.20, build: function(E) { E.tone({ freq: 150, freqEnd: 50, dur: 0.15, type: 'sawtooth', gain: 0.40, attack: 0.002 }); E.noise({ dur: 0.10, gain: 0.30, seed: 612, filter: { type: 'lowpass', freq: 600 } }); } });
+  KY.audio.registerPreset('slide-stone-surface-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.25, seed: 613, filter: { type: 'lowpass', freq: 1200 } }); } });
+  KY.audio.registerPreset('slide-ice-long-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.20, seed: 614, filter: { type: 'highpass', freq: 2000 } }); E.tone({ freq: 1500, freqEnd: 800, dur: 0.80, type: 'sine', gain: 0.15, attack: 0.020 }); } });
+  KY.audio.registerPreset('rope-climb-strain-001', { duration: 0.60, build: function(E) { E.noise({ dur: 0.50, gain: 0.20, seed: 615, filter: { type: 'bandpass', freq: 800 } }); } });
+  KY.audio.registerPreset('ladder-wood-climb-001', { duration: 0.30, build: function(E) { E.tone({ freq: 300, dur: 0.05, type: 'square', gain: 0.25, when: 0, attack: 0.002 }); E.tone({ freq: 300, dur: 0.05, type: 'square', gain: 0.25, when: 0.15, attack: 0.002 }); } });
+  KY.audio.registerPreset('ladder-metal-rattle-001', { duration: 0.20, build: function(E) { E.noise({ dur: 0.15, gain: 0.30, seed: 616, filter: { type: 'bandpass', freq: 3000 } }); E.tone({ freq: 800, dur: 0.10, type: 'triangle', gain: 0.20, attack: 0.002 }); } });
+  KY.audio.registerPreset('rope-swing-pass-001', { duration: 0.50, build: function(E) { E.tone({ freq: 200, freqEnd: 500, dur: 0.40, type: 'sine', gain: 0.25, attack: 0.010 }); } });
+  KY.audio.registerPreset('zipline-start-001', { duration: 0.40, build: function(E) { E.tone({ freq: 400, freqEnd: 800, dur: 0.30, type: 'sawtooth', gain: 0.25, attack: 0.005 }); } });
+  KY.audio.registerPreset('zipline-stop-001', { duration: 0.50, build: function(E) { E.tone({ freq: 800, freqEnd: 200, dur: 0.40, type: 'sawtooth', gain: 0.25, attack: 0.005 }); } });
+  KY.audio.registerPreset('deep-water-dive-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.40, seed: 617, filter: { type: 'lowpass', freq: 1000 } }); E.tone({ freq: 300, freqEnd: 50, dur: 0.50, type: 'sine', gain: 0.30, attack: 0.010 }); } });
+  KY.audio.registerPreset('underwater-movement-001', { duration: 0.60, build: function(E) { E.noise({ dur: 0.50, gain: 0.25, seed: 618, filter: { type: 'lowpass', freq: 600 } }); } });
+  KY.audio.registerPreset('rock-climb-grip-001', { duration: 0.12, build: function(E) { E.noise({ dur: 0.08, gain: 0.25, seed: 619, filter: { type: 'bandpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('heavy-landing-dirt-001', { duration: 0.25, build: function(E) { E.tone({ freq: 120, freqEnd: 40, dur: 0.20, type: 'sine', gain: 0.40, attack: 0.005 }); E.noise({ dur: 0.15, gain: 0.30, seed: 620, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('body-roll-gravel-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.30, seed: 621, filter: { type: 'bandpass', freq: 2500 } }); } });
+})();
