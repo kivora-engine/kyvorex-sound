@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('ind-factory-siren-001', { duration: 1.00, build: function(E) { E.tone({ freq: 400, freqEnd: 600, dur: 0.80, type: 'sawtooth', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('ind-assembly-line-001', { duration: 1.00, build: function(E) { for(var i=0; i<8; i++) { E.tone({ freq: 100, dur: 0.05, type: 'square', gain: 0.25, when: i*0.12, attack: 0.001 }); } } });
+  KY.audio.registerPreset('ind-robot-arm-weld-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.40, seed: 900, filter: { type: 'highpass', freq: 4000 } }); } });
+  KY.audio.registerPreset('ind-conveyor-heavy-001', { duration: 1.10, build: function(E) { E.tone({ freq: 50, freqEnd: 80, dur: 1.00, type: 'sawtooth', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('ind-steam-release-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.45, seed: 901, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('ind-forge-hammer-001', { duration: 0.30, build: function(E) { E.tone({ freq: 80, dur: 0.20, type: 'sine', gain: 0.50, attack: 0.002 }); E.noise({ dur: 0.10, gain: 0.30, seed: 902, filter: { type: 'bandpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('ind-laser-cutter-001', { duration: 0.50, build: function(E) { E.tone({ freq: 2000, freqEnd: 1000, dur: 0.40, type: 'square', gain: 0.25, attack: 0.005 }); } });
+  KY.audio.registerPreset('ind-molding-press-001', { duration: 0.40, build: function(E) { E.tone({ freq: 100, freqEnd: 40, dur: 0.30, type: 'sine', gain: 0.40, attack: 0.005 }); } });
+  KY.audio.registerPreset('ind-coolant-spray-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.30, seed: 903, filter: { type: 'highpass', freq: 2500 } }); } });
+  KY.audio.registerPreset('ind-turbine-startup-001', { duration: 1.30, build: function(E) { E.tone({ freq: 50, freqEnd: 300, dur: 1.20, type: 'sawtooth', gain: 0.25, attack: 0.100 }); } });
+  KY.audio.registerPreset('ind-magnetic-crane-001', { duration: 0.15, build: function(E) { E.tone({ freq: 200, dur: 0.10, type: 'square', gain: 0.30, attack: 0.010 }); } });
+  KY.audio.registerPreset('ind-furnace-roar-001', { duration: 1.10, build: function(E) { E.noise({ dur: 1.00, gain: 0.40, seed: 904, filter: { type: 'lowpass', freq: 400 } }); } });
+  KY.audio.registerPreset('ind-packing-machine-001', { duration: 0.20, build: function(E) { E.tone({ freq: 150, dur: 0.05, type: 'square', gain: 0.20, when: 0.00, attack: 0.001 }); E.tone({ freq: 150, dur: 0.05, type: 'square', gain: 0.20, when: 0.15, attack: 0.001 }); } });
+  KY.audio.registerPreset('ind-shutdown-sequence-001', { duration: 1.10, build: function(E) { E.tone({ freq: 300, freqEnd: 50, dur: 1.00, type: 'sawtooth', gain: 0.30, attack: 0.020 }); } });
+  KY.audio.registerPreset('ind-emergency-stop-001', { duration: 0.20, build: function(E) { E.tone({ freq: 1000, dur: 0.10, type: 'square', gain: 0.35, when: 0.00, attack: 0.002 }); E.tone({ freq: 800, dur: 0.10, type: 'square', gain: 0.35, when: 0.20, attack: 0.002 }); } });
+  KY.audio.registerPreset('ind-metal-pour-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.35, seed: 905, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('ind-belt-snap-001', { duration: 0.10, build: function(E) { E.noise({ dur: 0.05, gain: 0.40, seed: 906, filter: { type: 'bandpass', freq: 1200 } }); E.tone({ freq: 150, dur: 0.05, type: 'sawtooth', gain: 0.30, attack: 0.001 }); } });
+  KY.audio.registerPreset('ind-ventilation-hum-001', { duration: 1.10, build: function(E) { E.noise({ dur: 1.00, gain: 0.15, seed: 907, filter: { type: 'lowpass', freq: 500 } }); } });
+  KY.audio.registerPreset('ind-drill-press-heavy-001', { duration: 0.60, build: function(E) { E.tone({ freq: 200, freqEnd: 100, dur: 0.50, type: 'square', gain: 0.30, attack: 0.010 }); } });
+  KY.audio.registerPreset('ind-forklift-move-001', { duration: 0.70, build: function(E) { E.tone({ freq: 80, freqEnd: 120, dur: 0.60, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('ind-safety-alarm-001', { duration: 0.20, build: function(E) { E.tone({ freq: 800, dur: 0.15, type: 'square', gain: 0.30, attack: 0.002 }); } });
+  KY.audio.registerPreset('ind-scrap-metal-crush-001', { duration: 0.60, build: function(E) { E.noise({ dur: 0.50, gain: 0.45, seed: 908, filter: { type: 'lowpass', freq: 600 } }); } });
+  KY.audio.registerPreset('ind-electric-motor-hum-001', { duration: 1.10, build: function(E) { E.tone({ freq: 60, dur: 1.00, type: 'sawtooth', gain: 0.25, attack: 0.010 }); } });
+  KY.audio.registerPreset('ind-production-bell-001', { duration: 0.40, build: function(E) { E.tone({ freq: 1000, dur: 0.30, type: 'triangle', gain: 0.30, attack: 0.005 }); } });
+  KY.audio.registerPreset('ind-heavy-door-lock-001', { duration: 0.20, build: function(E) { E.noise({ dur: 0.10, gain: 0.35, seed: 909, filter: { type: 'lowpass', freq: 800 } }); E.tone({ freq: 100, dur: 0.15, type: 'sine', gain: 0.40, attack: 0.002 }); } });
+})();

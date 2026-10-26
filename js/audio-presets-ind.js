@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('craft-brick-trowel-001', { duration: 0.20, build: function(E) { E.noise({ dur: 0.15, gain: 0.30, seed: 920, filter: { type: 'bandpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('craft-cement-mix-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.30, seed: 921, filter: { type: 'lowpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('craft-glass-cutting-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.35, seed: 922, filter: { type: 'highpass', freq: 3000 } }); E.tone({ freq: 2000, dur: 0.20, type: 'sine', gain: 0.15, attack: 0.001 }); } });
+  KY.audio.registerPreset('craft-wood-sanding-001', { duration: 0.60, build: function(E) { E.noise({ dur: 0.50, gain: 0.20, seed: 923, filter: { type: 'bandpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('craft-metal-filing-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.25, seed: 924, filter: { type: 'highpass', freq: 2500 } }); } });
+  KY.audio.registerPreset('craft-plaster-scrape-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.30, seed: 925, filter: { type: 'lowpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('craft-tile-cutting-001', { duration: 0.20, build: function(E) { E.noise({ dur: 0.15, gain: 0.35, seed: 926, filter: { type: 'bandpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('craft-wire-snips-001', { duration: 0.05, build: function(E) { E.tone({ freq: 1500, dur: 0.02, type: 'square', gain: 0.25, attack: 0.001 }); } });
+  KY.audio.registerPreset('craft-pipe-wrench-001', { duration: 0.15, build: function(E) { E.tone({ freq: 400, dur: 0.10, type: 'triangle', gain: 0.30, attack: 0.002 }); } });
+  KY.audio.registerPreset('craft-tape-measure-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.20, seed: 927, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('craft-level-bubble-001', { duration: 0.10, build: function(E) { E.tone({ freq: 1200, dur: 0.05, type: 'sine', gain: 0.20, attack: 0.001 }); } });
+  KY.audio.registerPreset('craft-pencil-mark-001', { duration: 0.08, build: function(E) { E.noise({ dur: 0.05, gain: 0.15, seed: 928, filter: { type: 'bandpass', freq: 4000 } }); } });
+  KY.audio.registerPreset('craft-rivet-gun-001', { duration: 0.10, build: function(E) { E.tone({ freq: 300, dur: 0.05, type: 'square', gain: 0.35, attack: 0.001 }); E.noise({ dur: 0.05, gain: 0.20, seed: 929, filter: { type: 'lowpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('craft-staple-gun-001', { duration: 0.05, build: function(E) { E.tone({ freq: 800, dur: 0.02, type: 'square', gain: 0.30, attack: 0.001 }); } });
+  KY.audio.registerPreset('craft-caulking-gun-001', { duration: 0.25, build: function(E) { E.tone({ freq: 400, freqEnd: 200, dur: 0.20, type: 'sine', gain: 0.20, attack: 0.010 }); } });
+  KY.audio.registerPreset('craft-paint-roller-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.20, seed: 930, filter: { type: 'lowpass', freq: 1200 } }); } });
+  KY.audio.registerPreset('craft-paint-brush-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.15, seed: 931, filter: { type: 'bandpass', freq: 2500 } }); } });
+  KY.audio.registerPreset('craft-chisel-wood-001', { duration: 0.10, build: function(E) { E.tone({ freq: 500, dur: 0.05, type: 'square', gain: 0.25, attack: 0.001 }); E.noise({ dur: 0.05, gain: 0.20, seed: 932, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('craft-rasp-wood-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.25, seed: 933, filter: { type: 'bandpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('craft-pvc-pipe-cut-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.35, seed: 934, filter: { type: 'highpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('craft-screw-driver-electric-001', { duration: 0.40, build: function(E) { E.tone({ freq: 400, freqEnd: 600, dur: 0.30, type: 'square', gain: 0.20, attack: 0.010 }); } });
+  KY.audio.registerPreset('craft-nail-puller-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.30, seed: 935, filter: { type: 'bandpass', freq: 1200 } }); } });
+  KY.audio.registerPreset('craft-hacksaw-metal-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.25, seed: 936, filter: { type: 'highpass', freq: 2500 } }); } });
+  KY.audio.registerPreset('craft-soldering-gun-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.15, seed: 937, filter: { type: 'highpass', freq: 4000 } }); } });
+  KY.audio.registerPreset('craft-lock-picking-001', { duration: 0.25, build: function(E) { for(var i=0; i<4; i++) { E.tone({ freq: 2000 + i*100, dur: 0.02, type: 'sine', gain: 0.15, when: i*0.05, attack: 0.001 }); } } });
+})();

@@ -19,7 +19,8 @@ const JS_FILES = [
 'audio-presets-advanced-ui.js',
 'audio-presets-board.js',
 'audio-presets-events.js','audio-presets-terrain.js','audio-presets-mech.js',
-'audio-presets-tools.js',
+'audio-presets-tools.js','audio-presets-ind.js',
+'audio-presets-craft.js',
 'audio-presets-animals.js','audio-presets-quests.js', 'audio-presets-extra.js', 'wav-renderer.js', 'donate.js', 'news.js'
 ];
 const CSS_FILES = ['base.css', 'layout.css', 'components.css', 'responsive.css'];
