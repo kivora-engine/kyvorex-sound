@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('ancient-gear-turn-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.30, seed: 1300, filter: { type: 'bandpass', freq: 1000 } }); E.tone({ freq: 80, freqEnd: 100, dur: 0.80, type: 'sawtooth', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('magical-trap-snap-001', { duration: 0.10, build: function(E) { E.tone({ freq: 600, dur: 0.05, type: 'square', gain: 0.35, attack: 0.001 }); E.noise({ dur: 0.10, gain: 0.25, seed: 1301, filter: { type: 'highpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('zero-gravity-float-001', { duration: 1.30, build: function(E) { E.tone({ freq: 400, freqEnd: 200, dur: 1.20, type: 'sine', gain: 0.25, attack: 0.200 }); } });
+  KY.audio.registerPreset('time-loop-echo-001', { duration: 0.60, build: function(E) { E.tone({ freq: 800, dur: 0.10, type: 'sine', gain: 0.30, when: 0.00, attack: 0.002 }); E.tone({ freq: 800, dur: 0.10, type: 'sine', gain: 0.20, when: 0.20, attack: 0.002 }); E.tone({ freq: 800, dur: 0.10, type: 'sine', gain: 0.10, when: 0.40, attack: 0.002 }); } });
+  KY.audio.registerPreset('artifact-discovery-001', { duration: 0.50, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 523.25+i*100, dur: 0.15, type: 'triangle', gain: 0.25, when: i*0.12, attack: 0.005 }); } } });
+  KY.audio.registerPreset('alien-flora-bloom-001', { duration: 0.60, build: function(E) { E.noise({ dur: 0.50, gain: 0.20, seed: 1302, filter: { type: 'bandpass', freq: 800 } }); E.tone({ freq: 600, freqEnd: 1200, dur: 0.40, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('futuristic-surgery-001', { duration: 0.70, build: function(E) { E.tone({ freq: 1000, freqEnd: 1500, dur: 0.60, type: 'sawtooth', gain: 0.20, attack: 0.010 }); } });
+  KY.audio.registerPreset('plasma-welding-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.45, seed: 1303, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('ion-thruster-ignite-001', { duration: 0.90, build: function(E) { E.tone({ freq: 100, freqEnd: 400, dur: 0.80, type: 'sine', gain: 0.40, attack: 0.050 }); } });
+  KY.audio.registerPreset('cryo-pod-open-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.35, seed: 1304, filter: { type: 'highpass', freq: 2000 } }); E.tone({ freq: 400, freqEnd: 100, dur: 0.50, type: 'sine', gain: 0.25, attack: 0.010 }); } });
+  KY.audio.registerPreset('cryo-pod-close-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.30, seed: 1305, filter: { type: 'lowpass', freq: 800 } }); E.tone({ freq: 80, dur: 0.20, type: 'sine', gain: 0.40, when: 0.30, attack: 0.005 }); } });
+  KY.audio.registerPreset('sonic-screwdriver-001', { duration: 0.50, build: function(E) { E.tone({ freq: 1500, freqEnd: 2000, dur: 0.40, type: 'square', gain: 0.20, attack: 0.010 }); } });
+  KY.audio.registerPreset('gravity-well-generate-001', { duration: 1.10, build: function(E) { E.tone({ freq: 400, freqEnd: 50, dur: 1.00, type: 'sine', gain: 0.40, attack: 0.050 }); } });
+  KY.audio.registerPreset('space-station-alarm-001', { duration: 0.80, build: function(E) { for(var i=0; i<4; i++) { E.tone({ freq: 800, dur: 0.15, type: 'square', gain: 0.25, when: i*0.20, attack: 0.002 }); } } });
+  KY.audio.registerPreset('meteor-shower-pass-001', { duration: 1.30, build: function(E) { E.noise({ dur: 1.20, gain: 0.30, seed: 1306, filter: { type: 'lowpass', freq: 400 } }); } });
+  KY.audio.registerPreset('aura-reveal-001', { duration: 0.90, build: function(E) { E.tone({ freq: 600, freqEnd: 1200, dur: 0.80, type: 'sine', gain: 0.20, attack: 0.100 }); } });
+  KY.audio.registerPreset('runic-translation-001', { duration: 0.30, build: function(E) { for(var i=0; i<5; i++) { E.tone({ freq: 800+i*50, dur: 0.05, type: 'triangle', gain: 0.15, when: i*0.05, attack: 0.001 }); } } });
+  KY.audio.registerPreset('dimensional-fold-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.40, seed: 1307, filter: { type: 'bandpass', freq: 2000 } }); E.tone({ freq: 800, freqEnd: 200, dur: 0.60, type: 'sawtooth', gain: 0.30, attack: 0.020 }); } });
+  KY.audio.registerPreset('elevator-mechanism-001', { duration: 0.70, build: function(E) { E.tone({ freq: 100, dur: 0.60, type: 'sawtooth', gain: 0.25, attack: 0.020 }); } });
+  KY.audio.registerPreset('trapdoor-trigger-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.40, seed: 1308, filter: { type: 'lowpass', freq: 600 } }); E.tone({ freq: 100, dur: 0.10, type: 'sine', gain: 0.40, attack: 0.002 }); } });
+  KY.audio.registerPreset('laser-grid-activate-001', { duration: 0.60, build: function(E) { E.tone({ freq: 400, freqEnd: 800, dur: 0.50, type: 'square', gain: 0.30, attack: 0.010 }); } });
+  KY.audio.registerPreset('biometric-lock-001', { duration: 0.15, build: function(E) { E.tone({ freq: 1000, dur: 0.10, type: 'sine', gain: 0.30, when: 0.00, attack: 0.002 }); E.tone({ freq: 1200, dur: 0.15, type: 'sine', gain: 0.30, when: 0.10, attack: 0.002 }); } });
+  KY.audio.registerPreset('black-hole-collapse-001', { duration: 1.60, build: function(E) { E.tone({ freq: 200, freqEnd: 20, dur: 1.50, type: 'sine', gain: 0.50, attack: 0.100 }); } });
+  KY.audio.registerPreset('nebula-ambience-001', { duration: 2.20, build: function(E) { E.noise({ dur: 2.00, gain: 0.20, seed: 1309, filter: { type: 'lowpass', freq: 500 } }); } });
+  KY.audio.registerPreset('alien-communication-001', { duration: 0.50, build: function(E) { for(var i=0; i<6; i++) { E.tone({ freq: 400+i*150, dur: 0.10, type: 'sine', gain: 0.20, when: i*0.08, attack: 0.010 }); } } });
+})();

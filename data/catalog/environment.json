@@ -1356,6 +1356,66 @@
       "previewMode": "procedural",
       "wavMode": "file",
       "mp3Mode": "file"
+    },
+    {
+      "id": "meteor-shower-pass-001",
+      "name": "Meteor Shower Pass 001",
+      "category": "Environment",
+      "description": "Meteor shower passing.",
+      "tags": [
+        "rare",
+        "meteor",
+        "météore"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/meteor-shower-pass-001.mp3",
+      "wav": "audio/wav/meteor-shower-pass-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "black-hole-collapse-001",
+      "name": "Black Hole Collapse 001",
+      "category": "Environment",
+      "description": "A black hole collapsing.",
+      "tags": [
+        "rare",
+        "black hole",
+        "trou noir"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/black-hole-collapse-001.mp3",
+      "wav": "audio/wav/black-hole-collapse-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "nebula-ambience-001",
+      "name": "Nebula Ambience 001",
+      "category": "Environment",
+      "description": "Nebula space ambience.",
+      "tags": [
+        "rare",
+        "nebula",
+        "nébuleuse"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/nebula-ambience-001.mp3",
+      "wav": "audio/wav/nebula-ambience-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
     }
   ]
 }

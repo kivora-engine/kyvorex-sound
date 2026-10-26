@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('data-stream-flow-001', { duration: 0.35, build: function(E) { for(var i=0; i<10; i++) { E.tone({ freq: 1000+i*50, dur: 0.02, type: 'square', gain: 0.15, when: i*0.03, attack: 0.001 }); } } });
+  KY.audio.registerPreset('server-sync-ping-001', { duration: 0.15, build: function(E) { E.tone({ freq: 1200, dur: 0.05, type: 'sine', gain: 0.25, when: 0.00, attack: 0.001 }); E.tone({ freq: 1200, dur: 0.05, type: 'sine', gain: 0.25, when: 0.10, attack: 0.001 }); } });
+  KY.audio.registerPreset('firewall-deflect-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.30, seed: 1200, filter: { type: 'highpass', freq: 2000 } }); E.tone({ freq: 400, dur: 0.05, type: 'sawtooth', gain: 0.20, attack: 0.001 }); } });
+  KY.audio.registerPreset('encryption-unlock-001', { duration: 0.30, build: function(E) { for(var i=0; i<4; i++) { E.tone({ freq: 800+i*100, dur: 0.04, type: 'square', gain: 0.20, when: i*0.06, attack: 0.001 }); } } });
+  KY.audio.registerPreset('hologram-glitch-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.40, seed: 1201, filter: { type: 'bandpass', freq: 3000 } }); E.tone({ freq: 2000, freqEnd: 500, dur: 0.20, type: 'sawtooth', gain: 0.25, attack: 0.001 }); } });
+  KY.audio.registerPreset('quantum-computer-hum-001', { duration: 1.10, build: function(E) { E.tone({ freq: 60, dur: 1.00, type: 'sine', gain: 0.30, attack: 0.050 }); E.tone({ freq: 120, dur: 1.00, type: 'sine', gain: 0.15, attack: 0.050 }); } });
+  KY.audio.registerPreset('system-overload-001', { duration: 0.60, build: function(E) { E.noise({ dur: 0.50, gain: 0.50, seed: 1202, filter: { type: 'bandpass', freq: 1500 } }); E.tone({ freq: 400, freqEnd: 1000, dur: 0.50, type: 'square', gain: 0.30, attack: 0.010 }); } });
+  KY.audio.registerPreset('neural-network-connect-001', { duration: 0.30, build: function(E) { for(var i=0; i<6; i++) { E.tone({ freq: 600+i*200, dur: 0.03, type: 'sine', gain: 0.15, when: i*0.05, attack: 0.001 }); } } });
+  KY.audio.registerPreset('digital-footprint-001', { duration: 0.15, build: function(E) { E.tone({ freq: 1500, dur: 0.10, type: 'triangle', gain: 0.20, attack: 0.002 }); } });
+  KY.audio.registerPreset('cyber-deck-boot-001', { duration: 0.70, build: function(E) { E.tone({ freq: 100, freqEnd: 400, dur: 0.60, type: 'sawtooth', gain: 0.30, attack: 0.020 }); } });
+  KY.audio.registerPreset('data-corruption-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.45, seed: 1203, filter: { type: 'bandpass', freq: 2500 } }); } });
+  KY.audio.registerPreset('satellite-uplink-001', { duration: 0.90, build: function(E) { E.tone({ freq: 200, freqEnd: 800, dur: 0.80, type: 'sine', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('biometric-scan-pass-001', { duration: 0.15, build: function(E) { E.tone({ freq: 1000, dur: 0.10, type: 'sine', gain: 0.30, when: 0.00, attack: 0.002 }); E.tone({ freq: 1500, dur: 0.15, type: 'sine', gain: 0.30, when: 0.10, attack: 0.002 }); } });
+  KY.audio.registerPreset('biometric-scan-fail-001', { duration: 0.25, build: function(E) { E.tone({ freq: 400, dur: 0.20, type: 'sawtooth', gain: 0.35, attack: 0.002 }); } });
+  KY.audio.registerPreset('drone-connect-001', { duration: 0.10, build: function(E) { E.tone({ freq: 300, dur: 0.05, type: 'square', gain: 0.20, when: 0.00, attack: 0.001 }); E.tone({ freq: 500, dur: 0.05, type: 'square', gain: 0.20, when: 0.08, attack: 0.001 }); } });
+  KY.audio.registerPreset('smart-device-activate-001', { duration: 0.10, build: function(E) { E.tone({ freq: 1200, dur: 0.05, type: 'sine', gain: 0.25, attack: 0.001 }); } });
+  KY.audio.registerPreset('signal-jammer-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.40, seed: 1204, filter: { type: 'bandpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('battery-recharge-001', { duration: 0.90, build: function(E) { E.tone({ freq: 200, freqEnd: 600, dur: 0.80, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('power-grid-surge-001', { duration: 0.50, build: function(E) { E.tone({ freq: 100, freqEnd: 800, dur: 0.40, type: 'sawtooth', gain: 0.40, attack: 0.010 }); } });
+  KY.audio.registerPreset('wireless-charge-001', { duration: 0.40, build: function(E) { E.tone({ freq: 800, dur: 0.30, type: 'sine', gain: 0.15, attack: 0.010 }); } });
+  KY.audio.registerPreset('cyber-attack-alert-001', { duration: 0.30, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 1000, dur: 0.05, type: 'square', gain: 0.30, when: i*0.10, attack: 0.001 }); } } });
+  KY.audio.registerPreset('mainframe-access-001', { duration: 0.40, build: function(E) { E.tone({ freq: 400, freqEnd: 200, dur: 0.30, type: 'sawtooth', gain: 0.30, attack: 0.005 }); } });
+  KY.audio.registerPreset('virtual-reality-enter-001', { duration: 0.70, build: function(E) { E.tone({ freq: 400, freqEnd: 1200, dur: 0.60, type: 'sine', gain: 0.25, attack: 0.020 }); } });
+  KY.audio.registerPreset('virtual-reality-exit-001', { duration: 0.70, build: function(E) { E.tone({ freq: 1200, freqEnd: 400, dur: 0.60, type: 'sine', gain: 0.25, attack: 0.020 }); } });
+  KY.audio.registerPreset('digital-map-render-001', { duration: 0.25, build: function(E) { for(var i=0; i<5; i++) { E.tone({ freq: 800, dur: 0.02, type: 'sine', gain: 0.10, when: i*0.05, attack: 0.001 }); } } });
+})();

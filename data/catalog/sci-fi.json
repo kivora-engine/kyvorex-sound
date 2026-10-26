@@ -1644,6 +1644,509 @@
       "previewMode": "procedural",
       "wavMode": "file",
       "mp3Mode": "file"
+    },
+    {
+      "id": "data-stream-flow-001",
+      "name": "Data Stream Flow 001",
+      "category": "Sci-Fi",
+      "description": "Flowing data streams.",
+      "tags": [
+        "digital",
+        "data",
+        "stream",
+        "données"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/data-stream-flow-001.mp3",
+      "wav": "audio/wav/data-stream-flow-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "server-sync-ping-001",
+      "name": "Server Sync Ping 001",
+      "category": "Sci-Fi",
+      "description": "Server synchronization ping.",
+      "tags": [
+        "digital",
+        "server",
+        "sync",
+        "serveur"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/server-sync-ping-001.mp3",
+      "wav": "audio/wav/server-sync-ping-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "firewall-deflect-001",
+      "name": "Firewall Deflect 001",
+      "category": "Sci-Fi",
+      "description": "Firewall deflecting attack.",
+      "tags": [
+        "digital",
+        "firewall",
+        "security",
+        "pare-feu"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/firewall-deflect-001.mp3",
+      "wav": "audio/wav/firewall-deflect-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "encryption-unlock-001",
+      "name": "Encryption Unlock 001",
+      "category": "Sci-Fi",
+      "description": "Unlocking encryption.",
+      "tags": [
+        "digital",
+        "encryption",
+        "chiffrement"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/encryption-unlock-001.mp3",
+      "wav": "audio/wav/encryption-unlock-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "hologram-glitch-001",
+      "name": "Hologram Glitch 001",
+      "category": "Sci-Fi",
+      "description": "Hologram glitching.",
+      "tags": [
+        "digital",
+        "hologram",
+        "hologramme"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/hologram-glitch-001.mp3",
+      "wav": "audio/wav/hologram-glitch-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "quantum-computer-hum-001",
+      "name": "Quantum Computer Hum 001",
+      "category": "Sci-Fi",
+      "description": "Quantum computer humming.",
+      "tags": [
+        "digital",
+        "quantum",
+        "quantique"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/quantum-computer-hum-001.mp3",
+      "wav": "audio/wav/quantum-computer-hum-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "system-overload-001",
+      "name": "System Overload 001",
+      "category": "Sci-Fi",
+      "description": "System overloading.",
+      "tags": [
+        "digital",
+        "system",
+        "système"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/system-overload-001.mp3",
+      "wav": "audio/wav/system-overload-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "neural-network-connect-001",
+      "name": "Neural Network Connect 001",
+      "category": "Sci-Fi",
+      "description": "Neural network connecting.",
+      "tags": [
+        "digital",
+        "neural",
+        "réseau"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/neural-network-connect-001.mp3",
+      "wav": "audio/wav/neural-network-connect-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "digital-footprint-001",
+      "name": "Digital Footprint 001",
+      "category": "Sci-Fi",
+      "description": "Digital footprint trace.",
+      "tags": [
+        "digital",
+        "footprint",
+        "trace"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/digital-footprint-001.mp3",
+      "wav": "audio/wav/digital-footprint-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "cyber-deck-boot-001",
+      "name": "Cyber Deck Boot 001",
+      "category": "Sci-Fi",
+      "description": "Cyber deck booting.",
+      "tags": [
+        "digital",
+        "cyber",
+        "boot"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/cyber-deck-boot-001.mp3",
+      "wav": "audio/wav/cyber-deck-boot-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "data-corruption-001",
+      "name": "Data Corruption 001",
+      "category": "Sci-Fi",
+      "description": "Corrupted data.",
+      "tags": [
+        "digital",
+        "corruption",
+        "corruption"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/data-corruption-001.mp3",
+      "wav": "audio/wav/data-corruption-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "satellite-uplink-001",
+      "name": "Satellite Uplink 001",
+      "category": "Sci-Fi",
+      "description": "Satellite uplink.",
+      "tags": [
+        "digital",
+        "satellite",
+        "satellite"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/satellite-uplink-001.mp3",
+      "wav": "audio/wav/satellite-uplink-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "biometric-scan-pass-001",
+      "name": "Biometric Scan Pass 001",
+      "category": "Sci-Fi",
+      "description": "Biometric scan success.",
+      "tags": [
+        "digital",
+        "biometric",
+        "biométrie"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/biometric-scan-pass-001.mp3",
+      "wav": "audio/wav/biometric-scan-pass-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "biometric-scan-fail-001",
+      "name": "Biometric Scan Fail 001",
+      "category": "Sci-Fi",
+      "description": "Biometric scan failed.",
+      "tags": [
+        "digital",
+        "biometric",
+        "biométrie"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/biometric-scan-fail-001.mp3",
+      "wav": "audio/wav/biometric-scan-fail-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "drone-connect-001",
+      "name": "Drone Connect 001",
+      "category": "Sci-Fi",
+      "description": "Connecting to a drone.",
+      "tags": [
+        "digital",
+        "drone",
+        "drone"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/drone-connect-001.mp3",
+      "wav": "audio/wav/drone-connect-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "smart-device-activate-001",
+      "name": "Smart Device Activate 001",
+      "category": "Sci-Fi",
+      "description": "Smart device activating.",
+      "tags": [
+        "digital",
+        "smart",
+        "intelligent"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/smart-device-activate-001.mp3",
+      "wav": "audio/wav/smart-device-activate-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "signal-jammer-001",
+      "name": "Signal Jammer 001",
+      "category": "Sci-Fi",
+      "description": "Signal jammer active.",
+      "tags": [
+        "digital",
+        "jammer",
+        "brouilleur"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/signal-jammer-001.mp3",
+      "wav": "audio/wav/signal-jammer-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "battery-recharge-001",
+      "name": "Battery Recharge 001",
+      "category": "Sci-Fi",
+      "description": "Battery recharging.",
+      "tags": [
+        "digital",
+        "battery",
+        "batterie"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/battery-recharge-001.mp3",
+      "wav": "audio/wav/battery-recharge-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "power-grid-surge-001",
+      "name": "Power Grid Surge 001",
+      "category": "Sci-Fi",
+      "description": "Power grid surge.",
+      "tags": [
+        "digital",
+        "power",
+        "énergie"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/power-grid-surge-001.mp3",
+      "wav": "audio/wav/power-grid-surge-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "wireless-charge-001",
+      "name": "Wireless Charge 001",
+      "category": "Sci-Fi",
+      "description": "Wireless charging.",
+      "tags": [
+        "digital",
+        "wireless",
+        "sans-fil"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/wireless-charge-001.mp3",
+      "wav": "audio/wav/wireless-charge-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "cyber-attack-alert-001",
+      "name": "Cyber Attack Alert 001",
+      "category": "Sci-Fi",
+      "description": "Cyber attack warning.",
+      "tags": [
+        "digital",
+        "attack",
+        "attaque"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/cyber-attack-alert-001.mp3",
+      "wav": "audio/wav/cyber-attack-alert-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "mainframe-access-001",
+      "name": "Mainframe Access 001",
+      "category": "Sci-Fi",
+      "description": "Accessing the mainframe.",
+      "tags": [
+        "digital",
+        "mainframe",
+        "serveur"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/mainframe-access-001.mp3",
+      "wav": "audio/wav/mainframe-access-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "virtual-reality-enter-001",
+      "name": "Virtual Reality Enter 001",
+      "category": "Sci-Fi",
+      "description": "Entering VR.",
+      "tags": [
+        "digital",
+        "vr",
+        "réalité"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/virtual-reality-enter-001.mp3",
+      "wav": "audio/wav/virtual-reality-enter-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "virtual-reality-exit-001",
+      "name": "Virtual Reality Exit 001",
+      "category": "Sci-Fi",
+      "description": "Exiting VR.",
+      "tags": [
+        "digital",
+        "vr",
+        "réalité"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/virtual-reality-exit-001.mp3",
+      "wav": "audio/wav/virtual-reality-exit-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "digital-map-render-001",
+      "name": "Digital Map Render 001",
+      "category": "Sci-Fi",
+      "description": "Rendering a digital map.",
+      "tags": [
+        "digital",
+        "map",
+        "carte"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/digital-map-render-001.mp3",
+      "wav": "audio/wav/digital-map-render-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
     }
   ]
 }

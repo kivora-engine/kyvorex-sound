@@ -3838,6 +3838,446 @@
       "previewMode": "procedural",
       "wavMode": "file",
       "mp3Mode": "file"
+    },
+    {
+      "id": "ancient-gear-turn-001",
+      "name": "Ancient Gear Turn 001",
+      "category": "Gameplay",
+      "description": "Ancient gears turning.",
+      "tags": [
+        "rare",
+        "ancient",
+        "ancien"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/ancient-gear-turn-001.mp3",
+      "wav": "audio/wav/ancient-gear-turn-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "magical-trap-snap-001",
+      "name": "Magical Trap Snap 001",
+      "category": "Gameplay",
+      "description": "A magical trap snapping.",
+      "tags": [
+        "rare",
+        "trap",
+        "piège"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/magical-trap-snap-001.mp3",
+      "wav": "audio/wav/magical-trap-snap-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "zero-gravity-float-001",
+      "name": "Zero Gravity Float 001",
+      "category": "Gameplay",
+      "description": "Floating in zero gravity.",
+      "tags": [
+        "rare",
+        "gravity",
+        "gravité"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/zero-gravity-float-001.mp3",
+      "wav": "audio/wav/zero-gravity-float-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "time-loop-echo-001",
+      "name": "Time Loop Echo 001",
+      "category": "Gameplay",
+      "description": "Echoing time loop.",
+      "tags": [
+        "rare",
+        "time",
+        "temps"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/time-loop-echo-001.mp3",
+      "wav": "audio/wav/time-loop-echo-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "artifact-discovery-001",
+      "name": "Artifact Discovery 001",
+      "category": "Gameplay",
+      "description": "Discovering an artifact.",
+      "tags": [
+        "rare",
+        "artifact",
+        "artefact"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/artifact-discovery-001.mp3",
+      "wav": "audio/wav/artifact-discovery-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "alien-flora-bloom-001",
+      "name": "Alien Flora Bloom 001",
+      "category": "Gameplay",
+      "description": "Alien flora blooming.",
+      "tags": [
+        "rare",
+        "alien",
+        "extraterrestre"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/alien-flora-bloom-001.mp3",
+      "wav": "audio/wav/alien-flora-bloom-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "futuristic-surgery-001",
+      "name": "Futuristic Surgery 001",
+      "category": "Gameplay",
+      "description": "High-tech surgery.",
+      "tags": [
+        "rare",
+        "surgery",
+        "chirurgie"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/futuristic-surgery-001.mp3",
+      "wav": "audio/wav/futuristic-surgery-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "plasma-welding-001",
+      "name": "Plasma Welding 001",
+      "category": "Gameplay",
+      "description": "Welding with plasma.",
+      "tags": [
+        "rare",
+        "plasma",
+        "plasma"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/plasma-welding-001.mp3",
+      "wav": "audio/wav/plasma-welding-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "ion-thruster-ignite-001",
+      "name": "Ion Thruster Ignite 001",
+      "category": "Gameplay",
+      "description": "Igniting ion thrusters.",
+      "tags": [
+        "rare",
+        "ion",
+        "propulsion"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/ion-thruster-ignite-001.mp3",
+      "wav": "audio/wav/ion-thruster-ignite-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "cryo-pod-open-001",
+      "name": "Cryo Pod Open 001",
+      "category": "Gameplay",
+      "description": "Opening a cryo pod.",
+      "tags": [
+        "rare",
+        "cryo",
+        "cryogénie"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/cryo-pod-open-001.mp3",
+      "wav": "audio/wav/cryo-pod-open-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "cryo-pod-close-001",
+      "name": "Cryo Pod Close 001",
+      "category": "Gameplay",
+      "description": "Closing a cryo pod.",
+      "tags": [
+        "rare",
+        "cryo",
+        "cryogénie"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/cryo-pod-close-001.mp3",
+      "wav": "audio/wav/cryo-pod-close-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "sonic-screwdriver-001",
+      "name": "Sonic Screwdriver 001",
+      "category": "Gameplay",
+      "description": "Sonic screwdriver hum.",
+      "tags": [
+        "rare",
+        "sonic",
+        "sonique"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/sonic-screwdriver-001.mp3",
+      "wav": "audio/wav/sonic-screwdriver-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "gravity-well-generate-001",
+      "name": "Gravity Well Generate 001",
+      "category": "Gameplay",
+      "description": "Generating a gravity well.",
+      "tags": [
+        "rare",
+        "gravity",
+        "gravité"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/gravity-well-generate-001.mp3",
+      "wav": "audio/wav/gravity-well-generate-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "space-station-alarm-001",
+      "name": "Space Station Alarm 001",
+      "category": "Gameplay",
+      "description": "Space station alarm.",
+      "tags": [
+        "rare",
+        "space",
+        "espace"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/space-station-alarm-001.mp3",
+      "wav": "audio/wav/space-station-alarm-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "aura-reveal-001",
+      "name": "Aura Reveal 001",
+      "category": "Gameplay",
+      "description": "Revealing an aura.",
+      "tags": [
+        "rare",
+        "aura",
+        "aura"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/aura-reveal-001.mp3",
+      "wav": "audio/wav/aura-reveal-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "runic-translation-001",
+      "name": "Runic Translation 001",
+      "category": "Gameplay",
+      "description": "Translating runes.",
+      "tags": [
+        "rare",
+        "rune",
+        "rune"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/runic-translation-001.mp3",
+      "wav": "audio/wav/runic-translation-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "dimensional-fold-001",
+      "name": "Dimensional Fold 001",
+      "category": "Gameplay",
+      "description": "Folding dimensions.",
+      "tags": [
+        "rare",
+        "dimension",
+        "dimension"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/dimensional-fold-001.mp3",
+      "wav": "audio/wav/dimensional-fold-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "elevator-mechanism-001",
+      "name": "Elevator Mechanism 001",
+      "category": "Gameplay",
+      "description": "Elevator mechanism.",
+      "tags": [
+        "rare",
+        "elevator",
+        "ascenseur"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/elevator-mechanism-001.mp3",
+      "wav": "audio/wav/elevator-mechanism-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "trapdoor-trigger-001",
+      "name": "Trapdoor Trigger 001",
+      "category": "Gameplay",
+      "description": "Triggering a trapdoor.",
+      "tags": [
+        "rare",
+        "trapdoor",
+        "trappe"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/trapdoor-trigger-001.mp3",
+      "wav": "audio/wav/trapdoor-trigger-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "laser-grid-activate-001",
+      "name": "Laser Grid Activate 001",
+      "category": "Gameplay",
+      "description": "Activating a laser grid.",
+      "tags": [
+        "rare",
+        "laser",
+        "laser"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/laser-grid-activate-001.mp3",
+      "wav": "audio/wav/laser-grid-activate-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "biometric-lock-001",
+      "name": "Biometric Lock 001",
+      "category": "Gameplay",
+      "description": "Biometric lock engaging.",
+      "tags": [
+        "rare",
+        "lock",
+        "verrou"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/biometric-lock-001.mp3",
+      "wav": "audio/wav/biometric-lock-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "alien-communication-001",
+      "name": "Alien Communication 001",
+      "category": "Gameplay",
+      "description": "Alien communication signal.",
+      "tags": [
+        "rare",
+        "alien",
+        "extraterrestre"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/alien-communication-001.mp3",
+      "wav": "audio/wav/alien-communication-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
     }
   ]
 }
