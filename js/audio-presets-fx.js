@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('fx-time-freeze-001', { duration: 0.90, build: function(E) { E.tone({ freq: 2000, freqEnd: 100, dur: 0.80, type: 'sawtooth', gain: 0.40, attack: 0.050 }); } });
+  KY.audio.registerPreset('fx-time-rewind-001', { duration: 0.70, build: function(E) { E.tone({ freq: 100, freqEnd: 1500, dur: 0.60, type: 'sine', gain: 0.40, attack: 0.050 }); } });
+  KY.audio.registerPreset('fx-gravity-shift-001', { duration: 0.80, build: function(E) { E.tone({ freq: 800, freqEnd: 100, dur: 0.70, type: 'triangle', gain: 0.40, attack: 0.050 }); } });
+  KY.audio.registerPreset('fx-reality-glitch-001', { duration: 0.10, build: function(E) { E.noise({ dur: 0.05, gain: 0.50, seed: 1100, filter: { type: 'highpass', freq: 3000 } }); E.tone({ freq: 1000, dur: 0.05, type: 'square', gain: 0.40, attack: 0.001 }); } });
+  KY.audio.registerPreset('fx-cloaking-device-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.30, seed: 1101, filter: { type: 'lowpass', freq: 800 } }); E.tone({ freq: 800, freqEnd: 200, dur: 0.70, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('fx-mind-control-001', { duration: 1.10, build: function(E) { E.tone({ freq: 100, freqEnd: 200, dur: 1.00, type: 'sine', gain: 0.30, attack: 0.100 }); } });
+  KY.audio.registerPreset('fx-illusion-break-001', { duration: 0.30, build: function(E) { E.noise({ dur: 0.20, gain: 0.50, seed: 1102, filter: { type: 'highpass', freq: 4000 } }); E.tone({ freq: 3000, dur: 0.15, type: 'sine', gain: 0.30, attack: 0.001 }); } });
+  KY.audio.registerPreset('fx-size-change-001', { duration: 0.70, build: function(E) { E.tone({ freq: 200, freqEnd: 800, dur: 0.60, type: 'sawtooth', gain: 0.40, attack: 0.050 }); } });
+  KY.audio.registerPreset('fx-elemental-fusion-001', { duration: 0.60, build: function(E) { E.tone({ freq: 400, freqEnd: 800, dur: 0.50, type: 'sine', gain: 0.30, when: 0.00, attack: 0.050 }); E.tone({ freq: 800, freqEnd: 400, dur: 0.50, type: 'sine', gain: 0.30, when: 0.00, attack: 0.050 }); } });
+  KY.audio.registerPreset('fx-arcane-barrier-001', { duration: 1.10, build: function(E) { E.tone({ freq: 80, dur: 1.00, type: 'sine', gain: 0.40, attack: 0.010 }); E.tone({ freq: 2000, dur: 0.80, type: 'sine', gain: 0.10, attack: 0.050 }); } });
+  KY.audio.registerPreset('fx-mana-drain-001', { duration: 0.90, build: function(E) { E.tone({ freq: 1000, freqEnd: 200, dur: 0.80, type: 'sine', gain: 0.40, attack: 0.050 }); } });
+  KY.audio.registerPreset('fx-rune-activate-001', { duration: 0.60, build: function(E) { E.noise({ dur: 0.50, gain: 0.30, seed: 1103, filter: { type: 'bandpass', freq: 1000 } }); E.tone({ freq: 2500, dur: 0.20, type: 'sine', gain: 0.30, when: 0.30, attack: 0.001 }); } });
+  KY.audio.registerPreset('fx-dimension-rift-001', { duration: 1.10, build: function(E) { E.noise({ dur: 1.00, gain: 0.50, seed: 1104, filter: { type: 'lowpass', freq: 600 } }); E.tone({ freq: 40, dur: 1.00, type: 'sine', gain: 0.40, attack: 0.050 }); } });
+  KY.audio.registerPreset('fx-telekinesis-001', { duration: 0.90, build: function(E) { E.tone({ freq: 300, freqEnd: 900, dur: 0.80, type: 'sine', gain: 0.40, attack: 0.050 }); } });
+  KY.audio.registerPreset('fx-invisibility-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.30, seed: 1105, filter: { type: 'lowpass', freq: 400 } }); } });
+  KY.audio.registerPreset('fx-possession-001', { duration: 1.10, build: function(E) { E.tone({ freq: 150, freqEnd: 100, dur: 1.00, type: 'sawtooth', gain: 0.40, attack: 0.050 }); } });
+  KY.audio.registerPreset('fx-healing-aura-001', { duration: 1.10, build: function(E) { E.tone({ freq: 400, freqEnd: 600, dur: 1.00, type: 'sine', gain: 0.30, attack: 0.100 }); } });
+  KY.audio.registerPreset('fx-curse-applied-001', { duration: 0.90, build: function(E) { E.tone({ freq: 200, freqEnd: 150, dur: 0.80, type: 'sawtooth', gain: 0.40, attack: 0.050 }); } });
+  KY.audio.registerPreset('fx-blessing-received-001', { duration: 1.10, build: function(E) { E.tone({ freq: 600, freqEnd: 800, dur: 1.00, type: 'sine', gain: 0.30, attack: 0.100 }); } });
+  KY.audio.registerPreset('fx-weapon-enchant-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.30, seed: 1106, filter: { type: 'bandpass', freq: 2000 } }); E.tone({ freq: 3000, dur: 0.20, type: 'sine', gain: 0.20, when: 0.10, attack: 0.010 }); } });
+  KY.audio.registerPreset('fx-armor-break-001', { duration: 0.30, build: function(E) { E.noise({ dur: 0.20, gain: 0.50, seed: 1107, filter: { type: 'bandpass', freq: 1500 } }); E.tone({ freq: 100, freqEnd: 50, dur: 0.20, type: 'sine', gain: 0.40, attack: 0.010 }); } });
+  KY.audio.registerPreset('fx-spirit-summon-001', { duration: 1.10, build: function(E) { E.noise({ dur: 1.00, gain: 0.40, seed: 1108, filter: { type: 'highpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('fx-vortex-creation-001', { duration: 0.90, build: function(E) { E.tone({ freq: 100, freqEnd: 300, dur: 0.80, type: 'sawtooth', gain: 0.40, attack: 0.050 }); } });
+  KY.audio.registerPreset('fx-levitation-001', { duration: 1.10, build: function(E) { E.tone({ freq: 300, freqEnd: 600, dur: 1.00, type: 'sine', gain: 0.30, attack: 0.100 }); } });
+  KY.audio.registerPreset('fx-mind-blast-001', { duration: 0.30, build: function(E) { E.noise({ dur: 0.20, gain: 0.60, seed: 1109, filter: { type: 'highpass', freq: 3000 } }); E.tone({ freq: 2000, dur: 0.10, type: 'square', gain: 0.40, attack: 0.001 }); } });
+})();

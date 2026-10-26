@@ -1144,6 +1144,506 @@
       "previewMode": "procedural",
       "wavMode": "file",
       "mp3Mode": "file"
+    },
+    {
+      "id": "fx-time-freeze-001",
+      "name": "Time Freeze 001",
+      "category": "Sci-Fi",
+      "description": "Time freezing effect.",
+      "tags": [
+        "fx",
+        "time",
+        "temps"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-time-freeze-001.mp3",
+      "wav": "audio/wav/fx-time-freeze-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-time-rewind-001",
+      "name": "Time Rewind 001",
+      "category": "Sci-Fi",
+      "description": "Time rewinding effect.",
+      "tags": [
+        "fx",
+        "time",
+        "temps"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-time-rewind-001.mp3",
+      "wav": "audio/wav/fx-time-rewind-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-gravity-shift-001",
+      "name": "Gravity Shift 001",
+      "category": "Sci-Fi",
+      "description": "Shifting gravity.",
+      "tags": [
+        "fx",
+        "gravity",
+        "gravité"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-gravity-shift-001.mp3",
+      "wav": "audio/wav/fx-gravity-shift-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-reality-glitch-001",
+      "name": "Reality Glitch 001",
+      "category": "Sci-Fi",
+      "description": "Digital reality glitch.",
+      "tags": [
+        "fx",
+        "glitch",
+        "réalité"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-reality-glitch-001.mp3",
+      "wav": "audio/wav/fx-reality-glitch-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-cloaking-device-001",
+      "name": "Cloaking Device 001",
+      "category": "Sci-Fi",
+      "description": "Activating cloak.",
+      "tags": [
+        "fx",
+        "cloak",
+        "invisibilité"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-cloaking-device-001.mp3",
+      "wav": "audio/wav/fx-cloaking-device-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-mind-control-001",
+      "name": "Mind Control 001",
+      "category": "Sci-Fi",
+      "description": "Mind control wave.",
+      "tags": [
+        "fx",
+        "mind",
+        "esprit"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-mind-control-001.mp3",
+      "wav": "audio/wav/fx-mind-control-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-illusion-break-001",
+      "name": "Illusion Break 001",
+      "category": "Sci-Fi",
+      "description": "Breaking an illusion.",
+      "tags": [
+        "fx",
+        "illusion",
+        "illusion"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-illusion-break-001.mp3",
+      "wav": "audio/wav/fx-illusion-break-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-size-change-001",
+      "name": "Size Change 001",
+      "category": "Sci-Fi",
+      "description": "Changing size.",
+      "tags": [
+        "fx",
+        "size",
+        "taille"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-size-change-001.mp3",
+      "wav": "audio/wav/fx-size-change-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-elemental-fusion-001",
+      "name": "Elemental Fusion 001",
+      "category": "Sci-Fi",
+      "description": "Fusing elements.",
+      "tags": [
+        "fx",
+        "element",
+        "élément"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-elemental-fusion-001.mp3",
+      "wav": "audio/wav/fx-elemental-fusion-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-arcane-barrier-001",
+      "name": "Arcane Barrier 001",
+      "category": "Sci-Fi",
+      "description": "Arcane shield.",
+      "tags": [
+        "fx",
+        "magic",
+        "barrière"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-arcane-barrier-001.mp3",
+      "wav": "audio/wav/fx-arcane-barrier-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-mana-drain-001",
+      "name": "Mana Drain 001",
+      "category": "Sci-Fi",
+      "description": "Draining mana.",
+      "tags": [
+        "fx",
+        "mana",
+        "mana"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-mana-drain-001.mp3",
+      "wav": "audio/wav/fx-mana-drain-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-rune-activate-001",
+      "name": "Rune Activate 001",
+      "category": "Sci-Fi",
+      "description": "Activating a rune.",
+      "tags": [
+        "fx",
+        "rune",
+        "rune"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-rune-activate-001.mp3",
+      "wav": "audio/wav/fx-rune-activate-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-dimension-rift-001",
+      "name": "Dimension Rift 001",
+      "category": "Sci-Fi",
+      "description": "Opening a rift.",
+      "tags": [
+        "fx",
+        "dimension",
+        "faille"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-dimension-rift-001.mp3",
+      "wav": "audio/wav/fx-dimension-rift-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-telekinesis-001",
+      "name": "Telekinesis 001",
+      "category": "Sci-Fi",
+      "description": "Using telekinesis.",
+      "tags": [
+        "fx",
+        "telekinesis",
+        "télékinésie"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-telekinesis-001.mp3",
+      "wav": "audio/wav/fx-telekinesis-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-invisibility-001",
+      "name": "Invisibility 001",
+      "category": "Sci-Fi",
+      "description": "Fading into invisibility.",
+      "tags": [
+        "fx",
+        "invisible",
+        "invisible"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-invisibility-001.mp3",
+      "wav": "audio/wav/fx-invisibility-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-possession-001",
+      "name": "Possession 001",
+      "category": "Sci-Fi",
+      "description": "Demonic possession.",
+      "tags": [
+        "fx",
+        "possession",
+        "possession"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-possession-001.mp3",
+      "wav": "audio/wav/fx-possession-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-healing-aura-001",
+      "name": "Healing Aura 001",
+      "category": "Sci-Fi",
+      "description": "Healing aura.",
+      "tags": [
+        "fx",
+        "heal",
+        "soin"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-healing-aura-001.mp3",
+      "wav": "audio/wav/fx-healing-aura-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-curse-applied-001",
+      "name": "Curse Applied 001",
+      "category": "Sci-Fi",
+      "description": "Applying a curse.",
+      "tags": [
+        "fx",
+        "curse",
+        "malédiction"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-curse-applied-001.mp3",
+      "wav": "audio/wav/fx-curse-applied-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-blessing-received-001",
+      "name": "Blessing Received 001",
+      "category": "Sci-Fi",
+      "description": "Receiving a blessing.",
+      "tags": [
+        "fx",
+        "blessing",
+        "bénédiction"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-blessing-received-001.mp3",
+      "wav": "audio/wav/fx-blessing-received-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-weapon-enchant-001",
+      "name": "Weapon Enchant 001",
+      "category": "Sci-Fi",
+      "description": "Enchanting a weapon.",
+      "tags": [
+        "fx",
+        "enchant",
+        "enchantement"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-weapon-enchant-001.mp3",
+      "wav": "audio/wav/fx-weapon-enchant-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-armor-break-001",
+      "name": "Armor Break 001",
+      "category": "Sci-Fi",
+      "description": "Breaking magical armor.",
+      "tags": [
+        "fx",
+        "armor",
+        "armure"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-armor-break-001.mp3",
+      "wav": "audio/wav/fx-armor-break-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-spirit-summon-001",
+      "name": "Spirit Summon 001",
+      "category": "Sci-Fi",
+      "description": "Summoning a spirit.",
+      "tags": [
+        "fx",
+        "spirit",
+        "esprit"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-spirit-summon-001.mp3",
+      "wav": "audio/wav/fx-spirit-summon-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-vortex-creation-001",
+      "name": "Vortex Creation 001",
+      "category": "Sci-Fi",
+      "description": "Creating a vortex.",
+      "tags": [
+        "fx",
+        "vortex",
+        "vortex"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-vortex-creation-001.mp3",
+      "wav": "audio/wav/fx-vortex-creation-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-levitation-001",
+      "name": "Levitation 001",
+      "category": "Sci-Fi",
+      "description": "Levitating.",
+      "tags": [
+        "fx",
+        "levitate",
+        "lévitation"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-levitation-001.mp3",
+      "wav": "audio/wav/fx-levitation-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "fx-mind-blast-001",
+      "name": "Mind Blast 001",
+      "category": "Sci-Fi",
+      "description": "Psychic mind blast.",
+      "tags": [
+        "fx",
+        "mind",
+        "esprit"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/fx-mind-blast-001.mp3",
+      "wav": "audio/wav/fx-mind-blast-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
     }
   ]
 }

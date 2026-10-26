@@ -117,9 +117,9 @@ def run_official(sync_catalog, new_only):
     tag = "official"
     
     if new_only:
-        from official_presets_ind import OFFICIAL_PRESETS_IND
-        from official_presets_craft import OFFICIAL_PRESETS_CRAFT
-        presets_to_run = {**OFFICIAL_PRESETS_IND, **OFFICIAL_PRESETS_CRAFT}
+        from official_presets_env import OFFICIAL_PRESETS_ENV
+        from official_presets_fx import OFFICIAL_PRESETS_FX
+        presets_to_run = {**OFFICIAL_PRESETS_ENV, **OFFICIAL_PRESETS_FX}
         tag = "new"
     else:
         from official_presets import OFFICIAL_PRESETS
@@ -136,13 +136,16 @@ def run_official(sync_catalog, new_only):
         from official_presets_tools import OFFICIAL_PRESETS_TOOLS
         from official_presets_ind import OFFICIAL_PRESETS_IND
         from official_presets_craft import OFFICIAL_PRESETS_CRAFT
+        from official_presets_env import OFFICIAL_PRESETS_ENV
+        from official_presets_fx import OFFICIAL_PRESETS_FX
         
         presets_to_run = {
             **OFFICIAL_PRESETS, **OFFICIAL_PRESETS_EXTRA, **OFFICIAL_PRESETS_QUESTS,
             **OFFICIAL_PRESETS_MUSIC, **OFFICIAL_PRESETS_BOARD, **OFFICIAL_PRESETS_EVENTS,
             **OFFICIAL_PRESETS_SCIENCE, **OFFICIAL_PRESETS_ADV_UI, **OFFICIAL_PRESETS_TERRAIN,
             **OFFICIAL_PRESETS_ANIMALS, **OFFICIAL_PRESETS_MECH, **OFFICIAL_PRESETS_TOOLS,
-            **OFFICIAL_PRESETS_IND, **OFFICIAL_PRESETS_CRAFT
+            **OFFICIAL_PRESETS_IND, **OFFICIAL_PRESETS_CRAFT, **OFFICIAL_PRESETS_ENV,
+            **OFFICIAL_PRESETS_FX
         }
         tag = "all"
 

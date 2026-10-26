@@ -853,6 +853,509 @@
       "previewMode": "procedural",
       "wavMode": "file",
       "mp3Mode": "file"
+    },
+    {
+      "id": "env-avalanche-001",
+      "name": "Avalanche 001",
+      "category": "Environment",
+      "description": "Rumbling avalanche.",
+      "tags": [
+        "nature",
+        "avalanche",
+        "snow",
+        "neige"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-avalanche-001.mp3",
+      "wav": "audio/wav/env-avalanche-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-geyser-eruption-001",
+      "name": "Geyser Eruption 001",
+      "category": "Environment",
+      "description": "Erupting geyser.",
+      "tags": [
+        "nature",
+        "geyser",
+        "water",
+        "eau"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-geyser-eruption-001.mp3",
+      "wav": "audio/wav/env-geyser-eruption-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-earthquake-rumble-001",
+      "name": "Earthquake Rumble 001",
+      "category": "Environment",
+      "description": "Deep earthquake rumble.",
+      "tags": [
+        "nature",
+        "earthquake",
+        "tremblement"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-earthquake-rumble-001.mp3",
+      "wav": "audio/wav/env-earthquake-rumble-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-desert-wind-001",
+      "name": "Desert Wind 001",
+      "category": "Environment",
+      "description": "Whistling desert wind.",
+      "tags": [
+        "nature",
+        "desert",
+        "désert"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-desert-wind-001.mp3",
+      "wav": "audio/wav/env-desert-wind-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-glacier-crack-001",
+      "name": "Glacier Crack 001",
+      "category": "Environment",
+      "description": "Ice cracking.",
+      "tags": [
+        "nature",
+        "glacier",
+        "ice",
+        "glace"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-glacier-crack-001.mp3",
+      "wav": "audio/wav/env-glacier-crack-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-lava-bubble-001",
+      "name": "Lava Bubble 001",
+      "category": "Environment",
+      "description": "Bubbling lava.",
+      "tags": [
+        "nature",
+        "lava",
+        "lave"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-lava-bubble-001.mp3",
+      "wav": "audio/wav/env-lava-bubble-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-mud-bubble-001",
+      "name": "Mud Bubble 001",
+      "category": "Environment",
+      "description": "Bubbling mud.",
+      "tags": [
+        "nature",
+        "mud",
+        "boue"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-mud-bubble-001.mp3",
+      "wav": "audio/wav/env-mud-bubble-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-waterfall-001",
+      "name": "Waterfall 001",
+      "category": "Environment",
+      "description": "Heavy waterfall.",
+      "tags": [
+        "nature",
+        "water",
+        "cascade"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-waterfall-001.mp3",
+      "wav": "audio/wav/env-waterfall-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-quicksand-001",
+      "name": "Quicksand 001",
+      "category": "Environment",
+      "description": "Sinking quicksand.",
+      "tags": [
+        "nature",
+        "quicksand",
+        "sables"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-quicksand-001.mp3",
+      "wav": "audio/wav/env-quicksand-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-snow-crunch-001",
+      "name": "Snow Crunch 001",
+      "category": "Environment",
+      "description": "Crunching snow.",
+      "tags": [
+        "nature",
+        "snow",
+        "neige"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-snow-crunch-001.mp3",
+      "wav": "audio/wav/env-snow-crunch-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-swamp-ambience-001",
+      "name": "Swamp Ambience 001",
+      "category": "Environment",
+      "description": "Murky swamp ambience.",
+      "tags": [
+        "nature",
+        "swamp",
+        "marais"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-swamp-ambience-001.mp3",
+      "wav": "audio/wav/env-swamp-ambience-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-bamboo-creak-001",
+      "name": "Bamboo Creak 001",
+      "category": "Environment",
+      "description": "Creaking bamboo.",
+      "tags": [
+        "nature",
+        "bamboo",
+        "bambou"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-bamboo-creak-001.mp3",
+      "wav": "audio/wav/env-bamboo-creak-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-sandstorm-001",
+      "name": "Sandstorm 001",
+      "category": "Environment",
+      "description": "Harsh sandstorm.",
+      "tags": [
+        "nature",
+        "sandstorm",
+        "tempête"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-sandstorm-001.mp3",
+      "wav": "audio/wav/env-sandstorm-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-icicle-fall-001",
+      "name": "Icicle Fall 001",
+      "category": "Environment",
+      "description": "Falling icicle.",
+      "tags": [
+        "nature",
+        "ice",
+        "glace"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-icicle-fall-001.mp3",
+      "wav": "audio/wav/env-icicle-fall-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-canyon-echo-001",
+      "name": "Canyon Echo 001",
+      "category": "Environment",
+      "description": "Echoing canyon.",
+      "tags": [
+        "nature",
+        "canyon",
+        "écho"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-canyon-echo-001.mp3",
+      "wav": "audio/wav/env-canyon-echo-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-river-flow-001",
+      "name": "River Flow 001",
+      "category": "Environment",
+      "description": "Flowing river.",
+      "tags": [
+        "nature",
+        "river",
+        "rivière"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-river-flow-001.mp3",
+      "wav": "audio/wav/env-river-flow-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-forest-fire-001",
+      "name": "Forest Fire 001",
+      "category": "Environment",
+      "description": "Raging forest fire.",
+      "tags": [
+        "nature",
+        "fire",
+        "feu"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-forest-fire-001.mp3",
+      "wav": "audio/wav/env-forest-fire-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-hail-storm-001",
+      "name": "Hail Storm 001",
+      "category": "Environment",
+      "description": "Hail impacts.",
+      "tags": [
+        "nature",
+        "hail",
+        "grêle"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-hail-storm-001.mp3",
+      "wav": "audio/wav/env-hail-storm-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-tornado-001",
+      "name": "Tornado 001",
+      "category": "Environment",
+      "description": "Roaring tornado.",
+      "tags": [
+        "nature",
+        "tornado",
+        "tornade"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-tornado-001.mp3",
+      "wav": "audio/wav/env-tornado-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-tide-pool-001",
+      "name": "Tide Pool 001",
+      "category": "Environment",
+      "description": "Tide pool water.",
+      "tags": [
+        "nature",
+        "water",
+        "eau"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-tide-pool-001.mp3",
+      "wav": "audio/wav/env-tide-pool-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-rock-fall-001",
+      "name": "Rock Fall 001",
+      "category": "Environment",
+      "description": "Falling rocks.",
+      "tags": [
+        "nature",
+        "rock",
+        "roche"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-rock-fall-001.mp3",
+      "wav": "audio/wav/env-rock-fall-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-volcanic-vent-001",
+      "name": "Volcanic Vent 001",
+      "category": "Environment",
+      "description": "Hissing volcanic vent.",
+      "tags": [
+        "nature",
+        "volcano",
+        "volcan"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-volcanic-vent-001.mp3",
+      "wav": "audio/wav/env-volcanic-vent-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-blizzard-001",
+      "name": "Blizzard 001",
+      "category": "Environment",
+      "description": "Howling blizzard.",
+      "tags": [
+        "nature",
+        "blizzard",
+        "neige"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-blizzard-001.mp3",
+      "wav": "audio/wav/env-blizzard-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-jungle-rain-001",
+      "name": "Jungle Rain 001",
+      "category": "Environment",
+      "description": "Heavy jungle rain.",
+      "tags": [
+        "nature",
+        "rain",
+        "pluie"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-jungle-rain-001.mp3",
+      "wav": "audio/wav/env-jungle-rain-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-quarry-blast-001",
+      "name": "Quarry Blast 001",
+      "category": "Environment",
+      "description": "Distant quarry blast.",
+      "tags": [
+        "nature",
+        "blast",
+        "explosion"
+      ],
+      "duration": "1.50s",
+      "date": "2026-10-26",
+      "mp3": "audio/mp3/env-quarry-blast-001.mp3",
+      "wav": "audio/wav/env-quarry-blast-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
     }
   ]
 }
