@@ -22,7 +22,10 @@ const JS_FILES = [
 'audio-presets-tools.js','audio-presets-ind.js','audio-presets-env.js',
 'audio-presets-fx.js','audio-presets-digital.js',
 'audio-presets-rare.js',
-'audio-presets-craft.js',
+'audio-presets-craft.js','audio-presets-epic.js',
+'audio-presets-adv-tech.js',
+'audio-presets-rare-env.js',
+'audio-presets-unique.js',
 'audio-presets-animals.js','audio-presets-quests.js', 'audio-presets-extra.js', 'wav-renderer.js', 'donate.js', 'news.js'
 ];
 const CSS_FILES = ['base.css', 'layout.css', 'components.css', 'responsive.css'];

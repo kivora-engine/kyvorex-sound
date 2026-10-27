@@ -2147,6 +2147,449 @@
       "previewMode": "procedural",
       "wavMode": "file",
       "mp3Mode": "file"
+    },
+    {
+      "id": "epic-transcendence-001",
+      "name": "Epic Transcendence 001",
+      "category": "Sci-Fi",
+      "description": "Ascending to a higher plane.",
+      "tags": [
+        "epic",
+        "transcendence"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-transcendence-001.mp3",
+      "wav": "audio/wav/epic-transcendence-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "epic-portal-destroy-001",
+      "name": "Epic Portal Destroy 001",
+      "category": "Sci-Fi",
+      "description": "Destroying a portal.",
+      "tags": [
+        "epic",
+        "portal",
+        "destroy"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-portal-destroy-001.mp3",
+      "wav": "audio/wav/epic-portal-destroy-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "epic-time-shatter-001",
+      "name": "Epic Time Shatter 001",
+      "category": "Sci-Fi",
+      "description": "Shattering the time stream.",
+      "tags": [
+        "epic",
+        "time",
+        "shatter"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-time-shatter-001.mp3",
+      "wav": "audio/wav/epic-time-shatter-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "epic-energy-overflow-001",
+      "name": "Epic Energy Overflow 001",
+      "category": "Sci-Fi",
+      "description": "Massive energy overflow.",
+      "tags": [
+        "epic",
+        "energy",
+        "overflow"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-energy-overflow-001.mp3",
+      "wav": "audio/wav/epic-energy-overflow-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "epic-multiverse-collapse-001",
+      "name": "Epic Multiverse Collapse 001",
+      "category": "Sci-Fi",
+      "description": "The multiverse collapsing.",
+      "tags": [
+        "epic",
+        "multiverse",
+        "collapse"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-multiverse-collapse-001.mp3",
+      "wav": "audio/wav/epic-multiverse-collapse-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-nanobot-swarm-001",
+      "name": "Tech Nanobot Swarm 001",
+      "category": "Sci-Fi",
+      "description": "Nanobot swarm.",
+      "tags": [
+        "tech",
+        "nanobot",
+        "swarm"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-nanobot-swarm-001.mp3",
+      "wav": "audio/wav/tech-nanobot-swarm-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-antigravity-boot-001",
+      "name": "Tech Antigravity Boot 001",
+      "category": "Sci-Fi",
+      "description": "Antigravity booting.",
+      "tags": [
+        "tech",
+        "antigravity",
+        "boot"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-antigravity-boot-001.mp3",
+      "wav": "audio/wav/tech-antigravity-boot-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-matter-compiler-001",
+      "name": "Tech Matter Compiler 001",
+      "category": "Sci-Fi",
+      "description": "Matter compiling.",
+      "tags": [
+        "tech",
+        "matter",
+        "compiler"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-matter-compiler-001.mp3",
+      "wav": "audio/wav/tech-matter-compiler-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-warp-core-init-001",
+      "name": "Tech Warp Core Init 001",
+      "category": "Sci-Fi",
+      "description": "Warp core initialization.",
+      "tags": [
+        "tech",
+        "warp",
+        "core",
+        "init"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-warp-core-init-001.mp3",
+      "wav": "audio/wav/tech-warp-core-init-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-ai-uplink-001",
+      "name": "Tech AI Uplink 001",
+      "category": "Sci-Fi",
+      "description": "AI uplink connection.",
+      "tags": [
+        "tech",
+        "ai",
+        "uplink"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-ai-uplink-001.mp3",
+      "wav": "audio/wav/tech-ai-uplink-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-hologram-deploy-001",
+      "name": "Tech Hologram Deploy 001",
+      "category": "Sci-Fi",
+      "description": "Hologram deployment.",
+      "tags": [
+        "tech",
+        "hologram",
+        "deploy"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-hologram-deploy-001.mp3",
+      "wav": "audio/wav/tech-hologram-deploy-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-plasma-conduit-001",
+      "name": "Tech Plasma Conduit 001",
+      "category": "Sci-Fi",
+      "description": "Plasma conduit humming.",
+      "tags": [
+        "tech",
+        "plasma",
+        "conduit"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-plasma-conduit-001.mp3",
+      "wav": "audio/wav/tech-plasma-conduit-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-neural-link-001",
+      "name": "Tech Neural Link 001",
+      "category": "Sci-Fi",
+      "description": "Neural link established.",
+      "tags": [
+        "tech",
+        "neural",
+        "link"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-neural-link-001.mp3",
+      "wav": "audio/wav/tech-neural-link-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-energy-siphon-001",
+      "name": "Tech Energy Siphon 001",
+      "category": "Sci-Fi",
+      "description": "Energy siphon.",
+      "tags": [
+        "tech",
+        "energy",
+        "siphon"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-energy-siphon-001.mp3",
+      "wav": "audio/wav/tech-energy-siphon-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-quantum-entangle-001",
+      "name": "Tech Quantum Entangle 001",
+      "category": "Sci-Fi",
+      "description": "Quantum entanglement.",
+      "tags": [
+        "tech",
+        "quantum",
+        "entangle"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-quantum-entangle-001.mp3",
+      "wav": "audio/wav/tech-quantum-entangle-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-phase-shift-001",
+      "name": "Tech Phase Shift 001",
+      "category": "Sci-Fi",
+      "description": "Phase shifting.",
+      "tags": [
+        "tech",
+        "phase",
+        "shift"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-phase-shift-001.mp3",
+      "wav": "audio/wav/tech-phase-shift-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-singularity-form-001",
+      "name": "Tech Singularity Form 001",
+      "category": "Sci-Fi",
+      "description": "Singularity formation.",
+      "tags": [
+        "tech",
+        "singularity",
+        "form"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-singularity-form-001.mp3",
+      "wav": "audio/wav/tech-singularity-form-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-cyber-terraform-001",
+      "name": "Tech Cyber Terraform 001",
+      "category": "Sci-Fi",
+      "description": "Cyber terraforming.",
+      "tags": [
+        "tech",
+        "cyber",
+        "terraform"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-cyber-terraform-001.mp3",
+      "wav": "audio/wav/tech-cyber-terraform-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-drone-squadron-001",
+      "name": "Tech Drone Squadron 001",
+      "category": "Sci-Fi",
+      "description": "Drone squadron flying.",
+      "tags": [
+        "tech",
+        "drone",
+        "squadron"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-drone-squadron-001.mp3",
+      "wav": "audio/wav/tech-drone-squadron-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "tech-system-reboot-prime-001",
+      "name": "Tech System Reboot Prime 001",
+      "category": "Sci-Fi",
+      "description": "Prime system reboot.",
+      "tags": [
+        "tech",
+        "system",
+        "reboot",
+        "prime"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/tech-system-reboot-prime-001.mp3",
+      "wav": "audio/wav/tech-system-reboot-prime-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "unique-cyber-deck-overheat-001",
+      "name": "Unique Cyber Deck Overheat 001",
+      "category": "Sci-Fi",
+      "description": "Cyber deck overheating.",
+      "tags": [
+        "unique",
+        "cyber",
+        "deck",
+        "overheat"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/unique-cyber-deck-overheat-001.mp3",
+      "wav": "audio/wav/unique-cyber-deck-overheat-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "unique-reality-glitch-short-001",
+      "name": "Unique Reality Glitch Short 001",
+      "category": "Sci-Fi",
+      "description": "Short reality glitch.",
+      "tags": [
+        "unique",
+        "reality",
+        "glitch",
+        "short"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/unique-reality-glitch-short-001.mp3",
+      "wav": "audio/wav/unique-reality-glitch-short-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
     }
   ]
 }

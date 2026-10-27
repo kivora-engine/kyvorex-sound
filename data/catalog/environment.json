@@ -1416,6 +1416,333 @@
       "previewMode": "procedural",
       "wavMode": "file",
       "mp3Mode": "file"
+    },
+    {
+      "id": "epic-world-reveal-001",
+      "name": "Epic World Reveal 001",
+      "category": "Environment",
+      "description": "Massive world reveal.",
+      "tags": [
+        "epic",
+        "world",
+        "reveal"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-world-reveal-001.mp3",
+      "wav": "audio/wav/epic-world-reveal-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-aurora-borealis-001",
+      "name": "Env Aurora Borealis 001",
+      "category": "Environment",
+      "description": "Aurora borealis hum.",
+      "tags": [
+        "env",
+        "aurora",
+        "borealis"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-aurora-borealis-001.mp3",
+      "wav": "audio/wav/env-aurora-borealis-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-geyser-mini-001",
+      "name": "Env Geyser Mini 001",
+      "category": "Environment",
+      "description": "Mini geyser eruption.",
+      "tags": [
+        "env",
+        "geyser",
+        "mini"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-geyser-mini-001.mp3",
+      "wav": "audio/wav/env-geyser-mini-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-crystal-cave-hum-001",
+      "name": "Env Crystal Cave Hum 001",
+      "category": "Environment",
+      "description": "Crystal cave resonance.",
+      "tags": [
+        "env",
+        "crystal",
+        "cave",
+        "hum"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-crystal-cave-hum-001.mp3",
+      "wav": "audio/wav/env-crystal-cave-hum-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-floating-islands-001",
+      "name": "Env Floating Islands 001",
+      "category": "Environment",
+      "description": "Floating islands ambience.",
+      "tags": [
+        "env",
+        "floating",
+        "islands"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-floating-islands-001.mp3",
+      "wav": "audio/wav/env-floating-islands-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-meteor-shower-distant-001",
+      "name": "Env Meteor Shower Distant 001",
+      "category": "Environment",
+      "description": "Distant meteor shower.",
+      "tags": [
+        "env",
+        "meteor",
+        "shower",
+        "distant"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-meteor-shower-distant-001.mp3",
+      "wav": "audio/wav/env-meteor-shower-distant-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-swamp-gas-bubble-001",
+      "name": "Env Swamp Gas Bubble 001",
+      "category": "Environment",
+      "description": "Swamp gas bubbles.",
+      "tags": [
+        "env",
+        "swamp",
+        "gas",
+        "bubble"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-swamp-gas-bubble-001.mp3",
+      "wav": "audio/wav/env-swamp-gas-bubble-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-desert-mirage-shimmer-001",
+      "name": "Env Desert Mirage Shimmer 001",
+      "category": "Environment",
+      "description": "Desert mirage shimmer.",
+      "tags": [
+        "env",
+        "desert",
+        "mirage",
+        "shimmer"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-desert-mirage-shimmer-001.mp3",
+      "wav": "audio/wav/env-desert-mirage-shimmer-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-frozen-lake-crack-001",
+      "name": "Env Frozen Lake Crack 001",
+      "category": "Environment",
+      "description": "Frozen lake cracking.",
+      "tags": [
+        "env",
+        "frozen",
+        "lake",
+        "crack"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-frozen-lake-crack-001.mp3",
+      "wav": "audio/wav/env-frozen-lake-crack-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-volcanic-lightning-001",
+      "name": "Env Volcanic Lightning 001",
+      "category": "Environment",
+      "description": "Volcanic lightning.",
+      "tags": [
+        "env",
+        "volcanic",
+        "lightning"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-volcanic-lightning-001.mp3",
+      "wav": "audio/wav/env-volcanic-lightning-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-bioluminescent-forest-001",
+      "name": "Env Bioluminescent Forest 001",
+      "category": "Environment",
+      "description": "Bioluminescent forest.",
+      "tags": [
+        "env",
+        "bioluminescent",
+        "forest"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-bioluminescent-forest-001.mp3",
+      "wav": "audio/wav/env-bioluminescent-forest-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-sandstorm-distant-001",
+      "name": "Env Sandstorm Distant 001",
+      "category": "Environment",
+      "description": "Distant sandstorm.",
+      "tags": [
+        "env",
+        "sandstorm",
+        "distant"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-sandstorm-distant-001.mp3",
+      "wav": "audio/wav/env-sandstorm-distant-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-waterfall-misty-001",
+      "name": "Env Waterfall Misty 001",
+      "category": "Environment",
+      "description": "Misty waterfall.",
+      "tags": [
+        "env",
+        "waterfall",
+        "misty"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-waterfall-misty-001.mp3",
+      "wav": "audio/wav/env-waterfall-misty-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-magnetic-anomaly-001",
+      "name": "Env Magnetic Anomaly 001",
+      "category": "Environment",
+      "description": "Magnetic anomaly.",
+      "tags": [
+        "env",
+        "magnetic",
+        "anomaly"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-magnetic-anomaly-001.mp3",
+      "wav": "audio/wav/env-magnetic-anomaly-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-gravity-well-pulse-001",
+      "name": "Env Gravity Well Pulse 001",
+      "category": "Environment",
+      "description": "Gravity well pulsing.",
+      "tags": [
+        "env",
+        "gravity",
+        "well",
+        "pulse"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-gravity-well-pulse-001.mp3",
+      "wav": "audio/wav/env-gravity-well-pulse-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "env-solar-flare-wind-001",
+      "name": "Env Solar Flare Wind 001",
+      "category": "Environment",
+      "description": "Solar flare wind.",
+      "tags": [
+        "env",
+        "solar",
+        "flare",
+        "wind"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/env-solar-flare-wind-001.mp3",
+      "wav": "audio/wav/env-solar-flare-wind-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
     }
   ]
 }

@@ -6,7 +6,17 @@
       "name": "Alert Error 001",
       "category": "Alerts",
       "description": "Two descending tones, error notification.",
-      "tags": ["error", "fail", "negative", "warning", "notification", "alerte", "erreur", "échec", "problème"],
+      "tags": [
+        "error",
+        "fail",
+        "negative",
+        "warning",
+        "notification",
+        "alerte",
+        "erreur",
+        "échec",
+        "problème"
+      ],
       "duration": "0.36s",
       "date": "2026-10-01",
       "mp3": "audio/mp3/alert-error-001.mp3",
@@ -22,7 +32,13 @@
       "name": "Alert Error 002",
       "category": "Alerts",
       "description": "Low sawtooth error notification.",
-      "tags": ["error", "fail", "alert", "erreur", "échec"],
+      "tags": [
+        "error",
+        "fail",
+        "alert",
+        "erreur",
+        "échec"
+      ],
       "duration": "0.40s",
       "date": "2026-10-19",
       "mp3": "audio/mp3/alert-error-002.mp3",
@@ -38,7 +54,17 @@
       "name": "Alert Success 001",
       "category": "Alerts",
       "description": "Ascending arpeggio, success cue.",
-      "tags": ["success", "ok", "positive", "done", "notification", "alerte", "succès", "réussite", "validé"],
+      "tags": [
+        "success",
+        "ok",
+        "positive",
+        "done",
+        "notification",
+        "alerte",
+        "succès",
+        "réussite",
+        "validé"
+      ],
       "duration": "0.42s",
       "date": "2026-10-01",
       "mp3": "audio/mp3/alert-success-001.mp3",
@@ -54,7 +80,13 @@
       "name": "Alert Success 002",
       "category": "Alerts",
       "description": "Rapid ascending triangle arpeggio.",
-      "tags": ["success", "ok", "alert", "succès", "réussite"],
+      "tags": [
+        "success",
+        "ok",
+        "alert",
+        "succès",
+        "réussite"
+      ],
       "duration": "0.50s",
       "date": "2026-10-19",
       "mp3": "audio/mp3/alert-success-002.mp3",
@@ -70,7 +102,15 @@
       "name": "Warning Alert 001",
       "category": "Alerts",
       "description": "Short warning notification sound.",
-      "tags": ["warning", "alert", "caution", "attention", "notification", "alerte", "avertissement"],
+      "tags": [
+        "warning",
+        "alert",
+        "caution",
+        "attention",
+        "notification",
+        "alerte",
+        "avertissement"
+      ],
       "duration": "0.30s",
       "date": "2026-10-08",
       "mp3": "audio/mp3/alert-warning-001.mp3",
@@ -86,7 +126,15 @@
       "name": "Info Alert 001",
       "category": "Alerts",
       "description": "Short informational notification sound.",
-      "tags": ["info", "information", "notification", "message", "alerte", "info", "message"],
+      "tags": [
+        "info",
+        "information",
+        "notification",
+        "message",
+        "alerte",
+        "info",
+        "message"
+      ],
       "duration": "0.25s",
       "date": "2026-10-08",
       "mp3": "audio/mp3/alert-info-001.mp3",
@@ -102,7 +150,17 @@
       "name": "Achievement 001",
       "category": "Alerts",
       "description": "Three quick ascending notes for an achievement.",
-      "tags": ["achievement", "reward", "unlock", "trophy", "success", "succès", "récompense", "trophée", "débloquer"],
+      "tags": [
+        "achievement",
+        "reward",
+        "unlock",
+        "trophy",
+        "success",
+        "succès",
+        "récompense",
+        "trophée",
+        "débloquer"
+      ],
       "duration": "0.40s",
       "date": "2026-10-15",
       "mp3": "audio/mp3/alert-achievement-001.mp3",
@@ -118,7 +176,17 @@
       "name": "Mission Complete 001",
       "category": "Alerts",
       "description": "Four ascending notes with a held final tone.",
-      "tags": ["mission", "complete", "objective", "success", "achievement", "mission", "objectif", "accompli", "réussi"],
+      "tags": [
+        "mission",
+        "complete",
+        "objective",
+        "success",
+        "achievement",
+        "mission",
+        "objectif",
+        "accompli",
+        "réussi"
+      ],
       "duration": "0.60s",
       "date": "2026-10-15",
       "mp3": "audio/mp3/alert-mission-complete-001.mp3",
@@ -128,16 +196,217 @@
       "previewMode": "procedural",
       "wavMode": "file",
       "mp3Mode": "file"
+    },
+    {
+      "id": "level-up-001",
+      "name": "Level Up 001",
+      "category": "Alerts",
+      "description": "Ascending square wave for leveling up.",
+      "tags": [
+        "level",
+        "up",
+        "progress",
+        "niveau",
+        "progression"
+      ],
+      "duration": "0.60s",
+      "date": "2026-10-21",
+      "mp3": "audio/mp3/level-up-001.mp3",
+      "wav": "audio/wav/level-up-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "quest-accepted-001",
+      "name": "Quest Accepted 001",
+      "category": "Alerts",
+      "description": "Confirmation for accepting a quest.",
+      "tags": [
+        "quest",
+        "accept",
+        "alert",
+        "quête",
+        "accepter"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-21",
+      "mp3": "audio/mp3/quest-accepted-001.mp3",
+      "wav": "audio/wav/quest-accepted-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "halloween-bell-001",
+      "name": "Halloween Bell 001",
+      "category": "Alerts",
+      "description": "Dissonant eerie bell.",
+      "tags": [
+        "bell",
+        "halloween",
+        "cloche",
+        "halloween"
+      ],
+      "duration": "0.50s",
+      "date": "2026-10-25",
+      "mp3": "audio/mp3/halloween-bell-001.mp3",
+      "wav": "audio/wav/halloween-bell-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "alert-critical-001",
+      "name": "Alert Critical 001",
+      "category": "Alerts",
+      "description": "Urgent repeating beeps.",
+      "tags": [
+        "critical",
+        "alert",
+        "urgence",
+        "alerte"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-23",
+      "mp3": "audio/mp3/alert-critical-001.mp3",
+      "wav": "audio/wav/alert-critical-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "alert-low-health-001",
+      "name": "Alert Low Health 001",
+      "category": "Alerts",
+      "description": "Pulsing heartbeat low health warning.",
+      "tags": [
+        "low",
+        "health",
+        "alert",
+        "santé",
+        "faible"
+      ],
+      "duration": "0.40s",
+      "date": "2026-10-23",
+      "mp3": "audio/mp3/alert-low-health-001.mp3",
+      "wav": "audio/wav/alert-low-health-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "achievement-unlocked-001",
+      "name": "Achievement Unlocked 001",
+      "category": "Alerts",
+      "description": "Achievement unlocked fanfare.",
+      "tags": [
+        "achievement",
+        "unlocked",
+        "alert",
+        "succès",
+        "débloqué"
+      ],
+      "duration": "0.60s",
+      "date": "2026-10-24",
+      "mp3": "audio/mp3/achievement-unlocked-001.mp3",
+      "wav": "audio/wav/achievement-unlocked-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "epic-victory-fanfare-001",
+      "name": "Epic Victory Fanfare 001",
+      "category": "Alerts",
+      "description": "Grand victory fanfare.",
+      "tags": [
+        "epic",
+        "victory",
+        "fanfare"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-victory-fanfare-001.mp3",
+      "wav": "audio/wav/epic-victory-fanfare-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "epic-legendary-unlock-001",
+      "name": "Epic Legendary Unlock 001",
+      "category": "Alerts",
+      "description": "Legendary unlock sound.",
+      "tags": [
+        "epic",
+        "legendary",
+        "unlock"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-legendary-unlock-001.mp3",
+      "wav": "audio/wav/epic-legendary-unlock-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "epic-quest-complete-massive-001",
+      "name": "Epic Quest Complete Massive 001",
+      "category": "Alerts",
+      "description": "Massive quest completion.",
+      "tags": [
+        "epic",
+        "quest",
+        "complete",
+        "massive"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-quest-complete-massive-001.mp3",
+      "wav": "audio/wav/epic-quest-complete-massive-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "epic-champion-crown-001",
+      "name": "Epic Champion Crown 001",
+      "category": "Alerts",
+      "description": "Becoming the champion.",
+      "tags": [
+        "epic",
+        "champion",
+        "crown"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-champion-crown-001.mp3",
+      "wav": "audio/wav/epic-champion-crown-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
     }
-    ,
-{ "id": "level-up-001", "name": "Level Up 001", "category": "Alerts", "description": "Ascending square wave for leveling up.", "tags": ["level", "up", "progress", "niveau", "progression"], "duration": "0.60s", "date": "2026-10-21", "mp3": "audio/mp3/level-up-001.mp3", "wav": "audio/wav/level-up-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" },
-{ "id": "quest-accepted-001", "name": "Quest Accepted 001", "category": "Alerts", "description": "Confirmation for accepting a quest.", "tags": ["quest", "accept", "alert", "quête", "accepter"], "duration": "0.40s", "date": "2026-10-21", "mp3": "audio/mp3/quest-accepted-001.mp3", "wav": "audio/wav/quest-accepted-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" }
-    ,
-{ "id": "halloween-bell-001", "name": "Halloween Bell 001", "category": "Alerts", "description": "Dissonant eerie bell.", "tags": ["bell", "halloween", "cloche", "halloween"], "duration": "0.50s", "date": "2026-10-25", "mp3": "audio/mp3/halloween-bell-001.mp3", "wav": "audio/wav/halloween-bell-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" }
-    ,
-{ "id": "alert-critical-001", "name": "Alert Critical 001", "category": "Alerts", "description": "Urgent repeating beeps.", "tags": ["critical", "alert", "urgence", "alerte"], "duration": "0.40s", "date": "2026-10-23", "mp3": "audio/mp3/alert-critical-001.mp3", "wav": "audio/wav/alert-critical-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" },
-{ "id": "alert-low-health-001", "name": "Alert Low Health 001", "category": "Alerts", "description": "Pulsing heartbeat low health warning.", "tags": ["low", "health", "alert", "santé", "faible"], "duration": "0.40s", "date": "2026-10-23", "mp3": "audio/mp3/alert-low-health-001.mp3", "wav": "audio/wav/alert-low-health-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" }
-    ,
-{ "id": "achievement-unlocked-001", "name": "Achievement Unlocked 001", "category": "Alerts", "description": "Achievement unlocked fanfare.", "tags": ["achievement", "unlocked", "alert", "succès", "débloqué"], "duration": "0.60s", "date": "2026-10-24", "mp3": "audio/mp3/achievement-unlocked-001.mp3", "wav": "audio/wav/achievement-unlocked-001.wav", "license": "KYVOREX Free Sound License 1.0", "status": "available", "previewMode": "procedural", "wavMode": "file", "mp3Mode": "file" }
   ]
 }

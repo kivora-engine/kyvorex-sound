@@ -4278,6 +4278,267 @@
       "previewMode": "procedural",
       "wavMode": "file",
       "mp3Mode": "file"
+    },
+    {
+      "id": "epic-power-surge-001",
+      "name": "Epic Power Surge 001",
+      "category": "Gameplay",
+      "description": "Huge power surge.",
+      "tags": [
+        "epic",
+        "power",
+        "surge"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-power-surge-001.mp3",
+      "wav": "audio/wav/epic-power-surge-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "epic-artifact-awaken-001",
+      "name": "Epic Artifact Awaken 001",
+      "category": "Gameplay",
+      "description": "Artifact awakening.",
+      "tags": [
+        "epic",
+        "artifact",
+        "awaken"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-artifact-awaken-001.mp3",
+      "wav": "audio/wav/epic-artifact-awaken-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "epic-boss-defeat-001",
+      "name": "Epic Boss Defeat 001",
+      "category": "Gameplay",
+      "description": "Defeating a major boss.",
+      "tags": [
+        "epic",
+        "boss",
+        "defeat"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-boss-defeat-001.mp3",
+      "wav": "audio/wav/epic-boss-defeat-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "epic-ancient-awakens-001",
+      "name": "Epic Ancient Awakens 001",
+      "category": "Gameplay",
+      "description": "An ancient being awakens.",
+      "tags": [
+        "epic",
+        "ancient",
+        "awakens"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-ancient-awakens-001.mp3",
+      "wav": "audio/wav/epic-ancient-awakens-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "epic-final-stand-001",
+      "name": "Epic Final Stand 001",
+      "category": "Gameplay",
+      "description": "The final battle begins.",
+      "tags": [
+        "epic",
+        "final",
+        "stand"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/epic-final-stand-001.mp3",
+      "wav": "audio/wav/epic-final-stand-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "unique-alchemy-brew-001",
+      "name": "Unique Alchemy Brew 001",
+      "category": "Gameplay",
+      "description": "Alchemy brewing.",
+      "tags": [
+        "unique",
+        "alchemy",
+        "brew"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/unique-alchemy-brew-001.mp3",
+      "wav": "audio/wav/unique-alchemy-brew-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "unique-lockpick-snap-001",
+      "name": "Unique Lockpick Snap 001",
+      "category": "Gameplay",
+      "description": "Lockpick snapping.",
+      "tags": [
+        "unique",
+        "lockpick",
+        "snap"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/unique-lockpick-snap-001.mp3",
+      "wav": "audio/wav/unique-lockpick-snap-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "unique-trap-disarm-001",
+      "name": "Unique Trap Disarm 001",
+      "category": "Gameplay",
+      "description": "Disarming a trap.",
+      "tags": [
+        "unique",
+        "trap",
+        "disarm"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/unique-trap-disarm-001.mp3",
+      "wav": "audio/wav/unique-trap-disarm-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "unique-stealth-footstep-001",
+      "name": "Unique Stealth Footstep 001",
+      "category": "Gameplay",
+      "description": "Stealthy footstep.",
+      "tags": [
+        "unique",
+        "stealth",
+        "footstep"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/unique-stealth-footstep-001.mp3",
+      "wav": "audio/wav/unique-stealth-footstep-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "unique-vent-crawl-001",
+      "name": "Unique Vent Crawl 001",
+      "category": "Gameplay",
+      "description": "Crawling through a vent.",
+      "tags": [
+        "unique",
+        "vent",
+        "crawl"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/unique-vent-crawl-001.mp3",
+      "wav": "audio/wav/unique-vent-crawl-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "unique-wall-climb-001",
+      "name": "Unique Wall Climb 001",
+      "category": "Gameplay",
+      "description": "Climbing a wall.",
+      "tags": [
+        "unique",
+        "wall",
+        "climb"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/unique-wall-climb-001.mp3",
+      "wav": "audio/wav/unique-wall-climb-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "unique-vehicle-boost-001",
+      "name": "Unique Vehicle Boost 001",
+      "category": "Gameplay",
+      "description": "Vehicle boost.",
+      "tags": [
+        "unique",
+        "vehicle",
+        "boost"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/unique-vehicle-boost-001.mp3",
+      "wav": "audio/wav/unique-vehicle-boost-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "unique-magic-mirror-shatter-001",
+      "name": "Unique Magic Mirror Shatter 001",
+      "category": "Gameplay",
+      "description": "Shattering a magic mirror.",
+      "tags": [
+        "unique",
+        "magic",
+        "mirror",
+        "shatter"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-27",
+      "mp3": "audio/mp3/unique-magic-mirror-shatter-001.mp3",
+      "wav": "audio/wav/unique-magic-mirror-shatter-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
     }
   ]
 }
