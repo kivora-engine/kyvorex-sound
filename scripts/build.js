@@ -23,6 +23,8 @@ const JS_FILES = [
 'audio-presets-fx.js','audio-presets-digital.js',
 'audio-presets-rare.js',
 'audio-presets-craft.js','audio-presets-epic.js',
+  'audio-presets-robotics.js',
+'audio-presets-spaceship.js',
 'audio-presets-adv-tech.js',
 'audio-presets-rare-env.js',
 'audio-presets-unique.js',

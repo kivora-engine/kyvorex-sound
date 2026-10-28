@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('spaceship-door-open-001', { duration: 0.90, build: function(E) { E.tone({ freq: 100, freqEnd: 200, dur: 0.80, type: 'sawtooth', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('spaceship-door-close-001', { duration: 0.90, build: function(E) { E.tone({ freq: 200, freqEnd: 100, dur: 0.80, type: 'sawtooth', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('spaceship-engine-hum-001', { duration: 1.60, build: function(E) { E.tone({ freq: 80, dur: 1.50, type: 'sine', gain: 0.25, attack: 0.100 }); } });
+  KY.audio.registerPreset('spaceship-warp-jump-001', { duration: 1.30, build: function(E) { E.tone({ freq: 100, freqEnd: 2000, dur: 1.20, type: 'sine', gain: 0.40, attack: 0.100 }); } });
+  KY.audio.registerPreset('spaceship-shield-hit-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.50, seed: 2100, filter: { type: 'bandpass', freq: 1000 } }); E.tone({ freq: 200, dur: 0.15, type: 'sine', gain: 0.30, attack: 0.002 }); } });
+  KY.audio.registerPreset('spaceship-weapon-fire-001', { duration: 0.40, build: function(E) { E.tone({ freq: 2000, freqEnd: 500, dur: 0.30, type: 'square', gain: 0.35, attack: 0.002 }); } });
+  KY.audio.registerPreset('spaceship-alert-system-001', { duration: 0.50, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 1200, dur: 0.10, type: 'square', gain: 0.25, when: i*0.15, attack: 0.002 }); } } });
+  KY.audio.registerPreset('spaceship-navigation-ping-001', { duration: 0.10, build: function(E) { E.tone({ freq: 1500, dur: 0.05, type: 'sine', gain: 0.20, attack: 0.001 }); } });
+  KY.audio.registerPreset('spaceship-comms-static-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.20, seed: 2101, filter: { type: 'highpass', freq: 2500 } }); } });
+  KY.audio.registerPreset('spaceship-docking-clamp-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.40, seed: 2102, filter: { type: 'lowpass', freq: 600 } }); E.tone({ freq: 100, dur: 0.10, type: 'sine', gain: 0.35, attack: 0.002 }); } });
+  KY.audio.registerPreset('spaceship-thruster-boost-001', { duration: 0.70, build: function(E) { E.tone({ freq: 100, freqEnd: 400, dur: 0.60, type: 'sawtooth', gain: 0.35, attack: 0.050 }); } });
+  KY.audio.registerPreset('spaceship-stabilizer-001', { duration: 0.50, build: function(E) { E.tone({ freq: 300, freqEnd: 200, dur: 0.40, type: 'sine', gain: 0.20, attack: 0.020 }); } });
+  KY.audio.registerPreset('spaceship-life-support-001', { duration: 1.10, build: function(E) { E.tone({ freq: 120, dur: 1.00, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('spaceship-oxygen-leak-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.30, seed: 2103, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('spaceship-hull-breach-001', { duration: 0.60, build: function(E) { E.noise({ dur: 0.50, gain: 0.60, seed: 2104, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('spaceship-scan-sweep-001', { duration: 0.90, build: function(E) { E.tone({ freq: 200, freqEnd: 2000, dur: 0.80, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('spaceship-target-lock-001', { duration: 0.20, build: function(E) { for(var i=0; i<2; i++) { E.tone({ freq: 1000, dur: 0.05, type: 'square', gain: 0.25, when: i*0.08, attack: 0.001 }); } } });
+  KY.audio.registerPreset('spaceship-emp-burst-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.60, seed: 2105, filter: { type: 'lowpass', freq: 500 } }); } });
+  KY.audio.registerPreset('spaceship-tractor-beam-001', { duration: 0.70, build: function(E) { E.tone({ freq: 400, freqEnd: 100, dur: 0.60, type: 'sine', gain: 0.25, attack: 0.020 }); } });
+  KY.audio.registerPreset('spaceship-cockpit-click-001', { duration: 0.05, build: function(E) { E.tone({ freq: 800, dur: 0.02, type: 'square', gain: 0.15, attack: 0.001 }); } });
+  KY.audio.registerPreset('spaceship-radar-sweep-001', { duration: 0.60, build: function(E) { for(var i=0; i<4; i++) { E.tone({ freq: 1500, dur: 0.02, type: 'sine', gain: 0.15, when: i*0.15, attack: 0.001 }); } } });
+  KY.audio.registerPreset('spaceship-gravity-off-001', { duration: 0.60, build: function(E) { E.tone({ freq: 200, freqEnd: 50, dur: 0.50, type: 'sine', gain: 0.25, attack: 0.020 }); } });
+  KY.audio.registerPreset('spaceship-gravity-on-001', { duration: 0.60, build: function(E) { E.tone({ freq: 50, freqEnd: 200, dur: 0.50, type: 'sine', gain: 0.25, attack: 0.020 }); } });
+  KY.audio.registerPreset('spaceship-cryo-freeze-001', { duration: 0.90, build: function(E) { E.tone({ freq: 800, freqEnd: 100, dur: 0.80, type: 'sawtooth', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('spaceship-cryo-thaw-001', { duration: 0.90, build: function(E) { E.tone({ freq: 100, freqEnd: 800, dur: 0.80, type: 'sawtooth', gain: 0.30, attack: 0.050 }); } });
+})();

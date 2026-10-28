@@ -117,11 +117,9 @@ def run_official(sync_catalog, new_only):
     tag = "official"
     
     if new_only:
-        from official_presets_epic import OFFICIAL_PRESETS_EPIC
-        from official_presets_adv_tech import OFFICIAL_PRESETS_ADV_TECH
-        from official_presets_rare_env import OFFICIAL_PRESETS_RARE_ENV
-        from official_presets_unique import OFFICIAL_PRESETS_UNIQUE
-        presets_to_run = {**OFFICIAL_PRESETS_EPIC, **OFFICIAL_PRESETS_ADV_TECH, **OFFICIAL_PRESETS_RARE_ENV, **OFFICIAL_PRESETS_UNIQUE}
+        from official_presets_robotics import OFFICIAL_PRESETS_ROBOTICS
+        from official_presets_spaceship import OFFICIAL_PRESETS_SPACESHIP
+        presets_to_run = {**OFFICIAL_PRESETS_ROBOTICS, **OFFICIAL_PRESETS_SPACESHIP}
         tag = "new"
     else:
         from official_presets import OFFICIAL_PRESETS
@@ -146,6 +144,8 @@ def run_official(sync_catalog, new_only):
         from official_presets_adv_tech import OFFICIAL_PRESETS_ADV_TECH
         from official_presets_rare_env import OFFICIAL_PRESETS_RARE_ENV
         from official_presets_unique import OFFICIAL_PRESETS_UNIQUE
+        from official_presets_robotics import OFFICIAL_PRESETS_ROBOTICS
+        from official_presets_spaceship import OFFICIAL_PRESETS_SPACESHIP
         
         presets_to_run = {
             **OFFICIAL_PRESETS, **OFFICIAL_PRESETS_EXTRA, **OFFICIAL_PRESETS_QUESTS,
@@ -155,7 +155,7 @@ def run_official(sync_catalog, new_only):
             **OFFICIAL_PRESETS_IND, **OFFICIAL_PRESETS_CRAFT, **OFFICIAL_PRESETS_ENV,
             **OFFICIAL_PRESETS_FX, **OFFICIAL_PRESETS_DIGITAL, **OFFICIAL_PRESETS_RARE,
             **OFFICIAL_PRESETS_EPIC, **OFFICIAL_PRESETS_ADV_TECH, **OFFICIAL_PRESETS_RARE_ENV,
-            **OFFICIAL_PRESETS_UNIQUE
+            **OFFICIAL_PRESETS_UNIQUE, **OFFICIAL_PRESETS_ROBOTICS, **OFFICIAL_PRESETS_SPACESHIP
         }
         tag = "all"
 

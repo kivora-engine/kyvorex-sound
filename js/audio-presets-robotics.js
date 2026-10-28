@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('robot-arm-move-001', { duration: 0.70, build: function(E) { E.tone({ freq: 100, freqEnd: 200, dur: 0.60, type: 'sawtooth', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('robot-servo-activate-001', { duration: 0.15, build: function(E) { E.tone({ freq: 400, dur: 0.10, type: 'square', gain: 0.20, attack: 0.002 }); } });
+  KY.audio.registerPreset('robot-claw-grab-001', { duration: 0.10, build: function(E) { E.noise({ dur: 0.05, gain: 0.30, seed: 2000, filter: { type: 'bandpass', freq: 1500 } }); E.tone({ freq: 200, dur: 0.05, type: 'sine', gain: 0.35, attack: 0.001 }); } });
+  KY.audio.registerPreset('robot-claw-release-001', { duration: 0.10, build: function(E) { E.noise({ dur: 0.05, gain: 0.25, seed: 2001, filter: { type: 'highpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('robot-joint-rotate-001', { duration: 0.50, build: function(E) { E.tone({ freq: 150, freqEnd: 300, dur: 0.40, type: 'sine', gain: 0.25, attack: 0.020 }); } });
+  KY.audio.registerPreset('robot-hydraulic-pump-001', { duration: 0.70, build: function(E) { E.tone({ freq: 80, freqEnd: 120, dur: 0.60, type: 'sawtooth', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('robot-weld-spark-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.40, seed: 2002, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('robot-circuit-hum-001', { duration: 1.10, build: function(E) { E.tone({ freq: 60, dur: 1.00, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('robot-calibration-beep-001', { duration: 0.35, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 1000, dur: 0.05, type: 'square', gain: 0.25, when: i*0.10, attack: 0.001 }); } } });
+  KY.audio.registerPreset('robot-scan-sweep-001', { duration: 0.70, build: function(E) { E.tone({ freq: 200, freqEnd: 2000, dur: 0.60, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('robot-lock-engage-001', { duration: 0.15, build: function(E) { E.tone({ freq: 150, dur: 0.10, type: 'square', gain: 0.30, attack: 0.002 }); E.noise({ dur: 0.05, gain: 0.20, seed: 2003, filter: { type: 'lowpass', freq: 600 } }); } });
+  KY.audio.registerPreset('robot-lock-release-001', { duration: 0.10, build: function(E) { E.noise({ dur: 0.05, gain: 0.25, seed: 2004, filter: { type: 'bandpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('robot-step-heavy-001', { duration: 0.20, build: function(E) { E.tone({ freq: 80, dur: 0.15, type: 'sine', gain: 0.40, attack: 0.002 }); } });
+  KY.audio.registerPreset('robot-step-light-001', { duration: 0.10, build: function(E) { E.tone({ freq: 150, dur: 0.05, type: 'sine', gain: 0.25, attack: 0.001 }); } });
+  KY.audio.registerPreset('robot-tool-switch-001', { duration: 0.10, build: function(E) { E.tone({ freq: 600, dur: 0.05, type: 'square', gain: 0.20, when: 0.00, attack: 0.001 }); E.tone({ freq: 800, dur: 0.05, type: 'square', gain: 0.20, when: 0.05, attack: 0.001 }); } });
+  KY.audio.registerPreset('robot-assembly-line-001', { duration: 0.50, build: function(E) { for(var i=0; i<6; i++) { E.tone({ freq: 200, dur: 0.03, type: 'square', gain: 0.20, when: i*0.08, attack: 0.001 }); } } });
+  KY.audio.registerPreset('robot-error-buzz-001', { duration: 0.40, build: function(E) { E.tone({ freq: 100, dur: 0.30, type: 'sawtooth', gain: 0.40, attack: 0.005 }); } });
+  KY.audio.registerPreset('robot-shutdown-001', { duration: 1.10, build: function(E) { E.tone({ freq: 400, freqEnd: 50, dur: 1.00, type: 'sine', gain: 0.35, attack: 0.050 }); } });
+  KY.audio.registerPreset('robot-startup-001', { duration: 1.10, build: function(E) { E.tone({ freq: 50, freqEnd: 400, dur: 1.00, type: 'sine', gain: 0.35, attack: 0.050 }); } });
+  KY.audio.registerPreset('robot-drill-arm-001', { duration: 0.60, build: function(E) { E.tone({ freq: 300, freqEnd: 500, dur: 0.50, type: 'sawtooth', gain: 0.30, attack: 0.010 }); } });
+  KY.audio.registerPreset('robot-magnet-grab-001', { duration: 0.25, build: function(E) { E.tone({ freq: 100, dur: 0.20, type: 'sine', gain: 0.30, attack: 0.010 }); } });
+  KY.audio.registerPreset('robot-magnet-release-001', { duration: 0.15, build: function(E) { E.tone({ freq: 80, dur: 0.10, type: 'sine', gain: 0.25, attack: 0.005 }); } });
+  KY.audio.registerPreset('robot-sensor-ping-001', { duration: 0.10, build: function(E) { E.tone({ freq: 2000, dur: 0.05, type: 'sine', gain: 0.20, attack: 0.001 }); } });
+  KY.audio.registerPreset('robot-battery-low-001', { duration: 0.40, build: function(E) { for(var i=0; i<2; i++) { E.tone({ freq: 800, dur: 0.10, type: 'square', gain: 0.25, when: i*0.20, attack: 0.002 }); } } });
+  KY.audio.registerPreset('robot-overload-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.50, seed: 2005, filter: { type: 'bandpass', freq: 1500 } }); } });
+})();
