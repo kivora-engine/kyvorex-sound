@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('ruin-stone-mechanism-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.40, seed: 2200, filter: { type: 'lowpass', freq: 600 } }); E.tone({ freq: 100, freqEnd: 80, dur: 0.20, type: 'sawtooth', gain: 0.30, attack: 0.010 }); } });
+  KY.audio.registerPreset('ruin-ancient-door-open-001', { duration: 1.30, build: function(E) { E.tone({ freq: 50, freqEnd: 120, dur: 1.20, type: 'sawtooth', gain: 0.35, attack: 0.050 }); } });
+  KY.audio.registerPreset('ruin-ancient-door-close-001', { duration: 1.30, build: function(E) { E.tone({ freq: 120, freqEnd: 50, dur: 1.20, type: 'sawtooth', gain: 0.35, attack: 0.050 }); } });
+  KY.audio.registerPreset('ruin-lock-engage-001', { duration: 0.15, build: function(E) { E.tone({ freq: 300, dur: 0.10, type: 'square', gain: 0.30, attack: 0.002 }); E.noise({ dur: 0.10, gain: 0.20, seed: 2201, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('ruin-lock-release-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.30, seed: 2202, filter: { type: 'bandpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('ruin-relic-activate-001', { duration: 0.50, build: function(E) { for(var i=0; i<4; i++) { E.tone({ freq: 600+i*100, dur: 0.10, type: 'sine', gain: 0.20, when: i*0.10, attack: 0.010 }); } } });
+  KY.audio.registerPreset('ruin-statue-turn-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.30, seed: 2203, filter: { type: 'lowpass', freq: 500 } }); } });
+  KY.audio.registerPreset('ruin-secret-wall-slide-001', { duration: 0.90, build: function(E) { E.tone({ freq: 150, freqEnd: 100, dur: 0.80, type: 'sine', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('ruin-trap-trigger-001', { duration: 0.10, build: function(E) { E.noise({ dur: 0.05, gain: 0.40, seed: 2204, filter: { type: 'highpass', freq: 2000 } }); E.tone({ freq: 200, dur: 0.05, type: 'square', gain: 0.30, attack: 0.001 }); } });
+  KY.audio.registerPreset('ruin-block-move-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.35, seed: 2205, filter: { type: 'lowpass', freq: 400 } }); } });
+  KY.audio.registerPreset('ruin-rune-glow-001', { duration: 0.70, build: function(E) { E.tone({ freq: 200, freqEnd: 800, dur: 0.60, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('ruin-artifact-pickup-001', { duration: 0.35, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 800+i*100, dur: 0.10, type: 'triangle', gain: 0.25, when: i*0.08, attack: 0.005 }); } } });
+  KY.audio.registerPreset('ruin-temple-bell-001', { duration: 1.30, build: function(E) { E.tone({ freq: 400, dur: 1.20, type: 'sine', gain: 0.30, attack: 0.005 }); } });
+  KY.audio.registerPreset('ruin-archaeological-scan-001', { duration: 0.90, build: function(E) { E.tone({ freq: 400, freqEnd: 1600, dur: 0.80, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('ruin-pedestal-activate-001', { duration: 0.25, build: function(E) { E.tone({ freq: 300, dur: 0.20, type: 'square', gain: 0.30, attack: 0.005 }); } });
+  KY.audio.registerPreset('ruin-glyph-light-001', { duration: 0.60, build: function(E) { E.tone({ freq: 800, freqEnd: 1200, dur: 0.50, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('ruin-pressure-plate-001', { duration: 0.10, build: function(E) { E.noise({ dur: 0.05, gain: 0.35, seed: 2206, filter: { type: 'lowpass', freq: 600 } }); E.tone({ freq: 100, dur: 0.05, type: 'sine', gain: 0.30, attack: 0.001 }); } });
+  KY.audio.registerPreset('ruin-sarcophagus-open-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.40, seed: 2207, filter: { type: 'lowpass', freq: 300 } }); } });
+  KY.audio.registerPreset('ruin-artifact-beam-001', { duration: 0.90, build: function(E) { E.tone({ freq: 1000, freqEnd: 2000, dur: 0.80, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('ruin-stone-grind-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.30, seed: 2208, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('ruin-temple-door-rumble-001', { duration: 1.30, build: function(E) { E.tone({ freq: 60, freqEnd: 40, dur: 1.20, type: 'sine', gain: 0.40, attack: 0.100 }); } });
+  KY.audio.registerPreset('ruin-relic-hum-001', { duration: 1.60, build: function(E) { E.tone({ freq: 80, dur: 1.50, type: 'sine', gain: 0.20, attack: 0.100 }); } });
+  KY.audio.registerPreset('ruin-ancient-magic-001', { duration: 0.60, build: function(E) { for(var i=0; i<6; i++) { E.tone({ freq: 400+i*80, dur: 0.15, type: 'sine', gain: 0.15, when: i*0.08, attack: 0.010 }); } } });
+  KY.audio.registerPreset('ruin-artifact-shatter-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.50, seed: 2209, filter: { type: 'highpass', freq: 3000 } }); E.tone({ freq: 2000, dur: 0.15, type: 'sine', gain: 0.20, attack: 0.001 }); } });
+  KY.audio.registerPreset('ruin-temple-wind-001', { duration: 1.60, build: function(E) { E.noise({ dur: 1.50, gain: 0.20, seed: 2210, filter: { type: 'lowpass', freq: 500 } }); } });
+})();

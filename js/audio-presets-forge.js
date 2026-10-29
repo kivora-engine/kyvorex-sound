@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('forge-anvil-strike-heavy-001', { duration: 0.25, build: function(E) { E.tone({ freq: 80, dur: 0.20, type: 'sine', gain: 0.50, attack: 0.002 }); E.noise({ dur: 0.10, gain: 0.30, seed: 2400, filter: { type: 'lowpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('forge-anvil-strike-light-001', { duration: 0.15, build: function(E) { E.tone({ freq: 150, dur: 0.10, type: 'sine', gain: 0.35, attack: 0.001 }); } });
+  KY.audio.registerPreset('forge-bellows-blow-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.30, seed: 2401, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('forge-tongs-clank-001', { duration: 0.15, build: function(E) { E.tone({ freq: 1200, dur: 0.10, type: 'triangle', gain: 0.25, attack: 0.001 }); } });
+  KY.audio.registerPreset('forge-quenching-sizzle-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.40, seed: 2402, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('forge-grindstone-spin-001', { duration: 0.70, build: function(E) { E.tone({ freq: 100, freqEnd: 200, dur: 0.60, type: 'sawtooth', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('forge-hammer-strike-soft-001', { duration: 0.15, build: function(E) { E.tone({ freq: 200, dur: 0.10, type: 'sine', gain: 0.30, attack: 0.002 }); } });
+  KY.audio.registerPreset('forge-chain-pull-001', { duration: 0.40, build: function(E) { for(var i=0; i<4; i++) { E.noise({ dur: 0.05, gain: 0.25, seed: 2403+i, when: i*0.08, filter: { type: 'bandpass', freq: 2000 } }); } } });
+  KY.audio.registerPreset('forge-crucible-pour-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.35, seed: 2404, filter: { type: 'lowpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('forge-metal-fold-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.30, seed: 2405, filter: { type: 'bandpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('forge-anvil-ring-001', { duration: 0.70, build: function(E) { E.tone({ freq: 800, dur: 0.60, type: 'sine', gain: 0.25, attack: 0.002 }); } });
+  KY.audio.registerPreset('forge-coal-shovel-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.25, seed: 2406, filter: { type: 'lowpass', freq: 600 } }); } });
+  KY.audio.registerPreset('forge-sparks-burst-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.35, seed: 2407, filter: { type: 'highpass', freq: 4000 } }); } });
+  KY.audio.registerPreset('forge-cooling-crackle-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.20, seed: 2408, filter: { type: 'bandpass', freq: 1200 } }); } });
+  KY.audio.registerPreset('forge-metal-press-001', { duration: 0.60, build: function(E) { E.tone({ freq: 100, freqEnd: 50, dur: 0.50, type: 'sawtooth', gain: 0.40, attack: 0.010 }); } });
+  KY.audio.registerPreset('forge-mold-stamp-001', { duration: 0.10, build: function(E) { E.tone({ freq: 200, dur: 0.05, type: 'square', gain: 0.35, attack: 0.001 }); } });
+  KY.audio.registerPreset('forge-file-metal-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.20, seed: 2409, filter: { type: 'bandpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('forge-cut-tongs-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.30, seed: 2410, filter: { type: 'highpass', freq: 2500 } }); E.tone({ freq: 1000, dur: 0.05, type: 'triangle', gain: 0.20, attack: 0.001 }); } });
+  KY.audio.registerPreset('forge-metal-bend-001', { duration: 0.70, build: function(E) { E.tone({ freq: 150, freqEnd: 100, dur: 0.60, type: 'sine', gain: 0.25, attack: 0.020 }); } });
+  KY.audio.registerPreset('forge-polish-leather-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.15, seed: 2411, filter: { type: 'bandpass', freq: 800 } }); } });
+  KY.audio.registerPreset('forge-glue-apply-001', { duration: 0.50, build: function(E) { E.tone({ freq: 400, freqEnd: 200, dur: 0.40, type: 'sine', gain: 0.20, attack: 0.010 }); } });
+  KY.audio.registerPreset('forge-clamp-tighten-001', { duration: 0.30, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 500, dur: 0.03, type: 'square', gain: 0.20, when: i*0.08, attack: 0.001 }); } } });
+  KY.audio.registerPreset('forge-rivet-gun-001', { duration: 0.10, build: function(E) { E.tone({ freq: 300, dur: 0.05, type: 'square', gain: 0.35, attack: 0.001 }); E.noise({ dur: 0.05, gain: 0.20, seed: 2412, filter: { type: 'lowpass', freq: 600 } }); } });
+  KY.audio.registerPreset('forge-weld-seam-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.40, seed: 2413, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('forge-workshop-ambience-001', { duration: 1.60, build: function(E) { E.noise({ dur: 1.50, gain: 0.15, seed: 2414, filter: { type: 'lowpass', freq: 500 } }); } });
+})();

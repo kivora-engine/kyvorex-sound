@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('sub-sonar-ping-001', { duration: 0.80, build: function(E) { E.tone({ freq: 1000, dur: 0.10, type: 'sine', gain: 0.30, when: 0.00, attack: 0.001 }); E.tone({ freq: 1000, dur: 0.10, type: 'sine', gain: 0.15, when: 0.30, attack: 0.001 }); } });
+  KY.audio.registerPreset('sub-engine-hum-001', { duration: 1.60, build: function(E) { E.tone({ freq: 60, dur: 1.50, type: 'sine', gain: 0.25, attack: 0.100 }); } });
+  KY.audio.registerPreset('sub-airlock-open-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.30, seed: 2300, filter: { type: 'highpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('sub-airlock-close-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.30, seed: 2301, filter: { type: 'lowpass', freq: 800 } }); E.tone({ freq: 80, dur: 0.20, type: 'sine', gain: 0.30, when: 0.50, attack: 0.005 }); } });
+  KY.audio.registerPreset('sub-pressure-warning-001', { duration: 0.50, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 800, dur: 0.10, type: 'square', gain: 0.25, when: i*0.15, attack: 0.002 }); } } });
+  KY.audio.registerPreset('sub-torpedo-fire-001', { duration: 0.40, build: function(E) { E.tone({ freq: 1500, freqEnd: 300, dur: 0.30, type: 'square', gain: 0.35, attack: 0.002 }); } });
+  KY.audio.registerPreset('sub-dive-alarm-001', { duration: 0.60, build: function(E) { for(var i=0; i<2; i++) { E.tone({ freq: 600, dur: 0.20, type: 'sawtooth', gain: 0.30, when: i*0.25, attack: 0.005 }); } } });
+  KY.audio.registerPreset('sub-navigation-beep-001', { duration: 0.10, build: function(E) { E.tone({ freq: 1200, dur: 0.05, type: 'sine', gain: 0.20, attack: 0.001 }); } });
+  KY.audio.registerPreset('sub-oxygen-warning-001', { duration: 0.60, build: function(E) { for(var i=0; i<2; i++) { E.tone({ freq: 1000, dur: 0.15, type: 'square', gain: 0.25, when: i*0.25, attack: 0.002 }); } } });
+  KY.audio.registerPreset('sub-hatch-open-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.35, seed: 2302, filter: { type: 'bandpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('sub-hatch-close-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.35, seed: 2303, filter: { type: 'lowpass', freq: 600 } }); } });
+  KY.audio.registerPreset('sub-propeller-start-001', { duration: 1.10, build: function(E) { E.tone({ freq: 50, freqEnd: 200, dur: 1.00, type: 'sawtooth', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('sub-propeller-stop-001', { duration: 1.10, build: function(E) { E.tone({ freq: 200, freqEnd: 50, dur: 1.00, type: 'sawtooth', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('sub-docking-clamp-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.40, seed: 2304, filter: { type: 'lowpass', freq: 500 } }); E.tone({ freq: 100, dur: 0.10, type: 'sine', gain: 0.35, attack: 0.002 }); } });
+  KY.audio.registerPreset('sub-torpedo-tube-open-001', { duration: 0.60, build: function(E) { E.tone({ freq: 100, freqEnd: 200, dur: 0.50, type: 'sine', gain: 0.25, attack: 0.020 }); } });
+  KY.audio.registerPreset('sub-radar-sweep-001', { duration: 0.60, build: function(E) { for(var i=0; i<4; i++) { E.tone({ freq: 1500, dur: 0.02, type: 'sine', gain: 0.15, when: i*0.15, attack: 0.001 }); } } });
+  KY.audio.registerPreset('sub-crash-dive-alarm-001', { duration: 0.50, build: function(E) { for(var i=0; i<4; i++) { E.tone({ freq: 1500, dur: 0.10, type: 'square', gain: 0.30, when: i*0.10, attack: 0.002 }); } } });
+  KY.audio.registerPreset('sub-ballast-blow-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.40, seed: 2305, filter: { type: 'highpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('sub-depth-charge-001', { duration: 0.60, build: function(E) { E.noise({ dur: 0.50, gain: 0.60, seed: 2306, filter: { type: 'lowpass', freq: 400 } }); E.tone({ freq: 80, freqEnd: 20, dur: 0.50, type: 'sine', gain: 0.40, attack: 0.005 }); } });
+  KY.audio.registerPreset('sub-sonar-sweep-001', { duration: 0.70, build: function(E) { E.tone({ freq: 2000, freqEnd: 800, dur: 0.60, type: 'sine', gain: 0.20, attack: 0.020 }); } });
+  KY.audio.registerPreset('sub-cabin-pressure-leak-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.30, seed: 2307, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('sub-control-panel-beep-001', { duration: 0.05, build: function(E) { E.tone({ freq: 1500, dur: 0.02, type: 'square', gain: 0.15, attack: 0.001 }); } });
+  KY.audio.registerPreset('sub-engine-reverse-001', { duration: 0.90, build: function(E) { E.tone({ freq: 200, freqEnd: 50, dur: 0.80, type: 'sawtooth', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('sub-underwater-scan-001', { duration: 0.70, build: function(E) { E.tone({ freq: 800, freqEnd: 1600, dur: 0.60, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('sub-external-hull-tap-001', { duration: 0.10, build: function(E) { E.noise({ dur: 0.05, gain: 0.35, seed: 2308, filter: { type: 'bandpass', freq: 2000 } }); E.tone({ freq: 150, dur: 0.05, type: 'sine', gain: 0.30, attack: 0.001 }); } });
+})();
