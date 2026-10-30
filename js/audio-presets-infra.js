@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('infra-train-horn-001', { duration: 0.70, build: function(E) { E.tone({ freq: 200, dur: 0.60, type: 'sawtooth', gain: 0.30, attack: 0.050 }); E.tone({ freq: 250, dur: 0.60, type: 'sawtooth', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('infra-bridge-lift-001', { duration: 1.30, build: function(E) { E.tone({ freq: 100, freqEnd: 200, dur: 1.20, type: 'sine', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('infra-elevator-ding-001', { duration: 0.15, build: function(E) { E.tone({ freq: 1200, dur: 0.10, type: 'sine', gain: 0.30, when: 0.00, attack: 0.001 }); E.tone({ freq: 1500, dur: 0.15, type: 'sine', gain: 0.30, when: 0.10, attack: 0.001 }); } });
+  KY.audio.registerPreset('infra-subway-arrival-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.30, seed: 2700, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('infra-traffic-light-beep-001', { duration: 0.35, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 1000, dur: 0.05, type: 'square', gain: 0.25, when: i*0.15, attack: 0.001 }); } } });
+  KY.audio.registerPreset('infra-bus-door-open-001', { duration: 0.60, build: function(E) { E.tone({ freq: 100, freqEnd: 200, dur: 0.50, type: 'sine', gain: 0.25, attack: 0.020 }); } });
+  KY.audio.registerPreset('infra-bus-door-close-001', { duration: 0.60, build: function(E) { E.tone({ freq: 200, freqEnd: 100, dur: 0.50, type: 'sine', gain: 0.25, attack: 0.020 }); E.noise({ dur: 0.10, gain: 0.20, seed: 2701, when: 0.40, filter: { type: 'lowpass', freq: 600 } }); } });
+  KY.audio.registerPreset('infra-train-track-clatter-001', { duration: 0.50, build: function(E) { for(var i=0; i<6; i++) { E.noise({ dur: 0.05, gain: 0.30, seed: 2702+i, when: i*0.08, filter: { type: 'bandpass', freq: 2000 } }); } } });
+  KY.audio.registerPreset('infra-tunnel-wind-001', { duration: 1.60, build: function(E) { E.noise({ dur: 1.50, gain: 0.20, seed: 2703, filter: { type: 'lowpass', freq: 600 } }); } });
+  KY.audio.registerPreset('infra-ferry-horn-001', { duration: 1.10, build: function(E) { E.tone({ freq: 150, dur: 1.00, type: 'sawtooth', gain: 0.40, attack: 0.050 }); } });
+  KY.audio.registerPreset('infra-drawbridge-motor-001', { duration: 1.10, build: function(E) { E.tone({ freq: 80, freqEnd: 120, dur: 1.00, type: 'sawtooth', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('infra-toll-booth-beep-001', { duration: 0.15, build: function(E) { E.tone({ freq: 800, dur: 0.10, type: 'square', gain: 0.25, attack: 0.001 }); } });
+  KY.audio.registerPreset('infra-parking-barrier-open-001', { duration: 0.50, build: function(E) { E.tone({ freq: 300, freqEnd: 400, dur: 0.40, type: 'sine', gain: 0.20, attack: 0.010 }); } });
+  KY.audio.registerPreset('infra-parking-barrier-close-001', { duration: 0.50, build: function(E) { E.tone({ freq: 400, freqEnd: 300, dur: 0.40, type: 'sine', gain: 0.20, attack: 0.010 }); } });
+  KY.audio.registerPreset('infra-crosswalk-signal-001', { duration: 0.50, build: function(E) { for(var i=0; i<4; i++) { E.tone({ freq: 1200, dur: 0.05, type: 'square', gain: 0.20, when: i*0.15, attack: 0.001 }); } } });
+  KY.audio.registerPreset('infra-train-brake-squeal-001', { duration: 1.30, build: function(E) { E.noise({ dur: 1.20, gain: 0.30, seed: 2704, filter: { type: 'bandpass', freq: 2500 } }); E.tone({ freq: 2000, dur: 0.80, type: 'sine', gain: 0.10, attack: 0.050 }); } });
+  KY.audio.registerPreset('infra-tram-bell-001', { duration: 0.30, build: function(E) { E.tone({ freq: 1000, dur: 0.20, type: 'triangle', gain: 0.25, attack: 0.002 }); } });
+  KY.audio.registerPreset('infra-cargo-crane-move-001', { duration: 1.10, build: function(E) { E.tone({ freq: 100, freqEnd: 150, dur: 1.00, type: 'sawtooth', gain: 0.25, attack: 0.100 }); } });
+  KY.audio.registerPreset('infra-container-lock-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.40, seed: 2705, filter: { type: 'lowpass', freq: 500 } }); E.tone({ freq: 100, dur: 0.10, type: 'sine', gain: 0.35, attack: 0.001 }); } });
+  KY.audio.registerPreset('infra-gate-open-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.30, seed: 2706, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('infra-gate-close-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.30, seed: 2707, filter: { type: 'lowpass', freq: 800 } }); E.tone({ freq: 80, dur: 0.15, type: 'sine', gain: 0.30, when: 0.50, attack: 0.005 }); } });
+  KY.audio.registerPreset('infra-highway-traffic-001', { duration: 2.20, build: function(E) { E.noise({ dur: 2.00, gain: 0.20, seed: 2708, filter: { type: 'lowpass', freq: 400 } }); } });
+  KY.audio.registerPreset('infra-tunnel-ambience-001', { duration: 2.20, build: function(E) { E.noise({ dur: 2.00, gain: 0.15, seed: 2709, filter: { type: 'lowpass', freq: 300 } }); } });
+  KY.audio.registerPreset('infra-runway-jet-001', { duration: 1.60, build: function(E) { E.tone({ freq: 100, freqEnd: 400, dur: 1.50, type: 'sawtooth', gain: 0.35, attack: 0.100 }); } });
+  KY.audio.registerPreset('infra-airport-bell-001', { duration: 0.50, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 1500, dur: 0.10, type: 'sine', gain: 0.20, when: i*0.15, attack: 0.001 }); } } });
+})();

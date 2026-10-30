@@ -2268,6 +2268,515 @@
       "previewMode": "procedural",
       "wavMode": "file",
       "mp3Mode": "file"
+    },
+    {
+      "id": "infra-train-horn-001",
+      "name": "Infra Train Horn 001",
+      "category": "Environment",
+      "description": "Infra Train Horn 001 sound effect.",
+      "tags": [
+        "infra",
+        "train",
+        "horn"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-train-horn-001.mp3",
+      "wav": "audio/wav/infra-train-horn-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-bridge-lift-001",
+      "name": "Infra Bridge Lift 001",
+      "category": "Environment",
+      "description": "Infra Bridge Lift 001 sound effect.",
+      "tags": [
+        "infra",
+        "bridge",
+        "lift"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-bridge-lift-001.mp3",
+      "wav": "audio/wav/infra-bridge-lift-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-elevator-ding-001",
+      "name": "Infra Elevator Ding 001",
+      "category": "Environment",
+      "description": "Infra Elevator Ding 001 sound effect.",
+      "tags": [
+        "infra",
+        "elevator",
+        "ding"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-elevator-ding-001.mp3",
+      "wav": "audio/wav/infra-elevator-ding-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-subway-arrival-001",
+      "name": "Infra Subway Arrival 001",
+      "category": "Environment",
+      "description": "Infra Subway Arrival 001 sound effect.",
+      "tags": [
+        "infra",
+        "subway",
+        "arrival"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-subway-arrival-001.mp3",
+      "wav": "audio/wav/infra-subway-arrival-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-traffic-light-beep-001",
+      "name": "Infra Traffic Light Beep 001",
+      "category": "Environment",
+      "description": "Infra Traffic Light Beep 001 sound effect.",
+      "tags": [
+        "infra",
+        "traffic",
+        "light",
+        "beep"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-traffic-light-beep-001.mp3",
+      "wav": "audio/wav/infra-traffic-light-beep-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-bus-door-open-001",
+      "name": "Infra Bus Door Open 001",
+      "category": "Environment",
+      "description": "Infra Bus Door Open 001 sound effect.",
+      "tags": [
+        "infra",
+        "bus",
+        "door",
+        "open"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-bus-door-open-001.mp3",
+      "wav": "audio/wav/infra-bus-door-open-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-bus-door-close-001",
+      "name": "Infra Bus Door Close 001",
+      "category": "Environment",
+      "description": "Infra Bus Door Close 001 sound effect.",
+      "tags": [
+        "infra",
+        "bus",
+        "door",
+        "close"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-bus-door-close-001.mp3",
+      "wav": "audio/wav/infra-bus-door-close-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-train-track-clatter-001",
+      "name": "Infra Train Track Clatter 001",
+      "category": "Environment",
+      "description": "Infra Train Track Clatter 001 sound effect.",
+      "tags": [
+        "infra",
+        "train",
+        "track",
+        "clatter"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-train-track-clatter-001.mp3",
+      "wav": "audio/wav/infra-train-track-clatter-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-tunnel-wind-001",
+      "name": "Infra Tunnel Wind 001",
+      "category": "Environment",
+      "description": "Infra Tunnel Wind 001 sound effect.",
+      "tags": [
+        "infra",
+        "tunnel",
+        "wind"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-tunnel-wind-001.mp3",
+      "wav": "audio/wav/infra-tunnel-wind-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-ferry-horn-001",
+      "name": "Infra Ferry Horn 001",
+      "category": "Environment",
+      "description": "Infra Ferry Horn 001 sound effect.",
+      "tags": [
+        "infra",
+        "ferry",
+        "horn"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-ferry-horn-001.mp3",
+      "wav": "audio/wav/infra-ferry-horn-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-drawbridge-motor-001",
+      "name": "Infra Drawbridge Motor 001",
+      "category": "Environment",
+      "description": "Infra Drawbridge Motor 001 sound effect.",
+      "tags": [
+        "infra",
+        "drawbridge",
+        "motor"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-drawbridge-motor-001.mp3",
+      "wav": "audio/wav/infra-drawbridge-motor-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-toll-booth-beep-001",
+      "name": "Infra Toll Booth Beep 001",
+      "category": "Environment",
+      "description": "Infra Toll Booth Beep 001 sound effect.",
+      "tags": [
+        "infra",
+        "toll",
+        "booth",
+        "beep"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-toll-booth-beep-001.mp3",
+      "wav": "audio/wav/infra-toll-booth-beep-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-parking-barrier-open-001",
+      "name": "Infra Parking Barrier Open 001",
+      "category": "Environment",
+      "description": "Infra Parking Barrier Open 001 sound effect.",
+      "tags": [
+        "infra",
+        "parking",
+        "barrier",
+        "open"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-parking-barrier-open-001.mp3",
+      "wav": "audio/wav/infra-parking-barrier-open-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-parking-barrier-close-001",
+      "name": "Infra Parking Barrier Close 001",
+      "category": "Environment",
+      "description": "Infra Parking Barrier Close 001 sound effect.",
+      "tags": [
+        "infra",
+        "parking",
+        "barrier",
+        "close"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-parking-barrier-close-001.mp3",
+      "wav": "audio/wav/infra-parking-barrier-close-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-crosswalk-signal-001",
+      "name": "Infra Crosswalk Signal 001",
+      "category": "Environment",
+      "description": "Infra Crosswalk Signal 001 sound effect.",
+      "tags": [
+        "infra",
+        "crosswalk",
+        "signal"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-crosswalk-signal-001.mp3",
+      "wav": "audio/wav/infra-crosswalk-signal-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-train-brake-squeal-001",
+      "name": "Infra Train Brake Squeal 001",
+      "category": "Environment",
+      "description": "Infra Train Brake Squeal 001 sound effect.",
+      "tags": [
+        "infra",
+        "train",
+        "brake",
+        "squeal"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-train-brake-squeal-001.mp3",
+      "wav": "audio/wav/infra-train-brake-squeal-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-tram-bell-001",
+      "name": "Infra Tram Bell 001",
+      "category": "Environment",
+      "description": "Infra Tram Bell 001 sound effect.",
+      "tags": [
+        "infra",
+        "tram",
+        "bell"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-tram-bell-001.mp3",
+      "wav": "audio/wav/infra-tram-bell-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-cargo-crane-move-001",
+      "name": "Infra Cargo Crane Move 001",
+      "category": "Environment",
+      "description": "Infra Cargo Crane Move 001 sound effect.",
+      "tags": [
+        "infra",
+        "cargo",
+        "crane",
+        "move"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-cargo-crane-move-001.mp3",
+      "wav": "audio/wav/infra-cargo-crane-move-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-container-lock-001",
+      "name": "Infra Container Lock 001",
+      "category": "Environment",
+      "description": "Infra Container Lock 001 sound effect.",
+      "tags": [
+        "infra",
+        "container",
+        "lock"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-container-lock-001.mp3",
+      "wav": "audio/wav/infra-container-lock-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-gate-open-001",
+      "name": "Infra Gate Open 001",
+      "category": "Environment",
+      "description": "Infra Gate Open 001 sound effect.",
+      "tags": [
+        "infra",
+        "gate",
+        "open"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-gate-open-001.mp3",
+      "wav": "audio/wav/infra-gate-open-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-gate-close-001",
+      "name": "Infra Gate Close 001",
+      "category": "Environment",
+      "description": "Infra Gate Close 001 sound effect.",
+      "tags": [
+        "infra",
+        "gate",
+        "close"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-gate-close-001.mp3",
+      "wav": "audio/wav/infra-gate-close-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-highway-traffic-001",
+      "name": "Infra Highway Traffic 001",
+      "category": "Environment",
+      "description": "Infra Highway Traffic 001 sound effect.",
+      "tags": [
+        "infra",
+        "highway",
+        "traffic"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-highway-traffic-001.mp3",
+      "wav": "audio/wav/infra-highway-traffic-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-tunnel-ambience-001",
+      "name": "Infra Tunnel Ambience 001",
+      "category": "Environment",
+      "description": "Infra Tunnel Ambience 001 sound effect.",
+      "tags": [
+        "infra",
+        "tunnel",
+        "ambience"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-tunnel-ambience-001.mp3",
+      "wav": "audio/wav/infra-tunnel-ambience-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-runway-jet-001",
+      "name": "Infra Runway Jet 001",
+      "category": "Environment",
+      "description": "Infra Runway Jet 001 sound effect.",
+      "tags": [
+        "infra",
+        "runway",
+        "jet"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-runway-jet-001.mp3",
+      "wav": "audio/wav/infra-runway-jet-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
+    },
+    {
+      "id": "infra-airport-bell-001",
+      "name": "Infra Airport Bell 001",
+      "category": "Environment",
+      "description": "Infra Airport Bell 001 sound effect.",
+      "tags": [
+        "infra",
+        "airport",
+        "bell"
+      ],
+      "duration": "0.80s",
+      "date": "2026-10-30",
+      "mp3": "audio/mp3/infra-airport-bell-001.mp3",
+      "wav": "audio/wav/infra-airport-bell-001.wav",
+      "license": "KYVOREX Free Sound License 1.0",
+      "status": "available",
+      "previewMode": "procedural",
+      "wavMode": "file",
+      "mp3Mode": "file"
     }
   ]
 }

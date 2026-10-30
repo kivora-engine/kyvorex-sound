@@ -117,10 +117,12 @@ def run_official(sync_catalog, new_only):
     tag = "official"
     
     if new_only:
-        from official_presets_ruins import OFFICIAL_PRESETS_RUINS
-        from official_presets_underwater import OFFICIAL_PRESETS_UNDERWATER
-        from official_presets_forge import OFFICIAL_PRESETS_FORGE
-        presets_to_run = {**OFFICIAL_PRESETS_RUINS, **OFFICIAL_PRESETS_UNDERWATER, **OFFICIAL_PRESETS_FORGE}
+        from official_presets_sci_tools import OFFICIAL_PRESETS_SCI_TOOLS
+        from official_presets_vehicles import OFFICIAL_PRESETS_VEHICLES
+        from official_presets_infra import OFFICIAL_PRESETS_INFRA
+        from official_presets_cyber import OFFICIAL_PRESETS_CYBER
+        from official_presets_reactors import OFFICIAL_PRESETS_REACTORS
+        presets_to_run = {**OFFICIAL_PRESETS_SCI_TOOLS, **OFFICIAL_PRESETS_VEHICLES, **OFFICIAL_PRESETS_INFRA, **OFFICIAL_PRESETS_CYBER, **OFFICIAL_PRESETS_REACTORS}
         tag = "new"
     else:
         from official_presets import OFFICIAL_PRESETS
@@ -150,6 +152,11 @@ def run_official(sync_catalog, new_only):
         from official_presets_ruins import OFFICIAL_PRESETS_RUINS
         from official_presets_underwater import OFFICIAL_PRESETS_UNDERWATER
         from official_presets_forge import OFFICIAL_PRESETS_FORGE
+        from official_presets_sci_tools import OFFICIAL_PRESETS_SCI_TOOLS
+        from official_presets_vehicles import OFFICIAL_PRESETS_VEHICLES
+        from official_presets_infra import OFFICIAL_PRESETS_INFRA
+        from official_presets_cyber import OFFICIAL_PRESETS_CYBER
+        from official_presets_reactors import OFFICIAL_PRESETS_REACTORS
         
         presets_to_run = {
             **OFFICIAL_PRESETS, **OFFICIAL_PRESETS_EXTRA, **OFFICIAL_PRESETS_QUESTS,
@@ -160,7 +167,9 @@ def run_official(sync_catalog, new_only):
             **OFFICIAL_PRESETS_FX, **OFFICIAL_PRESETS_DIGITAL, **OFFICIAL_PRESETS_RARE,
             **OFFICIAL_PRESETS_EPIC, **OFFICIAL_PRESETS_ADV_TECH, **OFFICIAL_PRESETS_RARE_ENV,
             **OFFICIAL_PRESETS_UNIQUE, **OFFICIAL_PRESETS_ROBOTICS, **OFFICIAL_PRESETS_SPACESHIP,
-            **OFFICIAL_PRESETS_RUINS, **OFFICIAL_PRESETS_UNDERWATER, **OFFICIAL_PRESETS_FORGE
+            **OFFICIAL_PRESETS_RUINS, **OFFICIAL_PRESETS_UNDERWATER, **OFFICIAL_PRESETS_FORGE,
+            **OFFICIAL_PRESETS_SCI_TOOLS, **OFFICIAL_PRESETS_VEHICLES, **OFFICIAL_PRESETS_INFRA,
+            **OFFICIAL_PRESETS_CYBER, **OFFICIAL_PRESETS_REACTORS
         }
         tag = "all"
 

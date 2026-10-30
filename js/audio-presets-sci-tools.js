@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('sci-inst-microscope-laser-001', { duration: 0.60, build: function(E) { E.tone({ freq: 2000, freqEnd: 2500, dur: 0.50, type: 'sine', gain: 0.20, attack: 0.010 }); } });
+  KY.audio.registerPreset('sci-inst-spectrometer-scan-001', { duration: 1.30, build: function(E) { E.tone({ freq: 100, freqEnd: 1500, dur: 1.20, type: 'sawtooth', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('sci-inst-calibration-ping-001', { duration: 0.10, build: function(E) { E.tone({ freq: 1000, dur: 0.05, type: 'sine', gain: 0.30, attack: 0.001 }); } });
+  KY.audio.registerPreset('sci-inst-centrifuge-spin-001', { duration: 1.60, build: function(E) { E.tone({ freq: 50, freqEnd: 200, dur: 1.50, type: 'square', gain: 0.20, attack: 0.100 }); } });
+  KY.audio.registerPreset('sci-inst-dna-sequencer-001', { duration: 0.50, build: function(E) { for(var i=0; i<8; i++) { E.tone({ freq: 600+i*50, dur: 0.05, type: 'triangle', gain: 0.15, when: i*0.06, attack: 0.001 }); } } });
+  KY.audio.registerPreset('sci-inst-electron-beam-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.40, seed: 2500, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('sci-inst-radar-sweep-001', { duration: 0.70, build: function(E) { E.tone({ freq: 800, freqEnd: 1200, dur: 0.60, type: 'sine', gain: 0.20, attack: 0.020 }); } });
+  KY.audio.registerPreset('sci-inst-sonar-ping-001', { duration: 0.20, build: function(E) { E.tone({ freq: 1500, dur: 0.10, type: 'sine', gain: 0.25, attack: 0.001 }); } });
+  KY.audio.registerPreset('sci-inst-telescope-focus-001', { duration: 0.50, build: function(E) { E.tone({ freq: 400, freqEnd: 500, dur: 0.40, type: 'sine', gain: 0.20, attack: 0.010 }); } });
+  KY.audio.registerPreset('sci-inst-lab-door-open-001', { duration: 0.90, build: function(E) { E.tone({ freq: 100, freqEnd: 200, dur: 0.80, type: 'sawtooth', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('sci-inst-lab-door-close-001', { duration: 0.90, build: function(E) { E.tone({ freq: 200, freqEnd: 100, dur: 0.80, type: 'sawtooth', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('sci-inst-chemical-analysis-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.30, seed: 2501, filter: { type: 'bandpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('sci-inst-vacuum-pump-001', { duration: 1.10, build: function(E) { E.tone({ freq: 80, freqEnd: 120, dur: 1.00, type: 'square', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('sci-inst-spectrum-analyzer-001', { duration: 0.50, build: function(E) { for(var i=0; i<5; i++) { E.tone({ freq: 1000+i*200, dur: 0.10, type: 'sine', gain: 0.15, when: i*0.10, attack: 0.005 }); } } });
+  KY.audio.registerPreset('sci-inst-microscope-slide-001', { duration: 0.10, build: function(E) { E.noise({ dur: 0.05, gain: 0.25, seed: 2502, filter: { type: 'highpass', freq: 2000 } }); E.tone({ freq: 800, dur: 0.05, type: 'sine', gain: 0.20, attack: 0.001 }); } });
+  KY.audio.registerPreset('sci-inst-cryo-analysis-001', { duration: 0.90, build: function(E) { E.tone({ freq: 1000, freqEnd: 200, dur: 0.80, type: 'sine', gain: 0.25, attack: 0.020 }); } });
+  KY.audio.registerPreset('sci-inst-particle-accelerator-001', { duration: 1.60, build: function(E) { E.tone({ freq: 200, freqEnd: 2000, dur: 1.50, type: 'sawtooth', gain: 0.30, attack: 0.100 }); } });
+  KY.audio.registerPreset('sci-inst-laser-calibration-001', { duration: 0.10, build: function(E) { E.tone({ freq: 1200, dur: 0.05, type: 'square', gain: 0.20, when: 0.00, attack: 0.001 }); E.tone({ freq: 1200, dur: 0.05, type: 'square', gain: 0.20, when: 0.15, attack: 0.001 }); } });
+  KY.audio.registerPreset('sci-inst-radiation-detector-001', { duration: 0.40, build: function(E) { for(var i=0; i<6; i++) { E.noise({ dur: 0.02, gain: 0.30, seed: 2503+i, when: i*0.08, filter: { type: 'highpass', freq: 3000 } }); } } });
+  KY.audio.registerPreset('sci-inst-dna-helix-scan-001', { duration: 0.50, build: function(E) { for(var i=0; i<4; i++) { E.tone({ freq: 400+i*100, dur: 0.15, type: 'sine', gain: 0.20, when: i*0.10, attack: 0.010 }); } } });
+  KY.audio.registerPreset('sci-inst-chemical-synthesizer-001', { duration: 0.70, build: function(E) { E.tone({ freq: 300, freqEnd: 600, dur: 0.60, type: 'sawtooth', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('sci-inst-lab-diagnostic-001', { duration: 0.20, build: function(E) { E.tone({ freq: 1500, dur: 0.10, type: 'sine', gain: 0.25, when: 0.00, attack: 0.001 }); E.tone({ freq: 1800, dur: 0.15, type: 'sine', gain: 0.25, when: 0.10, attack: 0.001 }); } });
+  KY.audio.registerPreset('sci-inst-microscope-zoom-001', { duration: 0.50, build: function(E) { E.tone({ freq: 400, freqEnd: 800, dur: 0.40, type: 'sine', gain: 0.20, attack: 0.010 }); } });
+  KY.audio.registerPreset('sci-inst-experimental-pulse-001', { duration: 0.60, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 200, dur: 0.20, type: 'square', gain: 0.30, when: i*0.25, attack: 0.005 }); } } });
+  KY.audio.registerPreset('sci-inst-lab-ambience-001', { duration: 2.20, build: function(E) { E.noise({ dur: 2.00, gain: 0.15, seed: 2504, filter: { type: 'lowpass', freq: 500 } }); } });
+})();

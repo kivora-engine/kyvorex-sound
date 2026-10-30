@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('veh-engine-turbo-001', { duration: 0.90, build: function(E) { E.tone({ freq: 100, freqEnd: 600, dur: 0.80, type: 'sawtooth', gain: 0.35, attack: 0.050 }); } });
+  KY.audio.registerPreset('veh-gear-shift-heavy-001', { duration: 0.15, build: function(E) { E.noise({ dur: 0.10, gain: 0.40, seed: 2600, filter: { type: 'lowpass', freq: 800 } }); E.tone({ freq: 100, dur: 0.10, type: 'square', gain: 0.35, attack: 0.002 }); } });
+  KY.audio.registerPreset('veh-gear-shift-light-001', { duration: 0.10, build: function(E) { E.tone({ freq: 300, dur: 0.05, type: 'triangle', gain: 0.25, attack: 0.001 }); } });
+  KY.audio.registerPreset('veh-brake-squeal-001', { duration: 0.60, build: function(E) { E.noise({ dur: 0.50, gain: 0.30, seed: 2601, filter: { type: 'bandpass', freq: 2000 } }); E.tone({ freq: 2000, dur: 0.40, type: 'sine', gain: 0.15, attack: 0.050 }); } });
+  KY.audio.registerPreset('veh-exhaust-burst-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.50, seed: 2602, filter: { type: 'lowpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('veh-engine-start-futuristic-001', { duration: 1.30, build: function(E) { E.tone({ freq: 50, freqEnd: 400, dur: 1.20, type: 'sine', gain: 0.30, attack: 0.100 }); } });
+  KY.audio.registerPreset('veh-engine-stop-futuristic-001', { duration: 1.30, build: function(E) { E.tone({ freq: 400, freqEnd: 50, dur: 1.20, type: 'sine', gain: 0.30, attack: 0.100 }); } });
+  KY.audio.registerPreset('veh-drivetrain-engage-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.35, seed: 2603, filter: { type: 'bandpass', freq: 1200 } }); E.tone({ freq: 80, freqEnd: 100, dur: 0.20, type: 'sawtooth', gain: 0.30, attack: 0.005 }); } });
+  KY.audio.registerPreset('veh-suspension-bounce-001', { duration: 0.40, build: function(E) { E.tone({ freq: 150, freqEnd: 80, dur: 0.30, type: 'sine', gain: 0.35, attack: 0.010 }); } });
+  KY.audio.registerPreset('veh-tire-screech-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.35, seed: 2604, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('veh-nitro-boost-001', { duration: 0.70, build: function(E) { E.tone({ freq: 200, freqEnd: 800, dur: 0.60, type: 'square', gain: 0.40, attack: 0.020 }); } });
+  KY.audio.registerPreset('veh-racing-pass-by-001', { duration: 0.90, build: function(E) { E.tone({ freq: 400, freqEnd: 100, dur: 0.80, type: 'sawtooth', gain: 0.35, attack: 0.050 }); } });
+  KY.audio.registerPreset('veh-mechanical-whine-001', { duration: 0.70, build: function(E) { E.tone({ freq: 800, freqEnd: 1200, dur: 0.60, type: 'sine', gain: 0.20, attack: 0.020 }); } });
+  KY.audio.registerPreset('veh-hydraulic-lift-001', { duration: 0.70, build: function(E) { E.tone({ freq: 100, freqEnd: 200, dur: 0.60, type: 'sawtooth', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('veh-hydraulic-lower-001', { duration: 0.70, build: function(E) { E.tone({ freq: 200, freqEnd: 100, dur: 0.60, type: 'sawtooth', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('veh-wheel-spin-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.25, seed: 2605, filter: { type: 'bandpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('veh-crash-metal-impact-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.60, seed: 2606, filter: { type: 'highpass', freq: 2000 } }); E.tone({ freq: 80, freqEnd: 40, dur: 0.30, type: 'sine', gain: 0.40, attack: 0.005 }); } });
+  KY.audio.registerPreset('veh-fuel-pump-001', { duration: 0.70, build: function(E) { E.tone({ freq: 200, freqEnd: 300, dur: 0.60, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('veh-speedometer-ping-001', { duration: 0.05, build: function(E) { E.tone({ freq: 2000, dur: 0.02, type: 'square', gain: 0.15, attack: 0.001 }); } });
+  KY.audio.registerPreset('veh-engine-rev-001', { duration: 0.60, build: function(E) { E.tone({ freq: 100, freqEnd: 200, dur: 0.50, type: 'sawtooth', gain: 0.35, attack: 0.020 }); } });
+  KY.audio.registerPreset('veh-gear-grind-001', { duration: 0.40, build: function(E) { E.noise({ dur: 0.30, gain: 0.40, seed: 2607, filter: { type: 'bandpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('veh-futuristic-hover-001', { duration: 1.10, build: function(E) { E.tone({ freq: 80, freqEnd: 120, dur: 1.00, type: 'sine', gain: 0.25, attack: 0.100 }); } });
+  KY.audio.registerPreset('veh-ignition-spark-001', { duration: 0.05, build: function(E) { E.tone({ freq: 1500, dur: 0.02, type: 'square', gain: 0.30, attack: 0.001 }); } });
+  KY.audio.registerPreset('veh-cockpit-ambience-001', { duration: 1.60, build: function(E) { E.noise({ dur: 1.50, gain: 0.15, seed: 2608, filter: { type: 'lowpass', freq: 400 } }); } });
+  KY.audio.registerPreset('veh-engine-cooling-001', { duration: 0.90, build: function(E) { E.tone({ freq: 200, freqEnd: 150, dur: 0.80, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+})();

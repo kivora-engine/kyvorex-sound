@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('react-startup-hum-001', { duration: 1.60, build: function(E) { E.tone({ freq: 50, freqEnd: 100, dur: 1.50, type: 'sine', gain: 0.30, attack: 0.100 }); } });
+  KY.audio.registerPreset('react-stabilize-pulse-001', { duration: 0.80, build: function(E) { for(var i=0; i<4; i++) { E.tone({ freq: 80, dur: 0.15, type: 'sine', gain: 0.25, when: i*0.20, attack: 0.005 }); } } });
+  KY.audio.registerPreset('react-energy-surge-001', { duration: 0.70, build: function(E) { E.tone({ freq: 100, freqEnd: 800, dur: 0.60, type: 'sawtooth', gain: 0.40, attack: 0.020 }); } });
+  KY.audio.registerPreset('react-core-overload-001', { duration: 0.60, build: function(E) { E.noise({ dur: 0.50, gain: 0.50, seed: 2900, filter: { type: 'bandpass', freq: 1500 } }); } });
+  KY.audio.registerPreset('react-coolant-flow-001', { duration: 1.10, build: function(E) { E.noise({ dur: 1.00, gain: 0.20, seed: 2901, filter: { type: 'highpass', freq: 3000 } }); } });
+  KY.audio.registerPreset('react-field-generate-001', { duration: 0.90, build: function(E) { E.tone({ freq: 200, freqEnd: 600, dur: 0.80, type: 'sine', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('react-field-collapse-001', { duration: 0.90, build: function(E) { E.tone({ freq: 600, freqEnd: 200, dur: 0.80, type: 'sine', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('react-power-transfer-001', { duration: 0.40, build: function(E) { for(var i=0; i<3; i++) { E.tone({ freq: 400+i*100, dur: 0.10, type: 'square', gain: 0.20, when: i*0.10, attack: 0.005 }); } } });
+  KY.audio.registerPreset('react-containment-beep-001', { duration: 0.10, build: function(E) { E.tone({ freq: 1500, dur: 0.05, type: 'sine', gain: 0.20, attack: 0.001 }); } });
+  KY.audio.registerPreset('react-warning-alarm-001', { duration: 0.40, build: function(E) { for(var i=0; i<2; i++) { E.tone({ freq: 1000, dur: 0.10, type: 'square', gain: 0.30, when: i*0.20, attack: 0.002 }); } } });
+  KY.audio.registerPreset('react-shutdown-sequence-001', { duration: 1.30, build: function(E) { E.tone({ freq: 300, freqEnd: 50, dur: 1.20, type: 'sawtooth', gain: 0.35, attack: 0.050 }); } });
+  KY.audio.registerPreset('react-plasma-ignite-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.40, seed: 2902, filter: { type: 'highpass', freq: 2000 } }); } });
+  KY.audio.registerPreset('react-magnetic-lock-001', { duration: 0.15, build: function(E) { E.tone({ freq: 100, dur: 0.10, type: 'sine', gain: 0.40, attack: 0.002 }); } });
+  KY.audio.registerPreset('react-energy-beam-001', { duration: 0.60, build: function(E) { E.tone({ freq: 1000, freqEnd: 2000, dur: 0.50, type: 'square', gain: 0.25, attack: 0.010 }); } });
+  KY.audio.registerPreset('react-core-vent-001', { duration: 0.70, build: function(E) { E.noise({ dur: 0.60, gain: 0.45, seed: 2903, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('react-stabilizer-hum-001', { duration: 1.60, build: function(E) { E.tone({ freq: 60, dur: 1.50, type: 'sine', gain: 0.20, attack: 0.100 }); } });
+  KY.audio.registerPreset('react-power-down-001', { duration: 1.60, build: function(E) { E.tone({ freq: 400, freqEnd: 50, dur: 1.50, type: 'sine', gain: 0.35, attack: 0.050 }); } });
+  KY.audio.registerPreset('react-emergency-purge-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.60, seed: 2904, filter: { type: 'bandpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('react-quantum-flux-001', { duration: 0.30, build: function(E) { for(var i=0; i<5; i++) { E.tone({ freq: 600+i*50, dur: 0.05, type: 'triangle', gain: 0.15, when: i*0.05, attack: 0.001 }); } } });
+  KY.audio.registerPreset('react-energy-absorb-001', { duration: 0.90, build: function(E) { E.tone({ freq: 800, freqEnd: 100, dur: 0.80, type: 'sine', gain: 0.30, attack: 0.020 }); } });
+  KY.audio.registerPreset('react-energy-release-001', { duration: 0.90, build: function(E) { E.tone({ freq: 100, freqEnd: 800, dur: 0.80, type: 'sine', gain: 0.30, attack: 0.020 }); } });
+  KY.audio.registerPreset('react-coolant-leak-001', { duration: 0.90, build: function(E) { E.noise({ dur: 0.80, gain: 0.30, seed: 2905, filter: { type: 'highpass', freq: 2500 } }); } });
+  KY.audio.registerPreset('react-reactor-ambience-001', { duration: 2.20, build: function(E) { E.noise({ dur: 2.00, gain: 0.15, seed: 2906, filter: { type: 'lowpass', freq: 400 } }); } });
+  KY.audio.registerPreset('react-plasma-containment-001', { duration: 1.10, build: function(E) { E.tone({ freq: 120, dur: 1.00, type: 'sine', gain: 0.30, attack: 0.050 }); } });
+  KY.audio.registerPreset('react-energy-siphon-001', { duration: 0.90, build: function(E) { E.tone({ freq: 800, freqEnd: 100, dur: 0.80, type: 'sawtooth', gain: 0.35, attack: 0.050 }); } });
+})();

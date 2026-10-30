@@ -1,0 +1,30 @@
+(function () {
+  'use strict';
+  var KY = window.KYVOREX = window.KYVOREX || {};
+  if (!KY.audio) { return; }
+  KY.audio.registerPreset('cyber-firewall-block-001', { duration: 0.25, build: function(E) { E.noise({ dur: 0.20, gain: 0.40, seed: 2800, filter: { type: 'bandpass', freq: 1500 } }); E.tone({ freq: 200, dur: 0.15, type: 'square', gain: 0.30, attack: 0.001 }); } });
+  KY.audio.registerPreset('cyber-access-granted-001', { duration: 0.15, build: function(E) { E.tone({ freq: 1000, dur: 0.05, type: 'sine', gain: 0.25, when: 0.00, attack: 0.001 }); E.tone({ freq: 1500, dur: 0.10, type: 'sine', gain: 0.25, when: 0.08, attack: 0.001 }); } });
+  KY.audio.registerPreset('cyber-access-denied-001', { duration: 0.20, build: function(E) { E.tone({ freq: 400, dur: 0.10, type: 'square', gain: 0.30, attack: 0.002 }); } });
+  KY.audio.registerPreset('cyber-password-accepted-001', { duration: 0.10, build: function(E) { E.tone({ freq: 1200, dur: 0.05, type: 'triangle', gain: 0.20, attack: 0.001 }); } });
+  KY.audio.registerPreset('cyber-password-rejected-001', { duration: 0.20, build: function(E) { E.tone({ freq: 300, dur: 0.15, type: 'sawtooth', gain: 0.25, attack: 0.002 }); } });
+  KY.audio.registerPreset('cyber-data-encrypt-001', { duration: 0.30, build: function(E) { for(var i=0; i<5; i++) { E.tone({ freq: 600+i*100, dur: 0.03, type: 'sine', gain: 0.15, when: i*0.05, attack: 0.001 }); } } });
+  KY.audio.registerPreset('cyber-data-decrypt-001', { duration: 0.30, build: function(E) { for(var i=0; i<5; i++) { E.tone({ freq: 1000-i*100, dur: 0.03, type: 'sine', gain: 0.15, when: i*0.05, attack: 0.001 }); } } });
+  KY.audio.registerPreset('cyber-mainframe-connect-001', { duration: 0.70, build: function(E) { E.tone({ freq: 100, freqEnd: 400, dur: 0.60, type: 'sine', gain: 0.25, attack: 0.050 }); } });
+  KY.audio.registerPreset('cyber-server-hum-001', { duration: 1.60, build: function(E) { E.tone({ freq: 60, dur: 1.50, type: 'sine', gain: 0.20, attack: 0.100 }); } });
+  KY.audio.registerPreset('cyber-ddos-attack-001', { duration: 1.10, build: function(E) { E.noise({ dur: 1.00, gain: 0.40, seed: 2801, filter: { type: 'bandpass', freq: 1000 } }); } });
+  KY.audio.registerPreset('cyber-brute-force-001', { duration: 0.35, build: function(E) { for(var i=0; i<8; i++) { E.tone({ freq: 800, dur: 0.02, type: 'square', gain: 0.15, when: i*0.04, attack: 0.001 }); } } });
+  KY.audio.registerPreset('cyber-vpn-connect-001', { duration: 0.50, build: function(E) { E.tone({ freq: 200, freqEnd: 800, dur: 0.40, type: 'sine', gain: 0.20, attack: 0.020 }); } });
+  KY.audio.registerPreset('cyber-alert-intrusion-001', { duration: 0.40, build: function(E) { for(var i=0; i<2; i++) { E.tone({ freq: 1200, dur: 0.10, type: 'square', gain: 0.30, when: i*0.20, attack: 0.002 }); } } });
+  KY.audio.registerPreset('cyber-trace-route-001', { duration: 0.70, build: function(E) { E.tone({ freq: 800, freqEnd: 400, dur: 0.60, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('cyber-system-lockdown-001', { duration: 1.10, build: function(E) { E.tone({ freq: 400, freqEnd: 50, dur: 1.00, type: 'sawtooth', gain: 0.35, attack: 0.050 }); } });
+  KY.audio.registerPreset('cyber-secure-channel-001', { duration: 0.10, build: function(E) { E.tone({ freq: 1500, dur: 0.05, type: 'sine', gain: 0.20, when: 0.00, attack: 0.001 }); E.tone({ freq: 1800, dur: 0.05, type: 'sine', gain: 0.20, when: 0.10, attack: 0.001 }); } });
+  KY.audio.registerPreset('cyber-digital-sig-001', { duration: 0.25, build: function(E) { for(var i=0; i<4; i++) { E.tone({ freq: 1000+i*100, dur: 0.03, type: 'triangle', gain: 0.20, when: i*0.05, attack: 0.001 }); } } });
+  KY.audio.registerPreset('cyber-quantum-key-001', { duration: 0.90, build: function(E) { E.tone({ freq: 2000, freqEnd: 500, dur: 0.80, type: 'sine', gain: 0.20, attack: 0.050 }); } });
+  KY.audio.registerPreset('cyber-proxy-switch-001', { duration: 0.10, build: function(E) { E.tone({ freq: 600, dur: 0.05, type: 'square', gain: 0.25, attack: 0.001 }); } });
+  KY.audio.registerPreset('cyber-node-scan-001', { duration: 0.50, build: function(E) { for(var i=0; i<6; i++) { E.tone({ freq: 400+i*50, dur: 0.02, type: 'sine', gain: 0.15, when: i*0.08, attack: 0.001 }); } } });
+  KY.audio.registerPreset('cyber-honeypot-trigger-001', { duration: 0.50, build: function(E) { E.noise({ dur: 0.40, gain: 0.30, seed: 2802, filter: { type: 'lowpass', freq: 800 } }); } });
+  KY.audio.registerPreset('cyber-zero-day-patch-001', { duration: 0.40, build: function(E) { E.tone({ freq: 300, freqEnd: 600, dur: 0.30, type: 'sine', gain: 0.20, attack: 0.010 }); } });
+  KY.audio.registerPreset('cyber-backdoor-open-001', { duration: 0.60, build: function(E) { E.tone({ freq: 100, freqEnd: 200, dur: 0.50, type: 'sawtooth', gain: 0.25, attack: 0.020 }); } });
+  KY.audio.registerPreset('cyber-network-ping-001', { duration: 0.05, build: function(E) { E.tone({ freq: 1000, dur: 0.02, type: 'sine', gain: 0.20, attack: 0.001 }); } });
+  KY.audio.registerPreset('cyber-system-reboot-001', { duration: 0.70, build: function(E) { E.tone({ freq: 200, freqEnd: 800, dur: 0.60, type: 'square', gain: 0.30, attack: 0.020 }); } });
+})();
