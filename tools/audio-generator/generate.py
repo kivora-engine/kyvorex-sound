@@ -157,6 +157,11 @@ def run_official(sync_catalog, new_only):
         from official_presets_infra import OFFICIAL_PRESETS_INFRA
         from official_presets_cyber import OFFICIAL_PRESETS_CYBER
         from official_presets_reactors import OFFICIAL_PRESETS_REACTORS
+        from official_presets_microlife import OFFICIAL_PRESETS_MICROLIFE
+        from official_presets_geoscape import OFFICIAL_PRESETS_GEOSCAPE
+        from official_presets_fortress import OFFICIAL_PRESETS_FORTRESS
+        from official_presets_alchemy import OFFICIAL_PRESETS_ALCHEMY
+        from official_presets_percussion import OFFICIAL_PRESETS_PERCUSSION
         
         presets_to_run = {
             **OFFICIAL_PRESETS, **OFFICIAL_PRESETS_EXTRA, **OFFICIAL_PRESETS_QUESTS,
@@ -169,7 +174,9 @@ def run_official(sync_catalog, new_only):
             **OFFICIAL_PRESETS_UNIQUE, **OFFICIAL_PRESETS_ROBOTICS, **OFFICIAL_PRESETS_SPACESHIP,
             **OFFICIAL_PRESETS_RUINS, **OFFICIAL_PRESETS_UNDERWATER, **OFFICIAL_PRESETS_FORGE,
             **OFFICIAL_PRESETS_SCI_TOOLS, **OFFICIAL_PRESETS_VEHICLES, **OFFICIAL_PRESETS_INFRA,
-            **OFFICIAL_PRESETS_CYBER, **OFFICIAL_PRESETS_REACTORS
+            **OFFICIAL_PRESETS_CYBER, **OFFICIAL_PRESETS_REACTORS,
+            **OFFICIAL_PRESETS_MICROLIFE, **OFFICIAL_PRESETS_GEOSCAPE, **OFFICIAL_PRESETS_FORTRESS,
+            **OFFICIAL_PRESETS_ALCHEMY, **OFFICIAL_PRESETS_PERCUSSION
         }
         tag = "all"
 
