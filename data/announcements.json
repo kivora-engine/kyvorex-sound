@@ -1,6 +1,13 @@
 {
   "announcements": [
     {
+      "id": "milestone-1000",
+      "date": "2026-10-31",
+      "title": "KYVOREX SOUNDS REACHES 1,000 SOUNDS!",
+      "type": "info",
+      "message": "KYVOREX SOUNDS has officially reached 1,000 original procedural sounds! This milestone marks the completion of the V1 development phase. Thank you to everyone supporting our mission to provide accessible, original sounds for game and app developers. A new development phase begins: V1.1. Future updates will focus on improving performance, stability, usability, and the overall experience of the sound store. This is only the beginning. More improvements are coming!"
+    },
+    {
   "id": "milestone-195",
   "date": "2026-10-24",
   "title": "195 Sounds Milestone Reached!",

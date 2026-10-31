@@ -1,6 +1,12 @@
 {
   "updates": [
     {
+      "id": "update-2026-10-31",
+      "date": "2026-10-31",
+      "title": "V1 DEVELOPMENT COMPLETED — V1.1 DEVELOPMENT BEGINS",
+      "description": "KYVOREX SOUNDS has completed its V1 development milestone with 1,000 sounds. Development now moves into V1.1, focusing on continuous improvements to performance, stability, usability, and existing features. V1.1 improvements will be delivered progressively through future updates."
+    },
+    {
       "id": "update-2026-10-20",
       "date": "2026-10-20",
       "title": "Added 30 new sounds and 2 categories",

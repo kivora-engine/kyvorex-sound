@@ -35,7 +35,7 @@ const JS_FILES = [
 'audio-presets-adv-tech.js',
 'audio-presets-rare-env.js',
 'audio-presets-unique.js',
-'audio-presets-microlife.js','audio-presets-geoscape.js','audio-presets-fortress.js','audio-presets-alchemy.js','audio-presets-percussion.js',
+'audio-presets-microlife.js','audio-presets-geoscape.js','audio-presets-fortress.js','audio-presets-alchemy.js','audio-presets-percussion.js','audio-presets-mocap.js','audio-presets-fantasyeco.js','audio-presets-smartcity.js','audio-presets-dimensions.js','audio-presets-prototypes.js',
 'audio-presets-animals.js','audio-presets-quests.js', 'audio-presets-extra.js', 'wav-renderer.js', 'donate.js', 'news.js'
 ];
 const CSS_FILES = ['base.css', 'layout.css', 'components.css', 'responsive.css'];
