@@ -167,6 +167,11 @@ def run_official(sync_catalog, new_only):
         from official_presets_smartcity import OFFICIAL_PRESETS_SMARTCITY
         from official_presets_dimensions import OFFICIAL_PRESETS_DIMENSIONS
         from official_presets_prototypes import OFFICIAL_PRESETS_PROTOTYPES
+        from official_presets_remaster_a import OFFICIAL_PRESETS_REMASTER_A
+        from official_presets_remaster_b import OFFICIAL_PRESETS_REMASTER_B
+        from official_presets_remaster_c import OFFICIAL_PRESETS_REMASTER_C
+        from official_presets_remaster_d import OFFICIAL_PRESETS_REMASTER_D
+        from official_presets_levels import apply_levels
         
         presets_to_run = {
             **OFFICIAL_PRESETS, **OFFICIAL_PRESETS_EXTRA, **OFFICIAL_PRESETS_QUESTS,
@@ -182,8 +187,11 @@ def run_official(sync_catalog, new_only):
             **OFFICIAL_PRESETS_CYBER, **OFFICIAL_PRESETS_REACTORS,
             **OFFICIAL_PRESETS_MICROLIFE, **OFFICIAL_PRESETS_GEOSCAPE, **OFFICIAL_PRESETS_FORTRESS,
             **OFFICIAL_PRESETS_ALCHEMY, **OFFICIAL_PRESETS_PERCUSSION,
-            **OFFICIAL_PRESETS_MOCAP, **OFFICIAL_PRESETS_FANTASYECO, **OFFICIAL_PRESETS_SMARTCITY, **OFFICIAL_PRESETS_DIMENSIONS, **OFFICIAL_PRESETS_PROTOTYPES
+            **OFFICIAL_PRESETS_MOCAP, **OFFICIAL_PRESETS_FANTASYECO, **OFFICIAL_PRESETS_SMARTCITY, **OFFICIAL_PRESETS_DIMENSIONS, **OFFICIAL_PRESETS_PROTOTYPES,
+            # V1.1 lot 1 : rebuilt sounds override the older versions with the same id
+            **OFFICIAL_PRESETS_REMASTER_A, **OFFICIAL_PRESETS_REMASTER_B, **OFFICIAL_PRESETS_REMASTER_C, **OFFICIAL_PRESETS_REMASTER_D
         }
+        presets_to_run = apply_levels(presets_to_run)
         tag = "all"
 
     total = len(presets_to_run)
