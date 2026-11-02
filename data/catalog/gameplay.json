@@ -1729,7 +1729,7 @@
         "résultat",
         "final"
       ],
-      "duration": "1.00s",
+      "duration": "2.10s",
       "date": "2026-10-24",
       "mp3": "audio/mp3/game-final-result-reveal-001.mp3",
       "wav": "audio/wav/game-final-result-reveal-001.wav",
@@ -2569,7 +2569,7 @@
         "industrial",
         "turbine"
       ],
-      "duration": "0.30s",
+      "duration": "1.65s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/mech-turbine-spin-001.mp3",
       "wav": "audio/wav/mech-turbine-spin-001.wav",
@@ -3472,7 +3472,7 @@
         "precision",
         "fil"
       ],
-      "duration": "0.30s",
+      "duration": "0.20s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/craft-wire-snips-001.mp3",
       "wav": "audio/wav/craft-wire-snips-001.wav",
@@ -3535,7 +3535,7 @@
         "precision",
         "niveau"
       ],
-      "duration": "0.30s",
+      "duration": "0.51s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/craft-level-bubble-001.mp3",
       "wav": "audio/wav/craft-level-bubble-001.wav",
@@ -3598,7 +3598,7 @@
         "assembly",
         "agrafeuse"
       ],
-      "duration": "0.30s",
+      "duration": "0.23s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/craft-staple-gun-001.mp3",
       "wav": "audio/wav/craft-staple-gun-001.wav",
@@ -4089,7 +4089,7 @@
         "gravity",
         "gravité"
       ],
-      "duration": "0.80s",
+      "duration": "1.60s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/gravity-well-generate-001.mp3",
       "wav": "audio/wav/gravity-well-generate-001.wav",
@@ -4509,7 +4509,7 @@
         "vehicle",
         "boost"
       ],
-      "duration": "0.80s",
+      "duration": "1.05s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/unique-vehicle-boost-001.mp3",
       "wav": "audio/wav/unique-vehicle-boost-001.wav",
@@ -4992,7 +4992,7 @@
         "ancient",
         "relique"
       ],
-      "duration": "0.80s",
+      "duration": "1.60s",
       "date": "2026-10-29",
       "mp3": "audio/mp3/ruin-relic-hum-001.mp3",
       "wav": "audio/wav/ruin-relic-hum-001.wav",
@@ -5181,7 +5181,7 @@
         "metal",
         "meule"
       ],
-      "duration": "0.50s",
+      "duration": "1.05s",
       "date": "2026-10-29",
       "mp3": "audio/mp3/forge-grindstone-spin-001.mp3",
       "wav": "audio/wav/forge-grindstone-spin-001.wav",

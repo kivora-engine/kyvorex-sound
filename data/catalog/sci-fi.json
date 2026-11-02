@@ -434,7 +434,7 @@
         "pipette",
         "science"
       ],
-      "duration": "0.10s",
+      "duration": "0.29s",
       "date": "2026-10-24",
       "mp3": "audio/mp3/lab-pipette-release-001.mp3",
       "wav": "audio/wav/lab-pipette-release-001.wav",
@@ -1958,7 +1958,7 @@
         "smart",
         "intelligent"
       ],
-      "duration": "0.40s",
+      "duration": "0.65s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/smart-device-activate-001.mp3",
       "wav": "audio/wav/smart-device-activate-001.wav",
@@ -2418,7 +2418,7 @@
         "energy",
         "siphon"
       ],
-      "duration": "0.80s",
+      "duration": "1.15s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/tech-energy-siphon-001.mp3",
       "wav": "audio/wav/tech-energy-siphon-001.wav",
@@ -2602,7 +2602,7 @@
         "robotics",
         "bras"
       ],
-      "duration": "0.50s",
+      "duration": "0.86s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/robot-arm-move-001.mp3",
       "wav": "audio/wav/robot-arm-move-001.wav",
@@ -3127,7 +3127,7 @@
         "space",
         "porte"
       ],
-      "duration": "0.50s",
+      "duration": "0.94s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/spaceship-door-open-001.mp3",
       "wav": "audio/wav/spaceship-door-open-001.wav",
@@ -3148,7 +3148,7 @@
         "space",
         "porte"
       ],
-      "duration": "0.50s",
+      "duration": "0.80s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/spaceship-door-close-001.mp3",
       "wav": "audio/wav/spaceship-door-close-001.wav",
@@ -3547,7 +3547,7 @@
         "space",
         "radar"
       ],
-      "duration": "0.50s",
+      "duration": "0.95s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/spaceship-radar-sweep-001.mp3",
       "wav": "audio/wav/spaceship-radar-sweep-001.wav",
@@ -3610,7 +3610,7 @@
         "space",
         "cryo"
       ],
-      "duration": "0.50s",
+      "duration": "1.30s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/spaceship-cryo-freeze-001.mp3",
       "wav": "audio/wav/spaceship-cryo-freeze-001.wav",
@@ -3631,7 +3631,7 @@
         "space",
         "cryo"
       ],
-      "duration": "0.50s",
+      "duration": "1.35s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/spaceship-cryo-thaw-001.mp3",
       "wav": "audio/wav/spaceship-cryo-thaw-001.wav",
@@ -4424,7 +4424,7 @@
         "mechanical",
         "whine"
       ],
-      "duration": "0.80s",
+      "duration": "0.85s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/veh-mechanical-whine-001.mp3",
       "wav": "audio/wav/veh-mechanical-whine-001.wav",
@@ -4625,7 +4625,7 @@
         "ignition",
         "spark"
       ],
-      "duration": "0.80s",
+      "duration": "1.05s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/veh-ignition-spark-001.mp3",
       "wav": "audio/wav/veh-ignition-spark-001.wav",
@@ -4825,7 +4825,7 @@
         "mainframe",
         "connect"
       ],
-      "duration": "0.80s",
+      "duration": "1.07s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/cyber-mainframe-connect-001.mp3",
       "wav": "audio/wav/cyber-mainframe-connect-001.wav",
@@ -4985,7 +4985,7 @@
         "secure",
         "channel"
       ],
-      "duration": "0.80s",
+      "duration": "0.67s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/cyber-secure-channel-001.mp3",
       "wav": "audio/wav/cyber-secure-channel-001.wav",
@@ -5126,7 +5126,7 @@
         "backdoor",
         "open"
       ],
-      "duration": "0.80s",
+      "duration": "0.99s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/cyber-backdoor-open-001.mp3",
       "wav": "audio/wav/cyber-backdoor-open-001.wav",
@@ -5166,7 +5166,7 @@
         "system",
         "reboot"
       ],
-      "duration": "0.80s",
+      "duration": "1.40s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/cyber-system-reboot-001.mp3",
       "wav": "audio/wav/cyber-system-reboot-001.wav",
@@ -5286,7 +5286,7 @@
         "field",
         "generate"
       ],
-      "duration": "0.80s",
+      "duration": "1.25s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/react-field-generate-001.mp3",
       "wav": "audio/wav/react-field-generate-001.wav",
@@ -5346,7 +5346,7 @@
         "containment",
         "beep"
       ],
-      "duration": "0.80s",
+      "duration": "0.77s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/react-containment-beep-001.mp3",
       "wav": "audio/wav/react-containment-beep-001.wav",
@@ -5486,7 +5486,7 @@
         "stabilizer",
         "hum"
       ],
-      "duration": "0.80s",
+      "duration": "1.55s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/react-stabilizer-hum-001.mp3",
       "wav": "audio/wav/react-stabilizer-hum-001.wav",
@@ -5646,7 +5646,7 @@
         "plasma",
         "containment"
       ],
-      "duration": "0.80s",
+      "duration": "1.05s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/react-plasma-containment-001.mp3",
       "wav": "audio/wav/react-plasma-containment-001.wav",

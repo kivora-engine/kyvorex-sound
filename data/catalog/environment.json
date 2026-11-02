@@ -844,7 +844,7 @@
         "animal",
         "cerf"
       ],
-      "duration": "0.50s",
+      "duration": "0.45s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/deer-alarm-bark-001.mp3",
       "wav": "audio/wav/deer-alarm-bark-001.wav",
@@ -1776,7 +1776,7 @@
         "underwater",
         "moteur"
       ],
-      "duration": "0.80s",
+      "duration": "1.55s",
       "date": "2026-10-29",
       "mp3": "audio/mp3/sub-engine-hum-001.mp3",
       "wav": "audio/wav/sub-engine-hum-001.wav",
@@ -2049,7 +2049,7 @@
         "underwater",
         "torpille"
       ],
-      "duration": "0.80s",
+      "duration": "0.95s",
       "date": "2026-10-29",
       "mp3": "audio/mp3/sub-torpedo-tube-open-001.mp3",
       "wav": "audio/wav/sub-torpedo-tube-open-001.wav",
