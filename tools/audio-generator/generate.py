@@ -172,6 +172,11 @@ def run_official(sync_catalog, new_only):
         from official_presets_remaster_c import OFFICIAL_PRESETS_REMASTER_C
         from official_presets_remaster_d import OFFICIAL_PRESETS_REMASTER_D
         from official_presets_remaster_lot2 import OFFICIAL_PRESETS_REMASTER_LOT2
+        from official_presets_g1_m3 import OFFICIAL_PRESETS_G1_M3
+        from official_presets_g1_m4 import OFFICIAL_PRESETS_G1_M4
+        from official_presets_g1_m5 import OFFICIAL_PRESETS_G1_M5
+        from official_presets_g1_m6 import OFFICIAL_PRESETS_G1_M6
+        from official_presets_g1_m7 import OFFICIAL_PRESETS_G1_M7
         from official_presets_levels import apply_levels
         
         presets_to_run = {
@@ -192,7 +197,10 @@ def run_official(sync_catalog, new_only):
             # V1.1 lot 1 : rebuilt sounds override the older versions with the same id
             **OFFICIAL_PRESETS_REMASTER_A, **OFFICIAL_PRESETS_REMASTER_B, **OFFICIAL_PRESETS_REMASTER_C, **OFFICIAL_PRESETS_REMASTER_D,
             # V1.1 lot 2 : duplicates rebuilt with their own identity
-            **OFFICIAL_PRESETS_REMASTER_LOT2
+            **OFFICIAL_PRESETS_REMASTER_LOT2,
+            # V1.1 generation 1 : 125 weakest sounds rebuilt (same ids, levels already set inside each module)
+            **OFFICIAL_PRESETS_G1_M3, **OFFICIAL_PRESETS_G1_M4, **OFFICIAL_PRESETS_G1_M5,
+            **OFFICIAL_PRESETS_G1_M6, **OFFICIAL_PRESETS_G1_M7
         }
         presets_to_run = apply_levels(presets_to_run)
         tag = "all"

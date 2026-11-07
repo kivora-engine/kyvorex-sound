@@ -55,7 +55,7 @@
         "pluie",
         "averse"
       ],
-      "duration": "0.50s",
+      "duration": "1.90s",
       "date": "2026-10-19",
       "mp3": "audio/mp3/environment-rain-start-001.mp3",
       "wav": "audio/wav/environment-rain-start-001.wav",
@@ -382,7 +382,7 @@
         "animal",
         "éléphant"
       ],
-      "duration": "0.50s",
+      "duration": "1.40s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/elephant-trumpet-001.mp3",
       "wav": "audio/wav/elephant-trumpet-001.wav",
@@ -445,7 +445,7 @@
         "animal",
         "chameau"
       ],
-      "duration": "0.50s",
+      "duration": "1.10s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/camel-call-001.mp3",
       "wav": "audio/wav/camel-call-001.wav",
@@ -466,7 +466,7 @@
         "animal",
         "hyène"
       ],
-      "duration": "0.50s",
+      "duration": "1.30s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/hyena-cackle-001.mp3",
       "wav": "audio/wav/hyena-cackle-001.wav",
@@ -487,7 +487,7 @@
         "animal",
         "grenouille"
       ],
-      "duration": "0.50s",
+      "duration": "1.30s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/frog-pond-croak-001.mp3",
       "wav": "audio/wav/frog-pond-croak-001.wav",
@@ -508,7 +508,7 @@
         "animal",
         "cigale"
       ],
-      "duration": "0.50s",
+      "duration": "0.90s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/cicada-day-chorus-001.mp3",
       "wav": "audio/wav/cicada-day-chorus-001.wav",
@@ -529,7 +529,7 @@
         "animal",
         "chouette"
       ],
-      "duration": "0.50s",
+      "duration": "1.00s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/owl-wing-pass-001.mp3",
       "wav": "audio/wav/owl-wing-pass-001.wav",
@@ -592,7 +592,7 @@
         "animal",
         "canard"
       ],
-      "duration": "0.50s",
+      "duration": "0.70s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/duck-flock-takeoff-001.mp3",
       "wav": "audio/wav/duck-flock-takeoff-001.wav",
@@ -655,7 +655,7 @@
         "animal",
         "baleine"
       ],
-      "duration": "0.50s",
+      "duration": "1.20s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/whale-song-low-001.mp3",
       "wav": "audio/wav/whale-song-low-001.wav",
@@ -718,7 +718,7 @@
         "animal",
         "abeilles"
       ],
-      "duration": "0.50s",
+      "duration": "0.90s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/bees-swarm-pass-001.mp3",
       "wav": "audio/wav/bees-swarm-pass-001.wav",
@@ -739,7 +739,7 @@
         "animal",
         "moustique"
       ],
-      "duration": "0.50s",
+      "duration": "1.50s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/mosquito-near-ear-001.mp3",
       "wav": "audio/wav/mosquito-near-ear-001.wav",
@@ -760,7 +760,7 @@
         "animal",
         "serpent"
       ],
-      "duration": "0.50s",
+      "duration": "0.90s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/snake-hiss-long-001.mp3",
       "wav": "audio/wav/snake-hiss-long-001.wav",
@@ -781,7 +781,7 @@
         "animal",
         "crocodile"
       ],
-      "duration": "0.50s",
+      "duration": "0.70s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/crocodile-water-movement-001.mp3",
       "wav": "audio/wav/crocodile-water-movement-001.wav",
@@ -823,7 +823,7 @@
         "animal",
         "sanglier"
       ],
-      "duration": "0.50s",
+      "duration": "1.20s",
       "date": "2026-10-25",
       "mp3": "audio/mp3/boar-ground-snuffle-001.mp3",
       "wav": "audio/wav/boar-ground-snuffle-001.wav",
@@ -1007,7 +1007,7 @@
         "water",
         "cascade"
       ],
-      "duration": "1.50s",
+      "duration": "2.20s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/env-waterfall-001.mp3",
       "wav": "audio/wav/env-waterfall-001.wav",
@@ -1067,7 +1067,7 @@
         "swamp",
         "marais"
       ],
-      "duration": "1.50s",
+      "duration": "1.60s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/env-swamp-ambience-001.mp3",
       "wav": "audio/wav/env-swamp-ambience-001.wav",
@@ -1167,7 +1167,7 @@
         "river",
         "rivière"
       ],
-      "duration": "1.50s",
+      "duration": "2.20s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/env-river-flow-001.mp3",
       "wav": "audio/wav/env-river-flow-001.wav",
@@ -1247,7 +1247,7 @@
         "water",
         "eau"
       ],
-      "duration": "1.50s",
+      "duration": "1.10s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/env-tide-pool-001.mp3",
       "wav": "audio/wav/env-tide-pool-001.wav",
@@ -1307,7 +1307,7 @@
         "blizzard",
         "neige"
       ],
-      "duration": "1.50s",
+      "duration": "2.20s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/env-blizzard-001.mp3",
       "wav": "audio/wav/env-blizzard-001.wav",
@@ -1327,7 +1327,7 @@
         "rain",
         "pluie"
       ],
-      "duration": "1.50s",
+      "duration": "1.60s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/env-jungle-rain-001.mp3",
       "wav": "audio/wav/env-jungle-rain-001.wav",
@@ -1367,7 +1367,7 @@
         "meteor",
         "météore"
       ],
-      "duration": "0.80s",
+      "duration": "1.30s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/meteor-shower-pass-001.mp3",
       "wav": "audio/wav/meteor-shower-pass-001.wav",
@@ -1387,7 +1387,7 @@
         "black hole",
         "trou noir"
       ],
-      "duration": "0.80s",
+      "duration": "1.60s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/black-hole-collapse-001.mp3",
       "wav": "audio/wav/black-hole-collapse-001.wav",
@@ -1407,7 +1407,7 @@
         "nebula",
         "nébuleuse"
       ],
-      "duration": "0.80s",
+      "duration": "2.20s",
       "date": "2026-10-26",
       "mp3": "audio/mp3/nebula-ambience-001.mp3",
       "wav": "audio/wav/nebula-ambience-001.wav",
@@ -1447,7 +1447,7 @@
         "aurora",
         "borealis"
       ],
-      "duration": "0.80s",
+      "duration": "2.20s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/env-aurora-borealis-001.mp3",
       "wav": "audio/wav/env-aurora-borealis-001.wav",
@@ -1467,7 +1467,7 @@
         "geyser",
         "mini"
       ],
-      "duration": "0.80s",
+      "duration": "1.40s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/env-geyser-mini-001.mp3",
       "wav": "audio/wav/env-geyser-mini-001.wav",
@@ -1488,7 +1488,7 @@
         "cave",
         "hum"
       ],
-      "duration": "0.80s",
+      "duration": "1.60s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/env-crystal-cave-hum-001.mp3",
       "wav": "audio/wav/env-crystal-cave-hum-001.wav",
@@ -1508,7 +1508,7 @@
         "floating",
         "islands"
       ],
-      "duration": "0.80s",
+      "duration": "2.20s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/env-floating-islands-001.mp3",
       "wav": "audio/wav/env-floating-islands-001.wav",
@@ -1529,7 +1529,7 @@
         "shower",
         "distant"
       ],
-      "duration": "0.80s",
+      "duration": "1.30s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/env-meteor-shower-distant-001.mp3",
       "wav": "audio/wav/env-meteor-shower-distant-001.wav",
@@ -1571,7 +1571,7 @@
         "mirage",
         "shimmer"
       ],
-      "duration": "0.80s",
+      "duration": "1.60s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/env-desert-mirage-shimmer-001.mp3",
       "wav": "audio/wav/env-desert-mirage-shimmer-001.wav",
@@ -1632,7 +1632,7 @@
         "bioluminescent",
         "forest"
       ],
-      "duration": "0.80s",
+      "duration": "1.60s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/env-bioluminescent-forest-001.mp3",
       "wav": "audio/wav/env-bioluminescent-forest-001.wav",
@@ -1652,7 +1652,7 @@
         "sandstorm",
         "distant"
       ],
-      "duration": "0.80s",
+      "duration": "2.20s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/env-sandstorm-distant-001.mp3",
       "wav": "audio/wav/env-sandstorm-distant-001.wav",
@@ -1672,7 +1672,7 @@
         "waterfall",
         "misty"
       ],
-      "duration": "0.80s",
+      "duration": "1.60s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/env-waterfall-misty-001.mp3",
       "wav": "audio/wav/env-waterfall-misty-001.wav",
@@ -1692,7 +1692,7 @@
         "magnetic",
         "anomaly"
       ],
-      "duration": "0.80s",
+      "duration": "1.10s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/env-magnetic-anomaly-001.mp3",
       "wav": "audio/wav/env-magnetic-anomaly-001.wav",
@@ -1713,7 +1713,7 @@
         "well",
         "pulse"
       ],
-      "duration": "0.80s",
+      "duration": "0.90s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/env-gravity-well-pulse-001.mp3",
       "wav": "audio/wav/env-gravity-well-pulse-001.wav",
@@ -1734,7 +1734,7 @@
         "flare",
         "wind"
       ],
-      "duration": "0.80s",
+      "duration": "1.60s",
       "date": "2026-10-27",
       "mp3": "audio/mp3/env-solar-flare-wind-001.mp3",
       "wav": "audio/wav/env-solar-flare-wind-001.wav",
@@ -1797,7 +1797,7 @@
         "underwater",
         "sas"
       ],
-      "duration": "0.80s",
+      "duration": "1.10s",
       "date": "2026-10-29",
       "mp3": "audio/mp3/sub-airlock-open-001.mp3",
       "wav": "audio/wav/sub-airlock-open-001.wav",
@@ -1881,7 +1881,7 @@
         "underwater",
         "alarme"
       ],
-      "duration": "0.80s",
+      "duration": "1.60s",
       "date": "2026-10-29",
       "mp3": "audio/mp3/sub-dive-alarm-001.mp3",
       "wav": "audio/wav/sub-dive-alarm-001.wav",
@@ -1923,7 +1923,7 @@
         "underwater",
         "oxygène"
       ],
-      "duration": "0.80s",
+      "duration": "1.50s",
       "date": "2026-10-29",
       "mp3": "audio/mp3/sub-oxygen-warning-001.mp3",
       "wav": "audio/wav/sub-oxygen-warning-001.wav",
@@ -1986,7 +1986,7 @@
         "underwater",
         "hélice"
       ],
-      "duration": "0.80s",
+      "duration": "1.10s",
       "date": "2026-10-29",
       "mp3": "audio/mp3/sub-propeller-start-001.mp3",
       "wav": "audio/wav/sub-propeller-start-001.wav",
@@ -2007,7 +2007,7 @@
         "underwater",
         "hélice"
       ],
-      "duration": "0.80s",
+      "duration": "1.10s",
       "date": "2026-10-29",
       "mp3": "audio/mp3/sub-propeller-stop-001.mp3",
       "wav": "audio/wav/sub-propeller-stop-001.wav",
@@ -2112,7 +2112,7 @@
         "underwater",
         "ballast"
       ],
-      "duration": "0.80s",
+      "duration": "0.90s",
       "date": "2026-10-29",
       "mp3": "audio/mp3/sub-ballast-blow-001.mp3",
       "wav": "audio/wav/sub-ballast-blow-001.wav",
@@ -2154,7 +2154,7 @@
         "underwater",
         "sonar"
       ],
-      "duration": "0.80s",
+      "duration": "1.80s",
       "date": "2026-10-29",
       "mp3": "audio/mp3/sub-sonar-sweep-001.mp3",
       "wav": "audio/wav/sub-sonar-sweep-001.wav",
@@ -2217,7 +2217,7 @@
         "underwater",
         "moteur"
       ],
-      "duration": "0.80s",
+      "duration": "0.90s",
       "date": "2026-10-29",
       "mp3": "audio/mp3/sub-engine-reverse-001.mp3",
       "wav": "audio/wav/sub-engine-reverse-001.wav",
@@ -2238,7 +2238,7 @@
         "underwater",
         "scan"
       ],
-      "duration": "0.80s",
+      "duration": "1.60s",
       "date": "2026-10-29",
       "mp3": "audio/mp3/sub-underwater-scan-001.mp3",
       "wav": "audio/wav/sub-underwater-scan-001.wav",
@@ -2299,7 +2299,7 @@
         "bridge",
         "lift"
       ],
-      "duration": "0.80s",
+      "duration": "1.30s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-bridge-lift-001.mp3",
       "wav": "audio/wav/infra-bridge-lift-001.wav",
@@ -2339,7 +2339,7 @@
         "subway",
         "arrival"
       ],
-      "duration": "0.80s",
+      "duration": "0.90s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-subway-arrival-001.mp3",
       "wav": "audio/wav/infra-subway-arrival-001.wav",
@@ -2423,7 +2423,7 @@
         "track",
         "clatter"
       ],
-      "duration": "0.80s",
+      "duration": "1.70s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-train-track-clatter-001.mp3",
       "wav": "audio/wav/infra-train-track-clatter-001.wav",
@@ -2443,7 +2443,7 @@
         "tunnel",
         "wind"
       ],
-      "duration": "0.80s",
+      "duration": "1.60s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-tunnel-wind-001.mp3",
       "wav": "audio/wav/infra-tunnel-wind-001.wav",
@@ -2463,7 +2463,7 @@
         "ferry",
         "horn"
       ],
-      "duration": "0.80s",
+      "duration": "1.10s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-ferry-horn-001.mp3",
       "wav": "audio/wav/infra-ferry-horn-001.wav",
@@ -2483,7 +2483,7 @@
         "drawbridge",
         "motor"
       ],
-      "duration": "0.80s",
+      "duration": "1.10s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-drawbridge-motor-001.mp3",
       "wav": "audio/wav/infra-drawbridge-motor-001.wav",
@@ -2525,7 +2525,7 @@
         "barrier",
         "open"
       ],
-      "duration": "0.80s",
+      "duration": "0.65s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-parking-barrier-open-001.mp3",
       "wav": "audio/wav/infra-parking-barrier-open-001.wav",
@@ -2546,7 +2546,7 @@
         "barrier",
         "close"
       ],
-      "duration": "0.80s",
+      "duration": "0.90s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-parking-barrier-close-001.mp3",
       "wav": "audio/wav/infra-parking-barrier-close-001.wav",
@@ -2566,7 +2566,7 @@
         "crosswalk",
         "signal"
       ],
-      "duration": "0.80s",
+      "duration": "1.25s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-crosswalk-signal-001.mp3",
       "wav": "audio/wav/infra-crosswalk-signal-001.wav",
@@ -2628,7 +2628,7 @@
         "crane",
         "move"
       ],
-      "duration": "0.80s",
+      "duration": "1.10s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-cargo-crane-move-001.mp3",
       "wav": "audio/wav/infra-cargo-crane-move-001.wav",
@@ -2668,7 +2668,7 @@
         "gate",
         "open"
       ],
-      "duration": "0.80s",
+      "duration": "0.70s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-gate-open-001.mp3",
       "wav": "audio/wav/infra-gate-open-001.wav",
@@ -2708,7 +2708,7 @@
         "highway",
         "traffic"
       ],
-      "duration": "0.80s",
+      "duration": "2.20s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-highway-traffic-001.mp3",
       "wav": "audio/wav/infra-highway-traffic-001.wav",
@@ -2728,7 +2728,7 @@
         "tunnel",
         "ambience"
       ],
-      "duration": "0.80s",
+      "duration": "2.20s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-tunnel-ambience-001.mp3",
       "wav": "audio/wav/infra-tunnel-ambience-001.wav",
@@ -2748,7 +2748,7 @@
         "runway",
         "jet"
       ],
-      "duration": "0.80s",
+      "duration": "1.60s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-runway-jet-001.mp3",
       "wav": "audio/wav/infra-runway-jet-001.wav",
@@ -2768,7 +2768,7 @@
         "airport",
         "bell"
       ],
-      "duration": "0.80s",
+      "duration": "1.45s",
       "date": "2026-10-30",
       "mp3": "audio/mp3/infra-airport-bell-001.mp3",
       "wav": "audio/wav/infra-airport-bell-001.wav",
